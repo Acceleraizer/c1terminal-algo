@@ -156,6 +156,9 @@ class GameState:
         result = cls.__new__(cls)
         result.game_map = deepcopy(self.game_map)
         result._shortest_path_finder = self._shortest_path_finder
+        result.ARENA_SIZE = self.ARENA_SIZE
+        result.HALF_ARENA = self.HALF_ARENA
+        result.config = self.config
         # result._shortest_path_finder.initialized = True
         # result._shortest_path_finder.game_state = result
         # result._shortest_path_finder.game_map = deepcopy(self._shortest_path_finder.game_map)

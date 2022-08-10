@@ -37,7 +37,8 @@ class GameMap:
         self.BOTTOM_RIGHT = 3
         self.__map = self.__empty_grid()
         self.__start = [13,0]
-    
+        self.edges = self.get_edges()
+
     def __getitem__(self, location):
         if len(location) == 2 and self.in_arena_bounds(location):
             x,y = location
@@ -117,8 +118,7 @@ class GameMap:
             self.warn("Passed invalid quadrant_description '{}'. See the documentation for valid inputs for get_edge_locations.".format(quadrant_description))
             return
 
-        edges = self.get_edges()
-        return edges[quadrant_description]
+        return self.edges[quadrant_description]
 
     def get_edges(self):
         """Gets all of the edges and their edge locations

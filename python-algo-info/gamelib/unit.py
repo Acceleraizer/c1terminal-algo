@@ -77,6 +77,9 @@ class GameUnit:
         self.cost = [type_config.get("cost1", 0) + self.cost[0], type_config.get("cost2", 0) + self.cost[1]]
         self.upgraded = True
 
+    def set_position(self, x, y):
+        self.x = x
+        self.y = y
 
     def __toString(self):
         owner = "Friendly" if self.player_index == 0 else "Enemy"

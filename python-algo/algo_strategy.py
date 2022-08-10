@@ -4,7 +4,7 @@ import math
 import warnings
 from sys import maxsize
 import json
-import tensorflow
+# import tensorflow
 
 
 """
@@ -61,7 +61,6 @@ class AlgoStrategy(gamelib.AlgoCore):
         self.starter_strategy(game_state)
 
         game_state.submit_turn()
-        game_state.num
 
     """
     NOTE: All the methods after this point are part of the sample starter-algo

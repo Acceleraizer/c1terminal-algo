@@ -4,7 +4,7 @@ import math
 import warnings
 from sys import maxsize
 import json
-import tensorflow
+# import tensorflow
 from simulator import Simulator
 
 """
@@ -78,14 +78,16 @@ class AlgoStrategy(gamelib.AlgoCore):
     def starter_strategy(self, game_state:gamelib.GameState):
         clone = game_state.clone()
         sim = Simulator(self.config, clone)
+        scenario = [[SCOUT, [11, 2]]]
+        sim.place_mobile_units(scenario)
+        sim.simulate()
 
         # Todo: debug log a bunch of things to check state representation
-        board_state = self.parse_board_state(game_state)
-        structures = board_state[-1]
-        if structures:
-            gamelib.debug_write(structures[0])
-        gamelib.debug_write(board_state)
-
+        # board_state = self.parse_board_state(game_state)
+        # structures = board_state[-1]
+        # if structures:
+        #     gamelib.debug_write(structures[0])
+        # gamelib.debug_write(board_state)
 
 
     def parse_board_state(self, game_state : gamelib.GameState):
