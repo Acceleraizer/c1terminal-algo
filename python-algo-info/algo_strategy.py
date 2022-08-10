@@ -76,13 +76,14 @@ class AlgoStrategy(gamelib.AlgoCore):
         game_state.submit_turn()
 
     def starter_strategy(self, game_state:gamelib.GameState):
-        if (game_state.turn_number == 5):
+        if (game_state.turn_number == -1):
             # crash
             a = 1/0
         sim = Simulator(self.config, game_state)
         scenario = [[SCOUT, 10, [6, 7]]]
         sim.place_mobile_units(scenario)
-        sim.simulate()
+        expected_dmg = sim.simulate()
+        gamelib.debug_write(f"Prediction: {expected_dmg} damage!")
 
         # Todo: debug log a bunch of things to check state representation
         # board_state = self.parse_board_state(game_state)

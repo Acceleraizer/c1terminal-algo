@@ -94,7 +94,6 @@ class Simulator:
 
         # printd(f"Turrets: {self.their_turrets}")
 
-    @timer
     def clone_game(self, game_state:gamelib.GameState):
         clone = gamelib.GameState.__new__(gamelib.GameState)
         clone.game_map = gamelib.GameMap(game_state.config)
@@ -115,6 +114,7 @@ class Simulator:
         clone.ARENA_SIZE = game_state.ARENA_SIZE
         clone.HALF_ARENA = game_state.HALF_ARENA
         clone.config = game_state.config
+        clone.game_map.edges = game_state.game_map.edges
         return clone
 
 
@@ -144,7 +144,7 @@ class Simulator:
 
             
     # True = dies
-    @timer
+    # @timer
     def move_unit(self, simunit:Simunit):
         x,y = simunit.unit.x, simunit.unit.y
 
@@ -160,7 +160,7 @@ class Simulator:
         # TODO: Self-destruct (but probably not necessary for attack sim)
         if len(simunit.path) == 0:
             self.graveyard.append(simunit)
-            self.resolve_end_of_path([x,y])
+            self.resolve_end_of_path(simunit)
             return True# But this unit has to be removed at the end of the round
 
         self.game_state.game_map[x, y].remove(simunit)
@@ -171,9 +171,10 @@ class Simulator:
 
 
     #def can be optimized
-    def resolve_end_of_path(self, loc):
-        if loc in self.game_state.game_map.edges:
-            self.damage += 1
+    def resolve_end_of_path(self, simunit:Simunit):
+        loc = [simunit.unit.x, simunit.unit.y]
+        if loc in self.game_state.game_map.edges[simunit.target_edge]:
+            self.damage += simunit.count
 
     def get_target(self, attacking_unit:Simunit):
         attacker_location = [attacking_unit.unit.x, attacking_unit.unit.y]
@@ -247,7 +248,7 @@ class Simulator:
         for simunit in self.our_inters:
             simunit.repath = True
 
-
+    @timer
     def simulate(self):
         while self.our_demos or self.our_scouts or self.our_inters:
             self.simulate_tick()
@@ -276,7 +277,6 @@ class Simulator:
         return
 
 
-    @timer
     def move_all_units(self):
         for simunit in self.our_scouts:
             self.move_unit(simunit)
@@ -286,7 +286,6 @@ class Simulator:
             for simunit in self.our_inters:
                 self.move_unit(simunit)
 
-    @timer
     def resolve_attacks(self):
         struct_destroyed = False
         struct_destroyed = self.resolve_attacks_per_list(self.our_scouts) or struct_destroyed
