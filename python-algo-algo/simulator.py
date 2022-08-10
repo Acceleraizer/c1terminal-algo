@@ -45,6 +45,7 @@ class Simunit:
         self.attack_s = unit.damage_f
 
         self.count_to_fire = count
+        self.graved = False
 
     def set_target_edge(self, tid):
         self.target_edge = tid
@@ -153,6 +154,7 @@ class Simulator:
         # TODO: Self-destruct (but probably not necessary for attack sim)
         if len(simunit.path) == 0:
             self.graveyard.append(simunit)
+            simunit.graved = True
             self.resolve_end_of_path(simunit)
             return True# But this unit has to be removed at the end of the round
 
@@ -248,7 +250,7 @@ class Simulator:
         return self.damage
 
     def simulate_tick(self):
-        # printd(f"Begin tick #{self.tick}")
+        printd(f"Begin tick #{self.tick}, scouts = {self.our_scouts}")
         # 1. TODO: support granting shields
 
         # 2. Each unit attempts to move
@@ -317,7 +319,7 @@ class Simulator:
             if defender.health <= 0:
                 defender.health = defender.base_health
                 defender.count -= 1
-                if defender.count == 0:
+                if defender.count == 0 and (not defender.graved):
                     self.graveyard.append(defender)
                     return True
 
@@ -328,6 +330,7 @@ class Simulator:
         n = len(self.graveyard)
         for _ in range(n):
             simunit = self.graveyard.pop()
+            printd(f"Goodbye <{simunit}>")
             if simunit.unit.unit_type == SCOUT:
                 self.our_scouts.remove(simunit)
             elif simunit.unit.unit_type == DEMOLISHER:
@@ -342,7 +345,6 @@ class Simulator:
             if simunit.unit.stationary:
                 self.pather.game_map[x][y].blocked = False
 
-            # printd(f"Goodbye <{simunit}>")
 
     def update_counts(self):
         for simunit in self.our_scouts:
