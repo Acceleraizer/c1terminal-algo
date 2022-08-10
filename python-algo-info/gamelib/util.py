@@ -1,4 +1,5 @@
 import sys
+from time import time_ns
 
 
 BANNER_TEXT = "---------------- Starting Your Algo --------------------"
@@ -39,3 +40,13 @@ def debug_write(*msg):
     #Printing to STDERR is okay and printed out by the game but doesn't effect turns.
     sys.stderr.write(", ".join(map(str, msg)).strip() + "\n")
     sys.stderr.flush()
+
+
+def timer(func):
+    def inner(*args, **kwargs):
+        t1 = time_ns()
+        ret = func(*args, **kwargs)
+        t2 = time_ns()
+        debug_write(f"Execution time of <{func.__name__}>: {(t2-t1)/10**6} ms")
+        return ret
+    return inner

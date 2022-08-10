@@ -11,7 +11,7 @@ import json
 from typing import List
 from copy import copy, deepcopy
 from collections import deque
-from time import time_ns
+from gamelib.util import timer
 
 
 edge_locations = [[0, 13], [27, 13], [1, 12], [26, 12], [2, 11], 
@@ -26,14 +26,7 @@ edge_locations = [[0, 13], [27, 13], [1, 12], [26, 12], [2, 11],
 #                   [5, [1,2], [-1,2], [1,-2],[-1,-2], [2,1], [2,-1], [-2,1], [-2,-1]],
 #                   [8, [2,2], [2,-2], [-2,2], [-2,-2]]]
 
-def timer(func):
-    def inner(*args, **kwargs):
-        t1 = time_ns()
-        ret = func(*args, **kwargs)
-        t2 = time_ns()
-        gamelib.debug_write(f"Execution time of <{func.__name__}>: {(t2-t1)/10**6} ms")
-        return ret
-    return inner
+
 
 
 class Simunit:

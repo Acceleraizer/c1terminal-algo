@@ -1,8 +1,8 @@
 import heapq
 import math
 import sys
-import queue
-from .util import debug_write
+from collections import deque
+from .util import debug_write, timer
 
 class Node:
     """A pathfinding node
@@ -14,7 +14,8 @@ class Node:
         * pathlength: The distance between this node and the target location
 
     """
-    def __init__(self):
+    def __init__(self, x, y):
+        self.loc = [x, y]
         self.visited_idealness = False
         self.visited_validate = False
         self.blocked = False
@@ -50,7 +51,7 @@ class ShortestPathFinder:
         #Initialize map 
         self.initialized = True
         self.game_state = game_state
-        self.game_map = [[Node() for x in range(self.game_state.ARENA_SIZE)] for y in range(self.game_state.ARENA_SIZE)]
+        self.game_map = [[Node(x, y) for x in range(self.game_state.ARENA_SIZE)] for y in range(self.game_state.ARENA_SIZE)]
 
     def initialize_blocked(self):
         for location in self.game_state.game_map:
@@ -96,19 +97,21 @@ class ShortestPathFinder:
         self._validate(ideal_endpoints, end_points)
         return self._get_path(start_point, end_points)
 
+    # @timer
     def _idealness_search(self, start, end_points):
         """
         Finds the most ideal tile in our 'pocket' of pathable space. 
         The edge if it is available, or the best self destruct location otherwise
         """
-        current = queue.Queue()
-        current.put(start)
+        current = deque()
+        current.append(start)
         best_idealness = self._get_idealness(start, end_points)
         self.game_map[start[0]][start[1]].visited_idealness = True
         most_ideal = start
 
-        while not current.empty():
-            search_location = current.get()
+        while len(current) > 0:
+            search_location = current.popleft()
+            
             for neighbor in self._get_neighbors(search_location):
                 if not self.game_state.game_map.in_arena_bounds(neighbor) or self.game_map[neighbor[0]][neighbor[1]].blocked:
                     continue
@@ -122,7 +125,7 @@ class ShortestPathFinder:
 
                 if not self.game_map[x][y].visited_idealness and not self.game_map[x][y].blocked:
                     self.game_map[x][y].visited_idealness = True
-                    current.put(neighbor)
+                    current.append(neighbor)
 
         return most_ideal
 
@@ -131,6 +134,7 @@ class ShortestPathFinder:
         """
         x, y = location
         return [[x, y + 1], [x, y - 1], [x + 1, y], [x - 1, y]]
+        # return [(x, y + 1),(x, y - 1), (x + 1, y), (x - 1, y)]
 
     def _get_direction_from_endpoints(self, end_points):
         """Prints a message to the games debug output
@@ -175,27 +179,28 @@ class ShortestPathFinder:
 
         return idealness
 
+    # @timer
     def _validate(self, ideal_tile, end_points):
         """Breadth first search of the grid, setting the pathlengths of each node
 
         """
         #VALDIATION
         #Add our most ideal tiles to current
-        current = queue.Queue()
+        current = deque()
         if ideal_tile in end_points:
             for location in end_points:
-               current.put(location)
+               current.append(location)
                #Set current pathlength to 0
                self.game_map[location[0]][location[1]].pathlength = 0
                self.game_map[location[0]][location[1]].visited_validate = True
         else:
-            current.put(ideal_tile)
+            current.append(ideal_tile)
             self.game_map[ideal_tile[0]][ideal_tile[1]].pathlength = 0
             self.game_map[ideal_tile[0]][ideal_tile[1]].visited_validate = True
 
         #While current is not empty
-        while not current.empty():
-            current_location = current.get()
+        while len(current) > 0:
+            current_location = current.popleft()
             current_node = self.game_map[current_location[0]][current_location[1]]
             for neighbor in self._get_neighbors(current_location):
                 if not self.game_state.game_map.in_arena_bounds(neighbor) or self.game_map[neighbor[0]][neighbor[1]].blocked:
@@ -205,12 +210,13 @@ class ShortestPathFinder:
                 if not neighbor_node.visited_validate and not current_node.blocked:
                     neighbor_node.pathlength = current_node.pathlength + 1
                     neighbor_node.visited_validate = True
-                    current.put(neighbor)
+                    current.append(neighbor)
 
         #debug_write("Print after validate")
         #self.print_map()
         return
 
+    # @timer
     def _get_path(self, start_point, end_points):
         """Once all nodes are validated, and a target is found, the unit can path to its target
 

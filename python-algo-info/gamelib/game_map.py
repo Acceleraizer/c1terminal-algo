@@ -1,6 +1,6 @@
 import math
 from .unit import GameUnit
-from .util import debug_write
+from .util import debug_write, timer
 
 class GameMap:
     """Holds data about the current game map and provides functions
@@ -91,19 +91,20 @@ class GameMap:
         
         """
         x, y = location
-        half_board = self.HALF_ARENA
+        return not(x+y<=12 or x+y >= 42 or y-x>=15 or y-x<=-15)
+        # half_board = self.HALF_ARENA
 
-        row_size = y + 1
-        startx = half_board - row_size
-        endx = startx + (2 * row_size) - 1
-        top_half_check = (y < self.HALF_ARENA and x >= startx and x <= endx)
+        # row_size = y + 1
+        # startx = half_board - row_size
+        # endx = startx + (2 * row_size) - 1
+        # top_half_check = (y < self.HALF_ARENA and x >= startx and x <= endx)
 
-        row_size = (self.ARENA_SIZE - 1 - y) + 1
-        startx = half_board - row_size
-        endx = startx + (2 * row_size) - 1
-        bottom_half_check = (y >= self.HALF_ARENA and x >= startx and x <= endx)
+        # row_size = (self.ARENA_SIZE - 1 - y) + 1
+        # startx = half_board - row_size
+        # endx = startx + (2 * row_size) - 1
+        # bottom_half_check = (y >= self.HALF_ARENA and x >= startx and x <= endx)
 
-        return bottom_half_check or top_half_check
+        # return bottom_half_check or top_half_check
 
     def get_edge_locations(self, quadrant_description):
         """Takes in an edge description and returns a list of locations.

@@ -81,6 +81,7 @@ class AlgoStrategy(gamelib.AlgoCore):
             a = 1/0
         sim = Simulator(self.config, game_state)
         scenario = [[SCOUT, 10, [6, 7]]]
+        # scenario = [[SCOUT, 10, [6, 7]], [DEMOLISHER, 2, [5,8]]]
         sim.place_mobile_units(scenario)
         expected_dmg = sim.simulate()
         gamelib.debug_write(f"Prediction: {expected_dmg} damage!")
