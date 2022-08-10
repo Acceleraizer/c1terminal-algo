@@ -1,6 +1,8 @@
+from distutils.sysconfig import get_makefile_filename
 import math
 import json
 import sys
+from copy import deepcopy
 
 from .navigation import ShortestPathFinder
 from .util import send_command, debug_write
@@ -148,6 +150,16 @@ class GameState:
                 else:
                     unit = GameUnit(unit_type, self.config, player_number, hp, x, y)
                     self.game_map[x,y].append(unit)
+
+    def clone(self):
+        cls = self.__class__
+        result = cls.__new__(cls)
+        result.game_map = deepcopy(self.game_map)
+        result._shortest_path_finder = self._shortest_path_finder
+        # result._shortest_path_finder.initialized = True
+        # result._shortest_path_finder.game_state = result
+        # result._shortest_path_finder.game_map = deepcopy(self._shortest_path_finder.game_map)
+        return result
 
     def __resource_required(self, unit_type):
         return self.SP if is_stationary(unit_type) else self.MP

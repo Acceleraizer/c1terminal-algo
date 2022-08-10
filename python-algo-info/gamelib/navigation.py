@@ -52,6 +52,19 @@ class ShortestPathFinder:
         self.game_state = game_state
         self.game_map = [[Node() for x in range(self.game_state.ARENA_SIZE)] for y in range(self.game_state.ARENA_SIZE)]
 
+    def initialize_blocked(self):
+        for location in self.game_state.game_map:
+            if self.game_state.contains_stationary_unit(location):
+                self.game_map[location[0]][location[1]].blocked = True
+            else:
+                self.game_map[location[0]][location[1]].blocked = False
+
+    def initialize_ifnot(self, game_state):
+        if not self.initialized:
+            self.initialize_map(game_state)
+            self.initialize_blocked()
+
+
     def navigate_multiple_endpoints(self, start_point, end_points, game_state):
         """Finds the path a unit would take to reach a set of endpoints
 
@@ -68,12 +81,8 @@ class ShortestPathFinder:
         if game_state.contains_stationary_unit(start_point):
             return
 
-        #Initialize map 
-        self.initialize_map(game_state)
-        #Fill in walls
-        for location in self.game_state.game_map:
-            if self.game_state.contains_stationary_unit(location):
-                self.game_map[location[0]][location[1]].blocked = True
+        self.initialize_ifnot(game_state)
+        
         #Do pathfinding
         ideal_endpoints = self._idealness_search(start_point, end_points)
         self._validate(ideal_endpoints, end_points)

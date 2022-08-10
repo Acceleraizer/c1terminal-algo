@@ -212,7 +212,7 @@ class GameMap:
             for j in range(int(y - search_radius), int(y + search_radius + 1)):
                 new_location = [i, j]
                 # A unit with a given range affects all locations who's centers are within that range + get hit radius
-                if self.in_arena_bounds(new_location) and self.distance_between_locations(location, new_location) < radius + getHitRadius:
+                if self.in_arena_bounds(new_location) and self.sq_distance_between_locations(location, new_location) < (radius + getHitRadius)**2:
                     locations.append(new_location)
         return locations
 
@@ -231,6 +231,12 @@ class GameMap:
         x2, y2 = location_2
 
         return math.sqrt((x1 - x2)**2 + (y1 - y2)**2)
+
+    def sq_distance_between_locations(self, location_1, location_2):
+        x1, y1 = location_1
+        x2, y2 = location_2
+
+        return (x1 - x2)**2 + (y1 - y2)**2
 
     def warn(self, message):
         """

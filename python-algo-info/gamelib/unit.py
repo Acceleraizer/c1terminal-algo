@@ -1,3 +1,5 @@
+from copy import deepcopy
+
 def is_stationary(unit_type, structure_types):
     """
         Args:
@@ -86,4 +88,12 @@ class GameUnit:
 
     def __repr__(self):
         return self.__toString()
+
+    def __deepcopy__(self, memo):
+        cls = self.__class__
+        result = cls.__new__(cls)
+        memo[id(self)] = result
+        for k, v in self.__dict__.items():
+            setattr(result, k, deepcopy(v, memo))
+        return result
 
