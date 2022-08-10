@@ -2,10 +2,10 @@ import gamelib
 import random
 import math
 import warnings
-from sys import maxsize
+from sys import maxsize, stderr
 import json
 # import tensorflow
-from simulator import Simulator
+from simulator import Simulator, timer
 
 """
 Most of the algo code you write will be in this file unless you create new
@@ -76,9 +76,11 @@ class AlgoStrategy(gamelib.AlgoCore):
         game_state.submit_turn()
 
     def starter_strategy(self, game_state:gamelib.GameState):
-        clone = game_state.clone()
-        sim = Simulator(self.config, clone)
-        scenario = [[SCOUT, [11, 2]]]
+        if (game_state.turn_number == 5):
+            # crash
+            a = 1/0
+        sim = Simulator(self.config, game_state)
+        scenario = [[SCOUT, 10, [6, 7]]]
         sim.place_mobile_units(scenario)
         sim.simulate()
 

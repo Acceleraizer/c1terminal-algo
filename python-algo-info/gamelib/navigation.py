@@ -64,6 +64,12 @@ class ShortestPathFinder:
             self.initialize_map(game_state)
             self.initialize_blocked()
 
+    def reinitialize_nodes(self):
+        for row in self.game_map:
+            for node in row:
+                node.visited_idealness = False
+                node.visited_validate = False
+            
 
     def navigate_multiple_endpoints(self, start_point, end_points, game_state):
         """Finds the path a unit would take to reach a set of endpoints
@@ -78,13 +84,15 @@ class ShortestPathFinder:
             Note that this path can change if a tower is destroyed during pathing, or if you or your enemy places structures.
 
         """
-        if game_state.contains_stationary_unit(start_point):
-            return
+        # if game_state.contains_stationary_unit(start_point):
+        #     return
 
         self.initialize_ifnot(game_state)
+        self.reinitialize_nodes()
         
         #Do pathfinding
         ideal_endpoints = self._idealness_search(start_point, end_points)
+        # debug_write(f"whats going on {ideal_endpoints}")
         self._validate(ideal_endpoints, end_points)
         return self._get_path(start_point, end_points)
 

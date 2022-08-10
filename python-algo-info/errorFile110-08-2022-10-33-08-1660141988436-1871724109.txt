@@ -1,0 +1,15 @@
+Random seed: 8211652841050101053
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 0 of your custom algo strategy
+                          Traceback (most recent call last):
+  File "/home/wittmann/Desktop/c1terminal-algo/python-algo-info/algo_strategy.py", line 121, in <module>
+    algo.start()
+  File "/home/wittmann/Desktop/c1terminal-algo/python-algo-info/gamelib/algocore.py", line 74, in start
+    self.on_turn(game_state_string)
+  File "/home/wittmann/Desktop/c1terminal-algo/python-algo-info/algo_strategy.py", line 74, in on_turn
+    self.starter_strategy(game_state)
+  File "/home/wittmann/Desktop/c1terminal-algo/python-algo-info/algo_strategy.py", line 84, in starter_strategy
+    if game_state.game_map[x,y].size() and game_state.game_map[x,y][0].stationary:
+AttributeError: 'list' object has no attribute 'size'

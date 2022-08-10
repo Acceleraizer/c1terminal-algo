@@ -20,6 +20,13 @@ class GameMap:
         * BOTTOM_RIGHT (int): A constant that represents the bottom right edge
 
     """
+    enable_warnings = True
+    ARENA_SIZE = 28
+    HALF_ARENA = ARENA_SIZE // 2
+    TOP_RIGHT = 0
+    TOP_LEFT = 1
+    BOTTOM_LEFT = 2
+    BOTTOM_RIGHT = 3
     def __init__(self, config):
         """Initializes constants and game map
 
@@ -28,13 +35,7 @@ class GameMap:
 
         """
         self.config = config
-        self.enable_warnings = True
-        self.ARENA_SIZE = 28
-        self.HALF_ARENA = int(self.ARENA_SIZE / 2)
-        self.TOP_RIGHT = 0
-        self.TOP_LEFT = 1
-        self.BOTTOM_LEFT = 2
-        self.BOTTOM_RIGHT = 3
+
         self.__map = self.__empty_grid()
         self.__start = [13,0]
         self.edges = self.get_edges()

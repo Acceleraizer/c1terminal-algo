@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/wittmann/Desktop/c1terminal-algo'
+make: Leaving directory '/home/wittmann/Desktop/c1terminal-algo'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+
