@@ -1,0 +1,6 @@
+Random seed: 3358646973571561772
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Mid game map cost: 63.5
+Performing turn 0 of your custom algo strategy
+Got end state, game over. Stopping algo.

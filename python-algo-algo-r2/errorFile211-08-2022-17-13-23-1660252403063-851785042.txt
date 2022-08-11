@@ -1,0 +1,21 @@
+Random seed: 8510182230962087679
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Mid game map cost: 63.0
+Performing turn 0 of your custom algo strategy
+after reflection: period = 2. predicted [0, 0, 0, 0] got [0, 0, 0, 0]
+Performing turn 1 of your custom algo strategy
+Performing turn 2 of your custom algo strategy
+Performing turn 3 of your custom algo strategy
+Performing turn 4 of your custom algo strategy
+Performing turn 5 of your custom algo strategy
+Damage: 88.0, 4.0
+Performing turn 6 of your custom algo strategy
+Damage: 40.800000000000004, 0.0
+TURN 6: (0, 0, 1, 3.5), [[6, 7], [14, 0]]
+Performing turn 7 of your custom algo strategy
+after reflection: period = 3. predicted (0, 0, 1, 3.5) got [0, 0, 0, 0]
+Damage: 37.6, 80.0
+Performing turn 8 of your custom algo strategy
+Damage: 16.0, 32.0
+Got EOF, parent game process must have died, exiting for cleanup

@@ -66,18 +66,18 @@ class AlgoStrategy(gamelib.AlgoCore):
         global EARLY_GAME_MAP, MID_GAME_MAP, MID_GAME_EXTRA_LEFT, MID_GAME_EXTRA_RIGHT, EARLY_TO_MID_DIFF, MID_GAME_DEFENCE, LATE_GAME_LEFT, LATE_GAME_RIGHT, LATE_GAME_SHIELD
 
         EARLY_GAME_MAP = \
-        {"wall_l1" : []
-        ,"turret_l1" : [[2, 13], [3, 12], [20, 12], [24, 12], [25, 12], [20, 11]]
-        ,"inters" : [[8,5], [19,5]]
+        {"wall_l1" : [[3, 11], [5, 11], [22, 11], [24, 11], [4, 10], [6, 10], [21, 10], [23, 10], [6, 9], [21, 9], [7, 8], [20, 8], [7, 7], [20, 7]]
+        ,"turret_l1" : []
+        ,"inters" : [[3, 10], [24, 10], [6, 7], [21, 7], [15,1]]
         }
         MID_GAME_MAP = \
         {"wall_l2" : [[0, 13], [1, 13], [23, 13], [26, 13], [27, 13], [4, 12], [21, 12], [5, 11], [23, 11]]
         ,"wall_l1" :[[23, 12], [6, 10], [7, 9], [18, 9], [8, 8], [9, 8], [10, 8], [11, 8], [12, 8], [13, 8], [14, 8], [15, 8], [16, 8], [17, 8]] + [[3, 13], [19, 10], [22, 10], [21, 9]]
-        ,"turret_l1" : EARLY_GAME_MAP["turret_l1"]
+        ,"turret_l1" : [[2, 13], [3, 12], [20, 12], [24, 12], [25, 12], [20, 11]]
         ,"cost": 0
         , "wall_l2_aux" : [[3, 13], [22, 10], [21, 9]]
         ,"support_l1": [[16, 6], [17, 6], [18, 6], [17, 5]]}
-        MID_GAME_MAP["cost"] = 2*len(MID_GAME_MAP["wall_l2"]) + 0.5*len(MID_GAME_MAP["wall_l1"])
+        MID_GAME_MAP["cost"] = 2*len(MID_GAME_MAP["wall_l2"]) + 0.5*len(MID_GAME_MAP["wall_l1"]) + 6*len(MID_GAME_MAP["turret_l1"])
         gamelib.debug_write(f"Mid game map cost: {MID_GAME_MAP['cost']}")
 
         MID_GAME_EXTRA_LEFT = \
@@ -187,15 +187,15 @@ class AlgoStrategy(gamelib.AlgoCore):
  
     def starter_strategy(self, game_state:gamelib.GameState):
         self.reflect_on_attack(game_state)
-        if game_state.turn_number > 0:
-            self.switch_to_mid_game(game_state)
+        self.switch_to_mid_game(game_state)
         if self.early_game:
             self.early_game_plan(game_state)
         else:
             ok = self.build_defences(game_state)
             if not ok:
                 self.interceptor_defence(game_state)
-        self.plan_attack(game_state)
+            else:
+                self.plan_attack(game_state)
             
 
     def reflect_on_attack(self, game_state:gamelib.GameState):
@@ -212,8 +212,8 @@ class AlgoStrategy(gamelib.AlgoCore):
 
 
     def early_game_plan(self, game_state:gamelib.GameState):
-        game_state.attempt_spawn(TURRET, EARLY_GAME_MAP["turret_l1"])
-        game_state.attempt_spawn(WALL, EARLY_GAME_MAP["wall_l1"])
+        if game_state.turn_number > 0:
+            game_state.attempt_spawn(WALL, EARLY_GAME_MAP["wall_l1"])
         game_state.attempt_spawn(INTERCEPTOR, EARLY_GAME_MAP["inters"], 1)
         
 

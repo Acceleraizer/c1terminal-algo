@@ -351,7 +351,7 @@ class Simulator:
         n = len(self.graveyard)
         for _ in range(n):
             simunit = self.graveyard.pop()
-            printd(f"Goodbye <{simunit}>")
+            # printd(f"Goodbye <{simunit}>")
             if simunit.unit.unit_type == SCOUT:
                 self.our_scouts.remove(simunit)
             elif simunit.unit.unit_type == DEMOLISHER:
