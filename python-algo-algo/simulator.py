@@ -250,14 +250,15 @@ class Simulator:
         return self.damage
 
     def simulate_tick(self):
-        printd(f"Begin tick #{self.tick}, scouts = {self.our_scouts}")
+        # printd(f"Begin tick #{self.tick}, scouts = {self.our_scouts}")
         # 1. TODO: support granting shields
+        self.apply_shielding()
 
         # 2. Each unit attempts to move
         self.move_all_units()
         
         # 3. Each unit attacks
-        # BIG TODO - first iteration can probably use the get_target function from game_state
+        # first iteration can probably use the get_target function from game_state
         # We would iterate through all the elements in the our/their lists and calculate the attack
         # If an enemy structure is destroyed, we must set struct_destroyed to True to trigger repathing
         struct_destroyed =  self.resolve_attacks()
@@ -269,6 +270,10 @@ class Simulator:
 
         if struct_destroyed:
             self.mark_recompute_paths()
+        return
+
+    def apply_shielding(self):
+        
         return
 
 

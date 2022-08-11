@@ -57,6 +57,7 @@ class AlgoStrategy(gamelib.AlgoCore):
         SP = 0
         # This is a good place to do initial setup
         self.scored_on_locations = []
+        self.next_attack_check = 6
 
     def on_turn(self, turn_state):
         """
@@ -75,37 +76,66 @@ class AlgoStrategy(gamelib.AlgoCore):
         game_state.submit_turn()
 
     def starter_strategy(self, game_state:gamelib.GameState):
-        if (game_state.turn_number == -1):
-            # crash
-            a = 1/0
-        sim = Simulator(self.config, game_state)
-        scenario = [[SCOUT, game_state.number_affordable(SCOUT), [6, 7]]]
-        # scenario = [[SCOUT, 10, [6, 7]], [DEMOLISHER, 2, [5,8]]]
-        sim.place_mobile_units(scenario)
-        expected_dmg = sim.simulate()
-        gamelib.debug_write(f"Prediction: {expected_dmg} damage!")
-
-        # Todo: debug log a bunch of things to check state representation
-        # board_state = self.parse_board_state(game_state)
-        # structures = board_state[-1]
-        # if structures:
-        #     gamelib.debug_write(structures[0])
-        # gamelib.debug_write(board_state)
+        # if (game_state.turn_number == -1):
+        #     # crash
+        #     a = 1/0
+        # sim = Simulator(self.config, game_state)
+        # scenario = [[SCOUT, game_state.number_affordable(SCOUT), [6, 7]]]
+        # sim.place_mobile_units(scenario)
+        # expected_dmg = sim.simulate()
+        # gamelib.debug_write(f"Prediction: {expected_dmg} damage!")
         self.build_defences(game_state)
         self.maybe_spawn_interceptors()
         if game_state.turn_number < 4:
             game_state.attempt_spawn(INTERCEPTOR, [[1, 12], [26, 12]])
-        elif game_state.turn_number % 6 in [0, 2]:
-            # To simplify we will just check sending them from back left and right
-            scout_spawn_location_options = [[13, 0], [14, 0]]
-            best_location = self.least_damage_spawn_location(game_state, scout_spawn_location_options)
-            if game_state.turn_number % 6 == 2:
-                game_state.attempt_spawn(SCOUT, best_location, 1000)
-            else:
-                game_state.attempt_spawn(DEMOLISHER, best_location, 1000)
-
-
+        else:
+            # game_state.attempt_spawn(INTERCEPTOR, [[20, 6]])
+            self.plan_attack(game_state)
         
+
+
+    def plan_attack(self, game_state:gamelib.GameState):
+        if not self.next_attack_check == game_state.turn_number:
+            return
+        mp = game_state.get_resource(MP)
+        spawn_location_options = [[3,10], [13, 0], [14, 0]]
+        # check demos first
+        best_loc = []
+        best_damage = 0
+        for loc in spawn_location_options:
+            sim = Simulator(self.config, game_state)
+            scenario = [[DEMOLISHER, mp // 3, loc]]
+            sim.place_mobile_units(scenario)
+            dmg = sim.simulate()
+            if dmg >= best_damage:
+                best_loc = loc
+                best_damage = dmg
+
+
+        # check if we should just sent scouts
+        mode = DEMOLISHER
+        sim = Simulator(self.config, game_state)
+        scenario = [[SCOUT, game_state.number_affordable(SCOUT), best_loc]]
+        sim.place_mobile_units(scenario)
+        dmg = sim.simulate()
+        if dmg > best_damage:
+            mode = SCOUT
+
+        # what if we wait one more round
+        # sim = Simulator(self.config, game_state)
+        # scenario = [[DEMOLISHER, game_state.project_future_MP()//3, best_loc]]
+        # sim.place_mobile_units(scenario)
+        # dmg = sim.simulate()
+        # if dmg > best_damage:
+        #     self.next_attack_check += 1
+        #     return
+
+        if mode == SCOUT:
+            self.next_attack_check += 4
+        else:
+            self.next_attack_check += 3
+        game_state.attempt_spawn(mode, best_loc, 1000)
+
 
 
     def parse_board_state(self, game_state : gamelib.GameState):
@@ -132,20 +162,20 @@ class AlgoStrategy(gamelib.AlgoCore):
         # More community tools available at: https://terminal.c1games.com/rules#Download
 
         # Place turrets that attack enemy units
-        turret_locations_primary = [[25, 12], [3, 11], [18, 10], [20, 7]]
-        turret_locations_secondary = [[2, 11], [24, 11], [17, 9], [21, 8]]
+        turret_locations_primary = [[25, 12], [3, 11], [18, 10], [17, 9]]
+        turret_locations_secondary = [[2, 11], [24, 11], [16, 8], [15, 7]]
         # attempt_spawn will try to spawn units if we have resources, and will check if a blocking unit is already there
         game_state.attempt_spawn(TURRET, turret_locations_primary)
         
         # Place walls in front of turrets to soak up damage for them
         wall_locations_key = [[2, 13], [25, 13], [18, 11], [19, 11]]
-        wall_locations_key_2 = [[26, 13], [24, 12],[1, 13],[3, 12], [17, 10], [16, 9], [15, 8]]
-        wall_locations_path =  [[0, 13], [1, 13], [26, 13], [27, 13], [3, 12], [24, 12], [4, 11], [23, 11], [5, 10], [17, 10], [22, 10], [6, 9], [16, 9], [21, 9], [7, 8], [15, 8], [20, 8], [8, 7], [14, 7], [19, 7], [9, 6], [13, 6], [10, 5], [12, 5], [11, 4]]
+        wall_locations_key_2 = [[26, 13], [24, 12],[1, 13],[3, 12], [17, 10], [16, 9], [15, 8], [4,11], [19,10], [18,9]]
+        wall_locations_path =  [[0, 13], [1, 13], [26, 13], [27, 13], [3, 12], [24, 12], [4, 11], [23, 11], [5, 10], [17, 10], [22, 10], [6, 9], [16, 9], [21, 9], [7, 8], [15, 8], [20, 8], [8, 7], [14, 7], [19, 7], [9, 6], [13, 6], [10, 6], [12, 6], [11, 6]]
         game_state.attempt_spawn(WALL, wall_locations_key + wall_locations_key_2+ wall_locations_path)
         # upgrade walls so they soak more damage
         game_state.attempt_upgrade(wall_locations_key)
-        game_state.attempt_upgrade(wall_locations_key_2)
         game_state.attempt_spawn(TURRET, turret_locations_secondary)
+        game_state.attempt_upgrade(wall_locations_key_2)
 
         # Lastly, if we have spare SP, let's build some supports
         support_locations = [[13, 2], [14, 2], [13, 3], [14, 3]]
