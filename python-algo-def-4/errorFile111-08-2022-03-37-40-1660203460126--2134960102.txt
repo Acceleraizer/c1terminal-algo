@@ -1,0 +1,21 @@
+Random seed: 1887051742409572189
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Performing turn 0 of your custom algo strategy
+opponent attack simulation
+Traceback (most recent call last):
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/algo_strategy.py", line 166, in <module>
+    algo.start()
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/gamelib/algocore.py", line 74, in start
+    self.on_turn(game_state_string)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/algo_strategy.py", line 75, in on_turn
+    self.starter_strategy(game_state)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/algo_strategy.py", line 83, in starter_strategy
+    self.opponent_attack_simulation(game_state)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/algo_strategy.py", line 90, in opponent_attack_simulation
+    gs = self.flip_board_state(game_state)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/algo_strategy.py", line 101, in flip_board_state
+    gs.game_map[x][y] = [unit for unit in game_state.game_map[x][size - y - 1]]
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/gamelib/game_map.py", line 44, in __getitem__
+    if len(location) == 2 and self.in_arena_bounds(location):
+TypeError: object of type 'int' has no len()

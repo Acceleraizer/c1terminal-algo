@@ -1,0 +1,304 @@
+Random seed: 7176355981373511823
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Performing turn 0 of your custom algo strategy
+5
+ok
+return
+returned
+Performing turn 1 of your custom algo strategy
+5
+ok
+return
+returned
+Performing turn 2 of your custom algo strategy
+5
+ok
+9.5
+return
+returned
+Performing turn 3 of your custom algo strategy
+5
+ok
+9.5
+return
+returned
+Performing turn 4 of your custom algo strategy
+5
+ok
+9.5
+return
+returned
+Performing turn 5 of your custom algo strategy
+5
+ok
+10
+11
+Begin tick #0
+Begin tick #1
+Goodbye <Enemy FF 0x, [3,14]>
+Begin tick #2
+Begin tick #3
+Goodbye <Enemy FF 0x, [1,14]>
+Goodbye <Our EI 5x, [3,11]>
+Execution time of <simulate>: 4.6627 ms
+Begin tick #0
+Begin tick #1
+Begin tick #2
+Begin tick #3
+Begin tick #4
+Begin tick #5
+Begin tick #6
+Begin tick #7
+Begin tick #8
+Begin tick #9
+Begin tick #10
+Begin tick #11
+Begin tick #12
+Begin tick #13
+Begin tick #14
+Begin tick #15
+Begin tick #16
+Begin tick #17
+Begin tick #18
+Begin tick #19
+Begin tick #20
+Goodbye <Enemy FF 0x, [24,14]>
+Begin tick #21
+Goodbye <Enemy DF 0x, [24,15]>
+Begin tick #22
+Begin tick #23
+Goodbye <Enemy DF 0x, [23,16]>
+Begin tick #24
+Begin tick #25
+Goodbye <Enemy FF 0x, [26,14]>
+Begin tick #26
+Begin tick #27
+Goodbye <Enemy FF 0x, [22,17]>
+Goodbye <Enemy FF 0x, [27,14]>
+Begin tick #28
+Begin tick #29
+Goodbye <Enemy FF 0x, [21,18]>
+Begin tick #30
+Begin tick #31
+Goodbye <Enemy FF 0x, [20,18]>
+Begin tick #32
+Begin tick #33
+Goodbye <Enemy FF 0x, [19,18]>
+Begin tick #34
+Begin tick #35
+Begin tick #36
+Begin tick #37
+Goodbye <Our EI 5x, [24,17]>
+Execution time of <simulate>: 70.4944 ms
+Begin tick #0
+Begin tick #1
+Begin tick #2
+Begin tick #3
+Begin tick #4
+Begin tick #5
+Begin tick #6
+Begin tick #7
+Begin tick #8
+Begin tick #9
+Begin tick #10
+Begin tick #11
+Begin tick #12
+Begin tick #13
+Begin tick #14
+Begin tick #15
+Begin tick #16
+Begin tick #17
+Begin tick #18
+Begin tick #19
+Goodbye <Enemy FF 0x, [24,14]>
+Begin tick #20
+Goodbye <Enemy DF 0x, [24,15]>
+Begin tick #21
+Begin tick #22
+Goodbye <Enemy DF 0x, [23,16]>
+Begin tick #23
+Begin tick #24
+Goodbye <Enemy FF 0x, [26,14]>
+Begin tick #25
+Begin tick #26
+Goodbye <Enemy FF 0x, [22,17]>
+Goodbye <Enemy FF 0x, [27,14]>
+Begin tick #27
+Begin tick #28
+Goodbye <Enemy FF 0x, [21,18]>
+Begin tick #29
+Begin tick #30
+Goodbye <Enemy FF 0x, [20,18]>
+Begin tick #31
+Begin tick #32
+Goodbye <Enemy FF 0x, [19,18]>
+Begin tick #33
+Begin tick #34
+Begin tick #35
+Goodbye <Enemy FF 0x, [18,18]>
+Begin tick #36
+Begin tick #37
+Begin tick #38
+Goodbye <Enemy FF 0x, [17,18]>
+Begin tick #39
+Begin tick #40
+Begin tick #41
+Goodbye <Enemy FF 0x, [16,18]>
+Begin tick #42
+Begin tick #43
+Begin tick #44
+Goodbye <Enemy FF 0x, [15,18]>
+Begin tick #45
+Begin tick #46
+Begin tick #47
+Begin tick #48
+Begin tick #49
+Begin tick #50
+Begin tick #51
+Begin tick #52
+Begin tick #53
+Begin tick #54
+Begin tick #55
+Begin tick #56
+Begin tick #57
+Begin tick #58
+Begin tick #59
+Goodbye <Our EI 5x, [13,27]>
+Execution time of <simulate>: 147.8364 ms
+12
+Begin tick #0
+Begin tick #1
+Begin tick #2
+Begin tick #3
+Begin tick #4
+Begin tick #5
+Begin tick #6
+Begin tick #7
+Begin tick #8
+Begin tick #9
+Begin tick #10
+Begin tick #11
+Begin tick #12
+Begin tick #13
+Begin tick #14
+Begin tick #15
+Begin tick #16
+Begin tick #17
+Begin tick #18
+Begin tick #19
+Begin tick #20
+Begin tick #21
+Begin tick #22
+Begin tick #23
+Begin tick #24
+Goodbye <Enemy FF 0x, [24,14]>
+Begin tick #25
+Begin tick #26
+Begin tick #27
+Begin tick #28
+Goodbye <Our PI 0x, [25,14]>
+Execution time of <simulate>: 56.7292 ms
+13
+Begin tick #0
+Begin tick #1
+Begin tick #2
+Begin tick #3
+Begin tick #4
+Begin tick #5
+Begin tick #6
+Begin tick #7
+Begin tick #8
+Begin tick #9
+Begin tick #10
+Begin tick #11
+Begin tick #12
+Begin tick #13
+Begin tick #14
+Begin tick #15
+Begin tick #16
+Begin tick #17
+Begin tick #18
+Begin tick #19
+Begin tick #20
+Begin tick #21
+Goodbye <Enemy FF 0x, [24,14]>
+Begin tick #22
+Goodbye <Enemy DF 0x, [24,15]>
+Begin tick #23
+Begin tick #24
+Begin tick #25
+Goodbye <Enemy DF 0x, [23,16]>
+Begin tick #26
+Goodbye <Enemy FF 0x, [26,14]>
+Begin tick #27
+Goodbye <Enemy FF 0x, [22,17]>
+Begin tick #28
+Begin tick #29
+Begin tick #30
+Goodbye <Enemy FF 0x, [27,14]>
+Begin tick #31
+Begin tick #32
+Goodbye <Enemy FF 0x, [21,18]>
+Begin tick #33
+Begin tick #34
+Goodbye <Enemy FF 0x, [20,18]>
+Begin tick #35
+Begin tick #36
+Begin tick #37
+Goodbye <Our EI 2x, [24,17]>
+Goodbye <Our PI 6x, [24,17]>
+Execution time of <simulate>: 110.5035 ms
+14
+return
+returned
+Performing turn 6 of your custom algo strategy
+5
+ok
+9.5
+return
+returned
+Performing turn 7 of your custom algo strategy
+5
+ok
+9.5
+return
+returned
+Performing turn 8 of your custom algo strategy
+5
+ok
+9.5
+return
+returned
+Performing turn 9 of your custom algo strategy
+5
+ok
+10
+11
+Begin tick #0
+Traceback (most recent call last):
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-algo/algo_strategy.py", line 222, in <module>
+    algo.start()
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-algo/gamelib/algocore.py", line 74, in start
+    self.on_turn(game_state_string)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-algo/algo_strategy.py", line 74, in on_turn
+    self.starter_strategy(game_state)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-algo/algo_strategy.py", line 97, in starter_strategy
+    self.plan_attack(game_state)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-algo/algo_strategy.py", line 120, in plan_attack
+    dmg, turrets, structures = sim.simulate()
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-algo/gamelib/util.py", line 48, in inner
+    ret = func(*args, **kwargs)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-algo/simulator.py", line 252, in simulate
+    self.simulate_tick()
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-algo/simulator.py", line 261, in simulate_tick
+    self.move_all_units()
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-algo/simulator.py", line 287, in move_all_units
+    self.move_unit(simunit)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-algo/simulator.py", line 149, in move_unit
+    path = self.pather.navigate_multiple_endpoints([x,y], 
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-algo/gamelib/navigation.py", line 98, in navigate_multiple_endpoints
+    return self._get_path(start_point, end_points)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-algo/gamelib/navigation.py", line 235, in _get_path
+    move_direction = self.VERTICAL
+KeyboardInterrupt

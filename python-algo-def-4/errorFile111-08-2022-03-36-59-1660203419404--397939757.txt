@@ -1,0 +1,15 @@
+Random seed: 6546068609062485533
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Performing turn 0 of your custom algo strategy
+opponent attack simulation
+Traceback (most recent call last):
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/algo_strategy.py", line 167, in <module>
+    algo.start()
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/gamelib/algocore.py", line 74, in start
+    self.on_turn(game_state_string)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/algo_strategy.py", line 75, in on_turn
+    self.starter_strategy(game_state)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/algo_strategy.py", line 83, in starter_strategy
+    self.opponent_attack_simulation(self, game_state)
+TypeError: opponent_attack_simulation() takes 2 positional arguments but 3 were given

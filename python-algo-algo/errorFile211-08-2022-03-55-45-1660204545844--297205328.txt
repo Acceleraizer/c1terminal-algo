@@ -1,0 +1,14 @@
+Random seed: 527874183149195472
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Performing turn 0 of your custom algo strategy
+5
+ok
+return
+returned
+Performing turn 1 of your custom algo strategy
+5
+ok
+return
+returned
+Got end state, game over. Stopping algo.

@@ -1,0 +1,412 @@
+Random seed: 6901651582504295401
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Performing turn 0 of your custom algo strategy
+opponent attack simulation
+[(13, 0), (12, 1), (11, 2), (10, 3), (9, 4), (8, 5), (7, 6), (6, 7), (5, 8), (4, 9), (3, 10), (2, 11), (1, 12), (0, 13), (14, 0), (15, 1), (16, 2), (17, 3), (18, 4), (19, 5), (20, 6), (21, 7), (22, 8), (23, 9), (24, 10), (25, 11), (26, 12), (27, 13)]
+<class 'tuple'>
+Goodbye <Our PI 5x, [27,14]>
+Execution time of <simulate>: 5.6661 ms
+<class 'tuple'>
+Goodbye <Our PI 5x, [26,15]>
+Execution time of <simulate>: 4.995 ms
+<class 'tuple'>
+Goodbye <Our PI 5x, [25,16]>
+Execution time of <simulate>: 4.9512 ms
+<class 'tuple'>
+Goodbye <Our PI 5x, [24,17]>
+Execution time of <simulate>: 5.1268 ms
+<class 'tuple'>
+Goodbye <Our PI 5x, [23,18]>
+Execution time of <simulate>: 5.0662 ms
+<class 'tuple'>
+Goodbye <Our PI 5x, [22,19]>
+Execution time of <simulate>: 5.341 ms
+<class 'tuple'>
+Goodbye <Our PI 5x, [21,20]>
+Execution time of <simulate>: 5.0762 ms
+<class 'tuple'>
+Goodbye <Our PI 5x, [20,21]>
+Execution time of <simulate>: 5.3186 ms
+<class 'tuple'>
+Goodbye <Our PI 5x, [19,22]>
+Execution time of <simulate>: 5.2869 ms
+<class 'tuple'>
+Goodbye <Our PI 5x, [18,23]>
+Execution time of <simulate>: 5.3274 ms
+<class 'tuple'>
+Goodbye <Our PI 5x, [17,24]>
+Execution time of <simulate>: 5.3029 ms
+<class 'tuple'>
+Goodbye <Our PI 5x, [16,25]>
+Execution time of <simulate>: 5.1438 ms
+<class 'tuple'>
+Goodbye <Our PI 5x, [15,26]>
+Execution time of <simulate>: 4.7468 ms
+<class 'tuple'>
+Goodbye <Our PI 5x, [14,27]>
+Execution time of <simulate>: 4.6669 ms
+<class 'tuple'>
+Goodbye <Our PI 5x, [0,14]>
+Execution time of <simulate>: 4.7301 ms
+<class 'tuple'>
+Goodbye <Our PI 5x, [1,15]>
+Execution time of <simulate>: 5.1665 ms
+<class 'tuple'>
+Goodbye <Our PI 5x, [2,16]>
+Execution time of <simulate>: 5.3919 ms
+<class 'tuple'>
+Goodbye <Our PI 5x, [3,17]>
+Execution time of <simulate>: 5.4014 ms
+<class 'tuple'>
+Goodbye <Our PI 5x, [4,18]>
+Execution time of <simulate>: 5.2196 ms
+<class 'tuple'>
+Goodbye <Our PI 5x, [5,19]>
+Execution time of <simulate>: 5.4279 ms
+<class 'tuple'>
+Goodbye <Our PI 5x, [6,20]>
+Execution time of <simulate>: 5.4084 ms
+<class 'tuple'>
+Goodbye <Our PI 5x, [7,21]>
+Execution time of <simulate>: 5.4509 ms
+<class 'tuple'>
+Goodbye <Our PI 5x, [8,22]>
+Execution time of <simulate>: 5.4036 ms
+<class 'tuple'>
+Goodbye <Our PI 5x, [9,23]>
+Execution time of <simulate>: 5.4163 ms
+<class 'tuple'>
+Goodbye <Our PI 5x, [10,24]>
+Execution time of <simulate>: 5.3583 ms
+<class 'tuple'>
+Goodbye <Our PI 5x, [11,25]>
+Execution time of <simulate>: 5.38 ms
+<class 'tuple'>
+Goodbye <Our PI 5x, [12,26]>
+Execution time of <simulate>: 4.9781 ms
+<class 'tuple'>
+Goodbye <Our PI 5x, [13,27]>
+Execution time of <simulate>: 4.7534 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 1 of your custom algo strategy
+opponent attack simulation
+[(13, 0), (4, 9), (2, 11), (14, 0), (23, 9), (25, 11)]
+<class 'tuple'>
+Goodbye <Enemy FF 0x, [24,14]>
+Goodbye <Enemy FF 0x, [26,14]>
+Goodbye <Enemy FF 0x, [27,14]>
+Goodbye <Our PI 1x, [26,15]>
+Execution time of <simulate>: 16.7142 ms
+<class 'tuple'>
+Goodbye <Enemy FF 0x, [3,14]>
+Goodbye <Enemy FF 0x, [5,17]>
+Goodbye <Enemy FF 0x, [7,18]>
+Goodbye <Enemy FF 0x, [6,18]>
+Goodbye <Enemy FF 0x, [8,18]>
+Goodbye <Enemy FF 0x, [9,18]>
+Goodbye <Enemy FF 0x, [10,18]>
+Goodbye <Our PI 3x, [14,27]>
+Execution time of <simulate>: 28.3714 ms
+<class 'tuple'>
+Goodbye <Enemy FF 0x, [1,14]>
+Goodbye <Enemy FF 0x, [0,14]>
+Goodbye <Enemy DF 0x, [3,15]>
+Goodbye <Our PI 4x, [14,27]>
+Execution time of <simulate>: 15.1179 ms
+<class 'tuple'>
+Goodbye <Our PI 8x, [1,15]>
+Execution time of <simulate>: 6.5113 ms
+<class 'tuple'>
+Goodbye <Enemy FF 0x, [19,18]>
+Goodbye <Enemy FF 0x, [20,18]>
+Goodbye <Enemy FF 0x, [18,18]>
+Goodbye <Enemy FF 0x, [21,18]>
+Goodbye <Enemy FF 0x, [17,18]>
+Goodbye <Enemy FF 0x, [22,17]>
+Goodbye <Enemy FF 0x, [16,18]>
+Goodbye <Enemy FF 0x, [15,18]>
+Goodbye <Enemy FF 0x, [14,18]>
+Goodbye <Our PI 8x, [11,25]>
+Execution time of <simulate>: 33.7616 ms
+<class 'tuple'>
+Goodbye <Enemy DF 0x, [24,15]>
+Goodbye <Our PI 6x, [12,26]>
+Execution time of <simulate>: 8.0166 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 2 of your custom algo strategy
+opponent attack simulation
+[(13, 0), (4, 9), (2, 11), (14, 0), (23, 9), (25, 11)]
+<class 'tuple'>
+Goodbye <Enemy FF 0x, [24,14]>
+Goodbye <Enemy FF 0x, [26,14]>
+Goodbye <Enemy FF 0x, [27,14]>
+Goodbye <Enemy DF 0x, [24,15]>
+Goodbye <Our PI 6x, [26,15]>
+Execution time of <simulate>: 19.1656 ms
+<class 'tuple'>
+Goodbye <Enemy FF 0x, [3,14]>
+Goodbye <Enemy FF 0x, [5,17]>
+Goodbye <Enemy DF 0x, [3,15]>
+Goodbye <Enemy FF 0x, [6,18]>
+Goodbye <Enemy FF 0x, [7,18]>
+Goodbye <Enemy FF 0x, [8,18]>
+Goodbye <Enemy FF 0x, [9,18]>
+Goodbye <Enemy FF 0x, [10,18]>
+Goodbye <Enemy FF 0x, [11,18]>
+Goodbye <Our PI 6x, [15,26]>
+Execution time of <simulate>: 31.107 ms
+<class 'tuple'>
+Goodbye <Enemy FF 0x, [1,14]>
+Goodbye <Enemy FF 0x, [0,14]>
+Goodbye <Our PI 11x, [15,26]>
+Execution time of <simulate>: 10.2448 ms
+<class 'tuple'>
+Goodbye <Our PI 11x, [1,15]>
+Execution time of <simulate>: 4.2982 ms
+<class 'tuple'>
+Goodbye <Enemy FF 0x, [19,18]>
+Goodbye <Enemy FF 0x, [18,18]>
+Goodbye <Enemy FF 0x, [20,18]>
+Goodbye <Enemy FF 0x, [21,18]>
+Goodbye <Enemy FF 0x, [22,17]>
+Goodbye <Enemy FF 0x, [17,18]>
+Goodbye <Enemy FF 0x, [16,18]>
+Goodbye <Enemy FF 0x, [15,18]>
+Goodbye <Enemy FF 0x, [14,18]>
+Goodbye <Our PI 11x, [11,25]>
+Execution time of <simulate>: 24.7304 ms
+<class 'tuple'>
+Goodbye <Our PI 11x, [12,26]>
+Execution time of <simulate>: 4.5697 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 3 of your custom algo strategy
+opponent attack simulation
+[(13, 0), (4, 9), (2, 11), (14, 0), (24, 10)]
+<class 'tuple'>
+Goodbye <Enemy FF 0x, [24,14]>
+Goodbye <Enemy FF 0x, [26,14]>
+Goodbye <Enemy FF 0x, [27,14]>
+Goodbye <Enemy DF 0x, [24,15]>
+Goodbye <Our PI 9x, [26,15]>
+Execution time of <simulate>: 19.084 ms
+<class 'tuple'>
+Goodbye <Enemy FF 0x, [3,14]>
+Goodbye <Enemy FF 0x, [5,17]>
+Goodbye <Enemy DF 0x, [3,15]>
+Goodbye <Enemy FF 0x, [6,18]>
+Goodbye <Enemy FF 0x, [7,18]>
+Goodbye <Enemy FF 0x, [8,18]>
+Goodbye <Enemy FF 0x, [9,18]>
+Goodbye <Enemy FF 0x, [10,18]>
+Goodbye <Enemy FF 0x, [11,18]>
+Goodbye <Our PI 9x, [15,26]>
+Execution time of <simulate>: 29.559 ms
+<class 'tuple'>
+Goodbye <Enemy FF 0x, [1,14]>
+Goodbye <Enemy FF 0x, [0,14]>
+Goodbye <Our PI 13x, [15,26]>
+Execution time of <simulate>: 9.8605 ms
+<class 'tuple'>
+Goodbye <Our PI 13x, [1,15]>
+Execution time of <simulate>: 4.4644 ms
+<class 'tuple'>
+Goodbye <Enemy FF 0x, [22,17]>
+Goodbye <Enemy FF 0x, [21,18]>
+Goodbye <Enemy FF 0x, [20,18]>
+Goodbye <Enemy FF 0x, [19,18]>
+Goodbye <Enemy FF 0x, [18,18]>
+Goodbye <Our PI 13x, [13,27]>
+Execution time of <simulate>: 19.1708 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 4 of your custom algo strategy
+opponent attack simulation
+[(13, 0), (3, 10), (14, 0), (24, 10)]
+<class 'tuple'>
+Goodbye <Enemy FF 0x, [24,14]>
+Goodbye <Enemy FF 0x, [26,14]>
+Goodbye <Enemy FF 0x, [27,14]>
+Goodbye <Enemy DF 0x, [24,15]>
+Goodbye <Our PI 11x, [26,15]>
+Execution time of <simulate>: 21.0022 ms
+<class 'tuple'>
+Goodbye <Enemy FF 0x, [3,14]>
+Goodbye <Enemy FF 0x, [1,14]>
+Goodbye <Enemy FF 0x, [0,14]>
+Goodbye <Enemy DF 0x, [3,15]>
+Goodbye <Enemy FF 0x, [5,17]>
+Goodbye <Enemy DF 0x, [4,16]>
+Goodbye <Enemy FF 0x, [6,18]>
+Goodbye <Enemy FF 0x, [7,18]>
+Goodbye <Enemy FF 0x, [8,18]>
+Goodbye <Enemy FF 0x, [9,18]>
+Goodbye <Our PI 6x, [14,27]>
+Execution time of <simulate>: 33.1504 ms
+<class 'tuple'>
+Goodbye <Our PI 15x, [1,15]>
+Execution time of <simulate>: 4.2301 ms
+<class 'tuple'>
+Goodbye <Enemy FF 0x, [22,17]>
+Goodbye <Enemy FF 0x, [21,18]>
+Goodbye <Enemy FF 0x, [20,18]>
+Goodbye <Enemy FF 0x, [19,18]>
+Goodbye <Enemy FF 0x, [18,18]>
+Goodbye <Our PI 15x, [13,27]>
+Execution time of <simulate>: 18.2499 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 5 of your custom algo strategy
+opponent attack simulation
+[(13, 0), (3, 10), (14, 0), (24, 10)]
+<class 'tuple'>
+Goodbye <Enemy FF 0x, [24,14]>
+Goodbye <Enemy FF 0x, [26,14]>
+Goodbye <Enemy FF 0x, [27,14]>
+Goodbye <Enemy DF 0x, [24,15]>
+Goodbye <Our PI 10x, [26,15]>
+Execution time of <simulate>: 21.8438 ms
+<class 'tuple'>
+Goodbye <Enemy FF 0x, [3,14]>
+Goodbye <Enemy FF 0x, [1,14]>
+Goodbye <Enemy FF 0x, [0,14]>
+Goodbye <Enemy DF 0x, [3,15]>
+Goodbye <Enemy FF 0x, [5,17]>
+Goodbye <Enemy DF 0x, [4,16]>
+Goodbye <Enemy FF 0x, [6,18]>
+Goodbye <Enemy FF 0x, [7,18]>
+Goodbye <Enemy FF 0x, [8,18]>
+Goodbye <Enemy FF 0x, [9,18]>
+Goodbye <Our PI 9x, [14,27]>
+Execution time of <simulate>: 32.2747 ms
+<class 'tuple'>
+Goodbye <Our PI 16x, [1,15]>
+Execution time of <simulate>: 6.2594 ms
+<class 'tuple'>
+Goodbye <Enemy DF 0x, [23,16]>
+Goodbye <Enemy FF 0x, [22,17]>
+Goodbye <Enemy FF 0x, [21,18]>
+Goodbye <Enemy FF 0x, [20,18]>
+Goodbye <Enemy FF 0x, [19,18]>
+Goodbye <Enemy FF 0x, [18,18]>
+Goodbye <Our PI 15x, [13,27]>
+Execution time of <simulate>: 20.9904 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 6 of your custom algo strategy
+opponent attack simulation
+[(13, 0), (3, 10), (14, 0), (24, 10)]
+<class 'tuple'>
+Goodbye <Enemy FF 0x, [24,14]>
+Goodbye <Enemy FF 0x, [26,14]>
+Goodbye <Enemy FF 0x, [27,14]>
+Goodbye <Enemy DF 0x, [24,15]>
+Goodbye <Enemy DF 0x, [23,16]>
+Goodbye <Our PI 14x, [26,15]>
+Execution time of <simulate>: 21.9176 ms
+<class 'tuple'>
+Goodbye <Enemy FF 0x, [3,14]>
+Goodbye <Enemy FF 0x, [1,14]>
+Goodbye <Enemy FF 0x, [0,14]>
+Goodbye <Enemy DF 0x, [3,15]>
+Goodbye <Enemy DF 0x, [4,16]>
+Goodbye <Enemy FF 0x, [5,17]>
+Goodbye <Enemy FF 0x, [6,18]>
+Goodbye <Enemy FF 0x, [7,18]>
+Goodbye <Enemy FF 0x, [8,18]>
+Goodbye <Enemy FF 0x, [9,18]>
+Goodbye <Our PI 11x, [14,27]>
+Execution time of <simulate>: 32.4018 ms
+<class 'tuple'>
+Goodbye <Our PI 17x, [1,15]>
+Execution time of <simulate>: 4.4831 ms
+<class 'tuple'>
+Goodbye <Enemy FF 0x, [22,17]>
+Goodbye <Enemy FF 0x, [21,18]>
+Goodbye <Enemy FF 0x, [20,18]>
+Goodbye <Enemy FF 0x, [19,18]>
+Goodbye <Enemy FF 0x, [18,18]>
+Goodbye <Our PI 17x, [13,27]>
+Execution time of <simulate>: 18.8819 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 7 of your custom algo strategy
+opponent attack simulation
+[(13, 0), (3, 10), (14, 0), (24, 10)]
+<class 'tuple'>
+Goodbye <Enemy FF 0x, [24,14]>
+Goodbye <Enemy FF 0x, [26,14]>
+Goodbye <Enemy FF 0x, [27,14]>
+Goodbye <Enemy DF 0x, [24,15]>
+Goodbye <Enemy DF 0x, [23,16]>
+Goodbye <Our PI 15x, [26,15]>
+Execution time of <simulate>: 22.8859 ms
+<class 'tuple'>
+Goodbye <Enemy FF 0x, [0,14]>
+Goodbye <Enemy DF 0x, [3,15]>
+Goodbye <Enemy DF 0x, [4,16]>
+Goodbye <Enemy FF 0x, [5,17]>
+Goodbye <Enemy FF 0x, [6,18]>
+Goodbye <Enemy FF 0x, [7,18]>
+Goodbye <Enemy FF 0x, [8,18]>
+Goodbye <Enemy FF 0x, [9,18]>
+Goodbye <Our PI 12x, [14,27]>
+Execution time of <simulate>: 27.0292 ms
+<class 'tuple'>
+Goodbye <Our PI 18x, [1,15]>
+Execution time of <simulate>: 4.3253 ms
+<class 'tuple'>
+Goodbye <Enemy FF 0x, [22,17]>
+Goodbye <Enemy FF 0x, [21,18]>
+Goodbye <Enemy FF 0x, [20,18]>
+Goodbye <Enemy FF 0x, [19,18]>
+Goodbye <Enemy FF 0x, [18,18]>
+Goodbye <Our PI 18x, [13,27]>
+Execution time of <simulate>: 18.6243 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 8 of your custom algo strategy
+opponent attack simulation
+Traceback (most recent call last):
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/algo_strategy.py", line 237, in <module>
+    algo.start()
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/gamelib/algocore.py", line 74, in start
+    self.on_turn(game_state_string)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/algo_strategy.py", line 75, in on_turn
+    self.starter_strategy(game_state)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/algo_strategy.py", line 83, in starter_strategy
+    unique_spawn_points, scores, cross_map = self.opponent_attack_simulation(game_state)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/algo_strategy.py", line 154, in opponent_attack_simulation
+    check_all_paths(gs, visited_points, unique_spawn_points, cross_map)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/algo_strategy.py", line 120, in check_all_paths
+    check_spawn_point(gs, spawn_point, unique_spawn_points, visited_points)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/algo_strategy.py", line 97, in check_spawn_point
+    path = gs.find_path_to_edge(spawn_point)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/gamelib/game_state.py", line 514, in find_path_to_edge
+    return self._shortest_path_finder.navigate_multiple_endpoints(start_location, end_points, self)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/gamelib/navigation.py", line 95, in navigate_multiple_endpoints
+    ideal_endpoints = self._idealness_search(start_point, end_points)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/gamelib/navigation.py", line 116, in _idealness_search
+    if not self.game_state.game_map.in_arena_bounds(neighbor) or self.game_map[neighbor[0]][neighbor[1]].blocked:
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/gamelib/game_map.py", line 94, in in_arena_bounds
+    return not(x+y<=12 or x+y >= 42 or y-x>=15 or y-x<=-15)
+KeyboardInterrupt

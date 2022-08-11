@@ -1,0 +1,808 @@
+Random seed: 9062590526352207443
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Performing turn 0 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (12, 1), (11, 2), (10, 3), (9, 4), (8, 5), (7, 6), (6, 7), (5, 8), (4, 9), (3, 10), (2, 11), (1, 12), (0, 13), (14, 0), (15, 1), (16, 2), (17, 3), (18, 4), (19, 5), (20, 6), (21, 7), (22, 8), (23, 9), (24, 10), (25, 11), (26, 12), (27, 13)]
+MIN-MID-MAX: [(0, 13), (13, 0), (27, 13)]
+HOW MANY OPTIONS 2: [(0, 13), (13, 0), (27, 13)]
+[(0, 13), (13, 0), (27, 13)]
+<class 'tuple'>
+Goodbye <Our PI 1x, [14,27]>
+Execution time of <simulate>: 4.4699 ms
+<class 'tuple'>
+Goodbye <Our PI 1x, [27,14]>
+Execution time of <simulate>: 4.8379 ms
+<class 'tuple'>
+Goodbye <Our PI 1x, [13,27]>
+Execution time of <simulate>: 4.7114 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 1 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (10, 3), (7, 6), (6, 7), (5, 8), (3, 10), (2, 11), (1, 12), (14, 0), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,13]>
+Execution time of <simulate>: 3.2722 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [24,12]>
+Execution time of <simulate>: 7.3602 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,13]>
+Execution time of <simulate>: 3.0915 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 2 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (10, 3), (7, 6), (6, 7), (5, 8), (3, 10), (2, 11), (1, 12), (14, 0), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,13]>
+Execution time of <simulate>: 3.2547 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [24,12]>
+Execution time of <simulate>: 7.298 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,13]>
+Execution time of <simulate>: 3.3587 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 3 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (10, 3), (7, 6), (6, 7), (5, 8), (3, 10), (2, 11), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,13]>
+Execution time of <simulate>: 3.0564 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [24,12]>
+Execution time of <simulate>: 7.3463 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,13]>
+Execution time of <simulate>: 3.4238 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 4 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (10, 3), (7, 6), (6, 7), (5, 8), (3, 10), (2, 11), (1, 12), (14, 0), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,13]>
+Execution time of <simulate>: 3.3261 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [24,12]>
+Execution time of <simulate>: 8.863 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,13]>
+Execution time of <simulate>: 3.2943 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 5 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,13]>
+Execution time of <simulate>: 3.8994 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [24,12]>
+Execution time of <simulate>: 10.5909 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,13]>
+Execution time of <simulate>: 3.5566 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 6 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,13]>
+Execution time of <simulate>: 3.3781 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 10.5307 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,13]>
+Execution time of <simulate>: 3.4349 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 7 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,13]>
+Execution time of <simulate>: 3.2695 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 10.8271 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,13]>
+Execution time of <simulate>: 4.0366 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 8 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [2,14]>
+Execution time of <simulate>: 3.9887 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 9.0973 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,13]>
+Execution time of <simulate>: 3.8549 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 9 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,13]>
+Execution time of <simulate>: 3.5835 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 10.6874 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,13]>
+Execution time of <simulate>: 3.3798 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 10 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,13]>
+Execution time of <simulate>: 3.7661 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 11.2995 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,13]>
+Execution time of <simulate>: 3.4411 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 11 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,13]>
+Execution time of <simulate>: 3.5884 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 11.6405 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,13]>
+Execution time of <simulate>: 3.2592 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 12 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,13]>
+Execution time of <simulate>: 3.7813 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 10.6467 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,13]>
+Execution time of <simulate>: 3.7151 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 13 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,12]>
+Execution time of <simulate>: 3.2241 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 11.8151 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,13]>
+Execution time of <simulate>: 3.5247 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 14 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,12]>
+Execution time of <simulate>: 3.2873 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 11.825 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,13]>
+Execution time of <simulate>: 3.5892 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 15 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,12]>
+Execution time of <simulate>: 3.4138 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 12.5463 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,12]>
+Execution time of <simulate>: 3.2398 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 16 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,12]>
+Execution time of <simulate>: 3.3268 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 13.5016 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,12]>
+Execution time of <simulate>: 3.1353 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 17 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,12]>
+Execution time of <simulate>: 3.1034 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 13.3274 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,12]>
+Execution time of <simulate>: 3.4148 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 18 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,12]>
+Execution time of <simulate>: 3.0477 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 13.1977 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,12]>
+Execution time of <simulate>: 3.1164 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 19 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,12]>
+Execution time of <simulate>: 3.3613 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 12.9463 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,12]>
+Execution time of <simulate>: 3.1054 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 20 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,12]>
+Execution time of <simulate>: 3.1897 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 15.1917 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,12]>
+Execution time of <simulate>: 3.2695 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 21 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,12]>
+Execution time of <simulate>: 3.192 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 13.4385 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,12]>
+Execution time of <simulate>: 3.1936 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 22 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,12]>
+Execution time of <simulate>: 4.0319 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 13.342 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,12]>
+Execution time of <simulate>: 3.4219 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 23 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,12]>
+Execution time of <simulate>: 3.1153 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 13.0496 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,12]>
+Execution time of <simulate>: 6.1056 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 24 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,12]>
+Execution time of <simulate>: 3.118 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 13.4993 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,12]>
+Execution time of <simulate>: 3.0524 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 25 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,12]>
+Execution time of <simulate>: 3.4188 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 13.1794 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,12]>
+Execution time of <simulate>: 2.974 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 26 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,12]>
+Execution time of <simulate>: 3.3639 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 13.3721 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,12]>
+Execution time of <simulate>: 3.0738 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 27 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,12]>
+Execution time of <simulate>: 3.3539 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 14.3449 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,12]>
+Execution time of <simulate>: 3.4646 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 28 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,12]>
+Execution time of <simulate>: 3.5047 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 13.1792 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,12]>
+Execution time of <simulate>: 3.2048 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 29 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,12]>
+Execution time of <simulate>: 3.0824 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 14.0234 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,12]>
+Execution time of <simulate>: 3.1331 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 30 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,12]>
+Execution time of <simulate>: 3.219 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 13.6856 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,12]>
+Execution time of <simulate>: 3.5947 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 31 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,12]>
+Execution time of <simulate>: 3.6315 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 13.379 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,12]>
+Execution time of <simulate>: 3.2601 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 32 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,12]>
+Execution time of <simulate>: 3.4926 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 12.6856 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,12]>
+Execution time of <simulate>: 3.4977 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 33 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,12]>
+Execution time of <simulate>: 3.2705 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 14.4366 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,12]>
+Execution time of <simulate>: 3.4021 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 34 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,12]>
+Execution time of <simulate>: 2.949 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 13.2993 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,12]>
+Execution time of <simulate>: 3.1054 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 35 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,12]>
+Execution time of <simulate>: 3.161 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 13.7309 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,12]>
+Execution time of <simulate>: 3.0618 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 36 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,12]>
+Execution time of <simulate>: 2.9018 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 11.4508 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,12]>
+Execution time of <simulate>: 3.5089 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 37 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,12]>
+Execution time of <simulate>: 3.5408 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 13.4136 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,12]>
+Execution time of <simulate>: 3.2973 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 38 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,12]>
+Execution time of <simulate>: 3.3824 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 11.8184 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,12]>
+Execution time of <simulate>: 3.1086 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 39 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,12]>
+Execution time of <simulate>: 3.089 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 13.2045 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,12]>
+Execution time of <simulate>: 3.2309 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 40 of your custom algo strategy
+opponent attack simulation
+HOW MANY OPTIONS : [(13, 0), (1, 12), (14, 0), (15, 1), (17, 3), (20, 6), (21, 7), (22, 8), (24, 10), (25, 11), (26, 12)]
+MIN-MID-MAX: [(1, 12), (13, 0), (26, 12)]
+HOW MANY OPTIONS 2: [(1, 12), (13, 0), (26, 12)]
+[(1, 12), (13, 0), (26, 12)]
+<class 'tuple'>
+Goodbye <Our PI 0x, [1,12]>
+Execution time of <simulate>: 3.1171 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [25,12]>
+Execution time of <simulate>: 12.0902 ms
+<class 'tuple'>
+Goodbye <Our PI 0x, [26,12]>
+Execution time of <simulate>: 3.3687 ms
+build_defenses
+maybe_spawn_interceptors
+return
+returned
+Performing turn 41 of your custom algo strategy
+opponent attack simulation
+Traceback (most recent call last):
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/algo_strategy.py", line 243, in <module>
+    algo.start()
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/gamelib/algocore.py", line 74, in start
+    self.on_turn(game_state_string)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/algo_strategy.py", line 75, in on_turn
+    self.starter_strategy(game_state)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/algo_strategy.py", line 83, in starter_strategy
+    self.opponent_attack_simulation(game_state)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/algo_strategy.py", line 156, in opponent_attack_simulation
+    check_all_paths(gs, visited_points, unique_spawn_points, cross_map)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/algo_strategy.py", line 120, in check_all_paths
+    check_spawn_point(gs, spawn_point, unique_spawn_points, visited_points)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/algo_strategy.py", line 97, in check_spawn_point
+    path = gs.find_path_to_edge(spawn_point)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/gamelib/game_state.py", line 514, in find_path_to_edge
+    return self._shortest_path_finder.navigate_multiple_endpoints(start_location, end_points, self)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/gamelib/navigation.py", line 95, in navigate_multiple_endpoints
+    ideal_endpoints = self._idealness_search(start_point, end_points)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/gamelib/navigation.py", line 116, in _idealness_search
+    if not self.game_state.game_map.in_arena_bounds(neighbor) or self.game_map[neighbor[0]][neighbor[1]].blocked:
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/gamelib/game_map.py", line 94, in in_arena_bounds
+    return not(x+y<=12 or x+y >= 42 or y-x>=15 or y-x<=-15)
+KeyboardInterrupt

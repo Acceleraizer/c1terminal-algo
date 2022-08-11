@@ -87,7 +87,7 @@ class AlgoStrategy(gamelib.AlgoCore):
 
     def defense_priority_1(self, game_state):
         main_turrets_loc = [[3, 12], [24, 12]]
-        main_turrets_walls_loc = [[4, 12], [23, 12]]
+        main_turrets_walls_loc = [[3, 13], [24, 13]]
         back_walls_loc = [[5, 10], [22, 10]] + [[col, 9] for col in range(6, 22)]
         
         game_state.attempt_spawn(TURRET, main_turrets_loc)
