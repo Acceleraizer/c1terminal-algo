@@ -78,15 +78,15 @@ class Simulator:
         self.graveyard:List[Simunit] = []
 
         self.game_state:gamelib.GameState = self.clone_game(game_state)
+        self.pather = self.game_state._shortest_path_finder
+        self.pather.initialize_map(game_state)
+        self.pather.initialize_blocked()
 
         self.tick = 0
         self.damage = 0
-        self.turrets = 0
-        self.structures = 0
-        self.pather = self.game_state._shortest_path_finder
+        self.turrets_killed = 0
+        self.structures_kilked = 0
 
-        self.pather.initialize_map(game_state)
-        self.pather.initialize_blocked()
 
         # printd(f"Turrets: {self.their_turrets}")
 
@@ -106,8 +106,7 @@ class Simulator:
                             if unit.unit_type == TURRET:
                                 self.their_turrets.append(simunit)
 
-        # clone._shortest_path_finder = game_state._shortest_path_finder
-        clone._shortest_path_finder = gamelib.navigation.ShortestPathFinder()
+        clone._shortest_path_finder = game_state._shortest_path_finder
         clone.ARENA_SIZE = game_state.ARENA_SIZE
         clone.HALF_ARENA = game_state.HALF_ARENA
         clone.config = game_state.config
@@ -250,10 +249,10 @@ class Simulator:
     def simulate(self):
         while self.our_demos or self.our_scouts or self.our_inters:
             self.simulate_tick()
-        return self.damage, self.turrets, self.structures
+        return self.damage, self.turrets_killed, self.structures_kilked
 
     def simulate_tick(self):
-        printd(f"Begin tick #{self.tick}")
+        # printd(f"Begin tick #{self.tick}, scouts = {self.our_scouts}")
         # 1. TODO: support granting shields
         self.apply_shielding()
 
@@ -276,7 +275,7 @@ class Simulator:
         return
 
     def apply_shielding(self):
-        
+
         return
 
 
@@ -330,9 +329,9 @@ class Simulator:
                 if defender.count == 0 and (not defender.graved):
                     self.graveyard.append(defender)
                     if defender.unit.stationary:
-                        self.structures += 1
+                        self.structures_kilked += 1
                         if defender.unit.unit_type == TURRET:
-                            self.turrets +=1
+                            self.turrets_killed += 1
                     return True
 
         return False
