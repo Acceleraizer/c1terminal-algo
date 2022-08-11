@@ -1,0 +1,57 @@
+Random seed: 7497211510966345883
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Performing turn 0 of your custom algo strategy
+Got scored on at: [17, 3]
+All locations: [[17, 3]]
+Got scored on at: [23, 9]
+All locations: [[17, 3], [23, 9]]
+Got scored on at: [9, 4]
+All locations: [[17, 3], [23, 9], [9, 4]]
+Performing turn 1 of your custom algo strategy
+Got scored on at: [17, 3]
+All locations: [[17, 3], [23, 9], [9, 4], [17, 3]]
+Got scored on at: [27, 13]
+All locations: [[17, 3], [23, 9], [9, 4], [17, 3], [27, 13]]
+Got scored on at: [4, 9]
+All locations: [[17, 3], [23, 9], [9, 4], [17, 3], [27, 13], [4, 9]]
+Performing turn 2 of your custom algo strategy
+Performing turn 3 of your custom algo strategy
+Performing turn 4 of your custom algo strategy
+Performing turn 5 of your custom algo strategy
+Performing turn 6 of your custom algo strategy
+Performing turn 7 of your custom algo strategy
+Performing turn 8 of your custom algo strategy
+Performing turn 9 of your custom algo strategy
+Performing turn 10 of your custom algo strategy
+Performing turn 11 of your custom algo strategy
+Performing turn 12 of your custom algo strategy
+Got scored on at: [17, 3]
+All locations: [[17, 3], [23, 9], [9, 4], [17, 3], [27, 13], [4, 9], [17, 3]]
+Performing turn 13 of your custom algo strategy
+Got scored on at: [17, 3]
+All locations: [[17, 3], [23, 9], [9, 4], [17, 3], [27, 13], [4, 9], [17, 3], [17, 3]]
+Got scored on at: [17, 3]
+All locations: [[17, 3], [23, 9], [9, 4], [17, 3], [27, 13], [4, 9], [17, 3], [17, 3], [17, 3]]
+Performing turn 14 of your custom algo strategy
+Got scored on at: [17, 3]
+All locations: [[17, 3], [23, 9], [9, 4], [17, 3], [27, 13], [4, 9], [17, 3], [17, 3], [17, 3], [17, 3]]
+Performing turn 15 of your custom algo strategy
+Got scored on at: [17, 3]
+All locations: [[17, 3], [23, 9], [9, 4], [17, 3], [27, 13], [4, 9], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3]]
+Got scored on at: [17, 3]
+All locations: [[17, 3], [23, 9], [9, 4], [17, 3], [27, 13], [4, 9], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3]]
+Performing turn 16 of your custom algo strategy
+Got scored on at: [17, 3]
+All locations: [[17, 3], [23, 9], [9, 4], [17, 3], [27, 13], [4, 9], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3]]
+Got scored on at: [17, 3]
+All locations: [[17, 3], [23, 9], [9, 4], [17, 3], [27, 13], [4, 9], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3]]
+Performing turn 17 of your custom algo strategy
+Traceback (most recent call last):
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-3/algo_strategy.py", line 200, in <module>
+    algo.start()
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-3/gamelib/algocore.py", line 59, in start
+    game_state_string = get_command()
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-3/gamelib/util.py", line 12, in get_command
+    ret = sys.stdin.readline()
+KeyboardInterrupt

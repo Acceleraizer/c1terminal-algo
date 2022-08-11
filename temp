@@ -1,0 +1,25 @@
+ def defense_priority_1(self, game_state):
+        main_turrets_loc = [[3, 12], [24, 12]]
+        main_turrets_walls_loc = [[4, 12], [23, 12]]
+        back_walls_loc = [[5, 10], [22, 10]] + [[col, 9] for col in range(6, 22)]
+        
+        game_state.attempt_spawn(TURRET, main_turrets_loc)
+        game_state.attempt_spawn(WALL, back_walls_loc)
+        game_state.attempt_spawn(WALL, main_turrets_walls_loc)
+        game_state.attempt_upgrade(main_turrets_walls_loc + main_turrets_loc)
+
+    def defense_priority_2(self, game_state):
+        other_turrets_loc = [[4, 11], [23, 11]]
+        front_walls_loc = [[0, 13], [27, 13], [1, 13], [26, 13]]
+
+        game_state.attempt_spawn(WALL, front_walls_loc)
+        game_state.attempt_upgrade(front_walls_loc)
+
+        game_state.attempt_spawn(TURRET, other_turrets_loc)
+        game_state.attempt_upgrade(other_turrets_loc)
+
+    def defense_priority_3(self, game_state):
+        other_turrets_loc = [[1, 12], [26, 12]]
+
+        game_state.attempt_spawn(other_turrets_loc)
+        game_state.attempt_upgrade(other_turrets_loc)

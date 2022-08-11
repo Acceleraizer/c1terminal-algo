@@ -1,0 +1,14 @@
+Random seed: 228723825835396712
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Performing turn 0 of your custom algo strategy
+Traceback (most recent call last):
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-3/algo_strategy.py", line 205, in <module>
+    algo.start()
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-3/gamelib/algocore.py", line 74, in start
+    self.on_turn(game_state_string)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-3/algo_strategy.py", line 60, in on_turn
+    self.starter_strategy(game_state)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-3/algo_strategy.py", line 77, in starter_strategy
+    my_resources, their_resources, my_health, their_health, board = parse_board_state(game_state)
+NameError: name 'parse_board_state' is not defined
