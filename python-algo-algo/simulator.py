@@ -20,14 +20,6 @@ edge_locations = [[0, 13], [27, 13], [1, 12], [26, 12], [2, 11],
                   [8, 5], [19, 5], [9, 4], [18, 4], [10, 3], [17, 3], 
                   [16, 2], [12, 1], [15, 1], [13, 0], [14, 0]]
 
-# target_offsets = [[1, [0, 1], [0,-1], [1,0], [-1,0]],
-#                   [2, [1,1], [1,-1], [-1,1], [1,1]],
-#                   [4, [0,2], [0,-2], [2,0], [-2,0]],
-#                   [5, [1,2], [-1,2], [1,-2],[-1,-2], [2,1], [2,-1], [-2,1], [-2,-1]],
-#                   [8, [2,2], [2,-2], [-2,2], [-2,-2]]]
-
-
-
 
 class Simunit:
     path : deque
@@ -73,8 +65,10 @@ class Simulator:
         self.our_scouts:List[Simunit] = []
         self.our_demos:List[Simunit] = []
         self.our_inters:List[Simunit] = []
+        self.our_supports:List[Simunit] = []
         self.their_turrets:List[Simunit] = []
 
+        self.our_unit_support_pairs = deque()
         self.graveyard:List[Simunit] = []
 
         self.game_state:gamelib.GameState = self.clone_game(game_state)
@@ -100,11 +94,13 @@ class Simulator:
                     if game_state.game_map[x,y]:
                         clone.game_map[x,y] = []
                         for unit in game_state.game_map[x,y]:
-                            # clonedunit = deepcopy(unit)
-                            simunit = Simunit(unit)
+                            clonedunit = deepcopy(unit)
+                            simunit = Simunit(clonedunit)
                             clone.game_map[x,y].append(simunit)
-                            if unit.unit_type == TURRET:
+                            if clonedunit.unit_type == TURRET and clonedunit.player_index == 1:
                                 self.their_turrets.append(simunit)
+                            if clonedunit.unit_type == SUPPORT and clonedunit.player_index == 0:
+                                self.our_supports.append(simunit)
 
         # clone._shortest_path_finder = game_state._shortest_path_finder
         clone._shortest_path_finder = gamelib.navigation.ShortestPathFinder()
@@ -135,6 +131,8 @@ class Simulator:
                 self.our_inters.append(simunit)
             
             self.game_state.game_map[x, y].append(simunit)
+            for support in self.our_supports:
+                self.our_unit_support_pairs.append([simunit ,support])
 
         
         # printd(self.our_scouts)
@@ -253,7 +251,7 @@ class Simulator:
         return self.damage, self.turrets, self.structures
 
     def simulate_tick(self):
-        printd(f"Begin tick #{self.tick}")
+        # printd(f"Begin tick #{self.tick}")
         # 1. TODO: support granting shields
         self.apply_shielding()
 
@@ -276,8 +274,19 @@ class Simulator:
         return
 
     def apply_shielding(self):
-        
-        return
+        n = len(self.our_unit_support_pairs)
+        for _ in range(n):
+            unit, supp = self.our_unit_support_pairs.popleft()
+            xu, yu = unit.unit.x, unit.unit.y
+            xs, ys = supp.unit.x, supp.unit.y
+            if (xu-xs)**2 + (yu-ys)**2 <= 3.5**2:
+                if supp.unit.upgraded:
+                    unit.base_health += 2 + 0.34*yu
+                else:
+                    unit.base_health += 3
+            else:
+                self.our_unit_support_pairs.append([unit, supp])
+
 
 
     def move_all_units(self):

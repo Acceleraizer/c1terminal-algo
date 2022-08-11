@@ -1,11 +1,10 @@
 import gamelib
 import random
 import math
-import warnings
 from sys import maxsize, stderr
 import json
 # import tensorflow
-from simulator import Simulator, timer
+from simulator import Simulator
 
 """
 Most of the algo code you write will be in this file unless you create new
@@ -57,7 +56,7 @@ class AlgoStrategy(gamelib.AlgoCore):
         SP = 0
         # This is a good place to do initial setup
         self.scored_on_locations = []
-        self.next_attack_check = 5
+        self.next_attack_check = 6
 
     def on_turn(self, turn_state):
         """
@@ -72,10 +71,8 @@ class AlgoStrategy(gamelib.AlgoCore):
         game_state.suppress_warnings(True)  #Comment or remove this line to enable warnings.
 
         self.starter_strategy(game_state)
-        gamelib.debug_write("return")
 
         game_state.submit_turn()
-        gamelib.debug_write("returned")
 
     def starter_strategy(self, game_state:gamelib.GameState):
         # if (game_state.turn_number == -1):
@@ -89,9 +86,9 @@ class AlgoStrategy(gamelib.AlgoCore):
 
         self.build_defences(game_state)
         self.maybe_spawn_interceptors()
-        gamelib.debug_write("ok")
-        if game_state.turn_number < 2:
-            game_state.attempt_spawn(INTERCEPTOR, [[4, 9], [19, 5]])
+        if game_state.turn_number < 3:
+            game_state.attempt_spawn(INTERCEPTOR, [[4, 9], [25, 11]])
+            pass
         else:
             # game_state.attempt_spawn(INTERCEPTOR, [[20, 6]])
             self.plan_attack(game_state)
@@ -100,28 +97,27 @@ class AlgoStrategy(gamelib.AlgoCore):
 
     def plan_attack(self, game_state:gamelib.GameState):
         if not (self.next_attack_check == game_state.turn_number):
-            gamelib.debug_write(9.5)
             return
         gamelib.debug_write(10)
 
         mp = game_state.get_resource(MP)
-        spawn_location_options = [[3, 10], [13, 0], [14, 0]]
-        gamelib.debug_write(11)
+        spawn_location_options = [[4, 9], [13, 0], [14, 0]]
 
         # check demos first
-        best_loc = []
+        best_loc = [13, 0]
         best_damage = 0
         best_turrets = 0
         best_structures = 0
         for loc in spawn_location_options:
             sim = Simulator(self.config, game_state)
-            scenario = [[DEMOLISHER, game_state.number_affordable(DEMOLISHER), loc]]
+            scenario = [[DEMOLISHER, int(mp//3), loc]]
             sim.place_mobile_units(scenario)
             dmg, turrets, structures = sim.simulate()
             if dmg > best_damage or turrets > best_turrets or structures>= best_structures:
                 best_loc = loc
                 best_damage = dmg
-        gamelib.debug_write(12)
+                best_turrets = turrets
+                best_structures = structures
 
         # check if we should just sent scouts
         mode = DEMOLISHER
@@ -131,6 +127,10 @@ class AlgoStrategy(gamelib.AlgoCore):
         dmg, turrets, structures= sim.simulate()
         if dmg > best_damage or turrets > best_turrets or structures>= best_structures:
             mode = SCOUT
+            best_loc = loc
+            best_damage = dmg
+            best_turrets = turrets
+            best_structures = structures
 
         # what if we wait one more round
         # sim = Simulator(self.config, game_state)
@@ -140,7 +140,6 @@ class AlgoStrategy(gamelib.AlgoCore):
         # if dmg > best_damage:
         #     self.next_attack_check += 1
         #     return
-        gamelib.debug_write(13)
 
         # check hybrid
         demo_loc = [10,3]
@@ -161,7 +160,6 @@ class AlgoStrategy(gamelib.AlgoCore):
             else:
                 self.next_attack_check += 3
             game_state.attempt_spawn(mode, best_loc, 1000)
-        gamelib.debug_write(14)
         
 
 
@@ -190,28 +188,33 @@ class AlgoStrategy(gamelib.AlgoCore):
         # More community tools available at: https://terminal.c1games.com/rules#Download
 
         # Place turrets that attack enemy units
-        turret_locations_primary = [[1, 12], [25, 12], [2, 11], [21, 8]]
-        turret_locations_secondary =  [[3, 10], [22, 9], [20, 7], [19, 6]]
+        turret_locations_primary = [[2, 12], [25, 12], [17, 8]]
+        turret_locations_secondary = [[3, 11], [22, 9], [21, 8], [19, 6]]
         # attempt_spawn will try to spawn units if we have resources, and will check if a blocking unit is already there
-        game_state.attempt_spawn(TURRET, turret_locations_primary)
         # Place walls in front of turrets to soak up damage for them
-        wall_locations_key = [[2, 13], [25, 13], [26, 13], [3, 12], [24, 12], [4, 11], [23, 11], [4, 10]]
-        wall_locations_key_2 = [[0, 13], [1, 13], [27, 13], [20, 11], [24, 11], [5, 10], [19, 10], [22, 10], [23, 10], [17, 9], [18, 9], [21, 9], [20, 8]]
-        wall_locations_path =  [[22, 13], [21, 12], [5, 9], [6, 9], [15, 9], [16, 9], [7, 8], [14, 8], [8, 7], [13, 7], [19, 7], [9, 6], [10, 6], [11, 6], [12, 6], [18, 6]]
-        game_state.attempt_spawn(WALL, wall_locations_key + wall_locations_key_2 + wall_locations_path)
-        # upgrade walls so they soak more damage
+        wall_locations_key = [[2, 13], [26, 13], [27, 13], [3, 12]]
+        wall_locations_key_2 = [[0, 13], [1, 13], [25, 13], [24, 12], [23, 11], [19, 10], [18, 9]]
+        wall_locations_key_3 = [[4, 11], [22, 10], [20, 8], [19, 7]]
+        wall_locations_path =  [[22, 13], [21, 12], [20, 11], [5, 10], [6, 9], [15, 9], [16, 9], [17, 9], [21, 9], [7, 8], [14, 8], [8, 7], [13, 7], [9, 6], [10, 6], [11, 6], [12, 6], [18, 6]]
+        support_locations_key = [[14, 3], [15, 3]]
+        support_locations_key_2 = [[16, 5], [15, 4], [16, 4], [13, 2], [14, 2]]
+        support_path = [[13, 5], [14, 4]]
+        game_state.attempt_spawn(TURRET, turret_locations_primary)
+        game_state.attempt_spawn(WALL, wall_locations_key)
         game_state.attempt_upgrade(wall_locations_key)
+        game_state.attempt_spawn(WALL, wall_locations_path)
+        game_state.attempt_spawn(WALL, wall_locations_key_2)
+        game_state.attempt_spawn(WALL, wall_locations_key_3)
+        game_state.attempt_upgrade(wall_locations_key_2)
+        game_state.attempt_spawn(SUPPORT, support_locations_key)
+        game_state.attempt_spawn(WALL, support_path)
         game_state.attempt_spawn(TURRET, turret_locations_secondary)
         game_state.attempt_upgrade(wall_locations_key_2)
-
-        # Lastly, if we have spare SP, let's build some supports
-        support_locations = [[16, 5], [15, 4], [16, 4], [14, 3], [15, 3], [13, 2], [14, 2]]
-        support_path = [[13, 5], [14, 4]]
-        game_state.attempt_spawn(WALL, support_path)
-        game_state.attempt_spawn(SUPPORT, support_locations)
+        game_state.attempt_upgrade(wall_locations_key_3)
         game_state.attempt_upgrade(turret_locations_primary)
-        gamelib.debug_write(5)
+        game_state.attempt_spawn(SUPPORT, support_locations_key_2)
         game_state.attempt_upgrade(turret_locations_secondary)
+
 
     def maybe_spawn_interceptors(self):
         return
