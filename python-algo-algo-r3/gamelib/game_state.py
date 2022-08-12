@@ -1,4 +1,3 @@
-from distutils.log import debug
 from distutils.sysconfig import get_makefile_filename
 import math
 import json
@@ -156,29 +155,13 @@ class GameState:
         cls = self.__class__
         result = cls.__new__(cls)
         result.game_map = deepcopy(self.game_map)
-        for loc in result.game_map:
-            if result.game_map[loc]:
-                debug_write(loc, result.game_map[loc])
-
         result._shortest_path_finder = self._shortest_path_finder
         result.ARENA_SIZE = self.ARENA_SIZE
         result.HALF_ARENA = self.HALF_ARENA
         result.config = self.config
-        result._player_resources = deepcopy(self._player_resources)
-        result.enable_warnings = True
-        result.ARENA_SIZE = 28
-        result.HALF_ARENA = int(self.ARENA_SIZE / 2)
-        result.MP = self.MP
-        result.SP = self.SP
-        result._build_stack = []
-        result._deploy_stack = []
-        result.turn_number = self.turn_number
-        result.my_health = self.my_health
-        result.my_time = self.my_time
-        result.enemy_health = self.enemy_health
-        result.enemy_time = self.enemy_time
-        result._player_resources = deepcopy(self._player_resources)
-        debug_write(result._player_resources)
+        # result._shortest_path_finder.initialized = True
+        # result._shortest_path_finder.game_state = result
+        # result._shortest_path_finder.game_map = deepcopy(self._shortest_path_finder.game_map)
         return result
 
     def __resource_required(self, unit_type):
@@ -396,7 +379,6 @@ class GameState:
             The number of units successfully spawned
 
         """
-        # debug_write(self._player_resources)
         if unit_type not in ALL_UNITS:
             self._invalid_unit(unit_type)
             return

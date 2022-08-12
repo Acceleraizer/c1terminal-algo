@@ -1,7 +1,6 @@
 import math
 from .unit import GameUnit
 from .util import debug_write, timer
-from copy import deepcopy
 
 class GameMap:
     """Holds data about the current game map and provides functions
@@ -77,14 +76,6 @@ class GameMap:
             for _ in range(0, self.ARENA_SIZE):
                 grid[x].append([])
         return grid
-
-    def __deepcopy__(self, memo):
-        cls = self.__class__
-        result = cls.__new__(cls)
-        memo[id(self)] = result
-        for k, v in self.__dict__.items():
-            setattr(result, k, deepcopy(v, memo))
-        return result
 
     def _invalid_coordinates(self, location):
         self.warn("{} is out of bounds.".format(str(location)))

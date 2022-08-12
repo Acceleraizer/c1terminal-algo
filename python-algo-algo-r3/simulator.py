@@ -52,7 +52,7 @@ class Simunit:
         return f"{'Enemy' if self.unit.player_index else 'Our' } {self.unit.unit_type} {self.count}x, [{self.unit.x},{self.unit.y}]"
 
 class Simulator:
-    def __init__(self, config, game_state : gamelib.GameState, perspective=0):
+    def __init__(self, config, game_state : gamelib.GameState):
         global WALL, SUPPORT, TURRET, SCOUT, DEMOLISHER, INTERCEPTOR, MP, SP, REMOVE, UPGRADE
         WALL = config["unitInformation"][0]["shorthand"]
         SUPPORT = config["unitInformation"][1]["shorthand"]
@@ -74,7 +74,7 @@ class Simulator:
         self.our_unit_support_pairs = deque()
         self.graveyard:List[Simunit] = []
 
-        self.game_state:gamelib.GameState = self.clone_game(game_state, perspective)
+        self.game_state:gamelib.GameState = self.clone_game(game_state)
 
         self.tick = 0
         self.damage = 0
@@ -88,8 +88,7 @@ class Simulator:
 
         # printd(f"Turrets: {self.their_turrets}")
 
-    # if perspective==1 we swap all structure player alignments
-    def clone_game(self, game_state:gamelib.GameState, perspective):
+    def clone_game(self, game_state:gamelib.GameState):
         clone = gamelib.GameState.__new__(gamelib.GameState)
         clone.game_map = gamelib.GameMap(game_state.config)
         # convert units to simunits
@@ -104,15 +103,10 @@ class Simulator:
                                 continue
                             
                             clonedunit = deepcopy(unit)
-                            clonedunit.x = x
-                            if perspective == 1:
-                                clonedunit.player_index = not clonedunit.player_index
-
                             simunit = Simunit(clonedunit)
                             clone.game_map[x,y].append(simunit)
                             if clonedunit.unit_type == TURRET and clonedunit.player_index == 1:
                                 self.their_turrets.append(simunit)
-                                # printd("TURRET", simunit)
                             if clonedunit.unit_type == SUPPORT and clonedunit.player_index == 0:
                                 self.our_supports.append(simunit)
         # perform our build stack
@@ -126,13 +120,8 @@ class Simulator:
             elif type in [TURRET, SUPPORT, WALL]:
                 unit = gamelib.GameUnit(type, game_state.config, 0,None, x, y)
                 simunit = Simunit(unit)
-                if perspective == 1:
-                    clonedunit.player_index = not clonedunit.player_index
                 clone.game_map[x,y].append(simunit)
-                if type == TURRET and clonedunit.player_index == 1:
-                    self.their_turrets.append(simunit)
-                    # printd("TURRET", simunit)
-                if type == SUPPORT and clonedunit.player_index == 0:
+                if type == SUPPORT:
                     self.our_supports.append(simunit)
                 # printd(simunit)
                 continue
@@ -187,7 +176,7 @@ class Simulator:
             simunit.repath = False
             # self.pather.print_map()
             # if self.game_state.turn_number == 14:
-            # self.print_path(simunit)
+            #     self.print_path(simunit)
 
         # TODO: Self-destruct (but probably not necessary for attack sim)
         if len(simunit.path) == 0:
@@ -401,7 +390,6 @@ class Simulator:
         n = len(self.graveyard)
         for _ in range(n):
             simunit = self.graveyard.pop()
-            printd(f"Goodbye <{simunit}> ")
             if simunit.unit.unit_type == SCOUT:
                 self.our_scouts.remove(simunit)
             elif simunit.unit.unit_type == DEMOLISHER:
@@ -412,7 +400,7 @@ class Simulator:
                 self.their_turrets.remove(simunit)
             
             x,y = simunit.unit.x, simunit.unit.y
-            printd(f"Goodbye <{simunit}>, {self.game_state.game_map[x,y]} ")
+            # printd(f"Goodbye <{simunit}>,{self.game_state.game_map[x,y][0]} ")
             self.game_state.game_map[x,y].remove(simunit)
             if simunit.unit.stationary:
                 self.pather.game_map[x][y].blocked = False
