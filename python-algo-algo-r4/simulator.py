@@ -1,4 +1,3 @@
-from cgi import print_directory
 from pathlib import Path
 import readline
 import gamelib
@@ -13,7 +12,6 @@ from typing import List
 from copy import copy, deepcopy
 from collections import deque
 from gamelib.util import timer
-from gamelib.navigation import ShortestPathFinder
 
 
 edge_locations = [[0, 13], [27, 13], [1, 12], [26, 12], [2, 11], 
@@ -54,7 +52,7 @@ class Simunit:
         return f"{'Enemy' if self.unit.player_index else 'Our' } {self.unit.unit_type} {self.count}x, [{self.unit.x},{self.unit.y}]"
 
 class Simulator:
-    def __init__(self, config, game_state : gamelib.GameState, perspective=0, clear=[]):
+    def __init__(self, config, game_state : gamelib.GameState, perspective=0):
         global WALL, SUPPORT, TURRET, SCOUT, DEMOLISHER, INTERCEPTOR, MP, SP, REMOVE, UPGRADE
         WALL = config["unitInformation"][0]["shorthand"]
         SUPPORT = config["unitInformation"][1]["shorthand"]
@@ -76,24 +74,22 @@ class Simulator:
         self.our_unit_support_pairs = deque()
         self.graveyard:List[Simunit] = []
 
-        self.game_state:gamelib.GameState = self.clone_game(game_state, perspective, clear)
+        self.game_state:gamelib.GameState = self.clone_game(game_state, perspective)
 
         self.tick = 0
         self.damage = 0
         self.turrets = 0
         self.structures = 0
         self.cost_damage = 0
-        self.pather = ShortestPathFinder()
+        self.pather = self.game_state._shortest_path_finder
 
-        self.pather.initialize_map(self.game_state)
-        # printd("at init", self.pather.game_map[19][6])
-        self.pather.initialize_blocked_alt()
-        # printd("at init  blocked", self.pather.game_map[19][6])
+        self.pather.initialize_map(game_state)
+        self.pather.initialize_blocked()
 
         # printd(f"Turrets: {self.their_turrets}")
 
     # if perspective==1 we swap all structure player alignments
-    def clone_game(self, game_state:gamelib.GameState, perspective, clear):
+    def clone_game(self, game_state:gamelib.GameState, perspective):
         clone = gamelib.GameState.__new__(gamelib.GameState)
         clone.game_map = gamelib.GameMap(game_state.config)
         # convert units to simunits
@@ -102,9 +98,6 @@ class Simulator:
                 if clone.game_map.in_arena_bounds([x,y]):
                     if game_state.game_map[x,y]:
                         clone.game_map[x,y] = []
-                        if [x,y] in clear:
-                            # printd("IGNORING UNIT AT ", (x,y))
-                            continue
                         for unit in game_state.game_map[x,y]:
                             if not unit.stationary or unit.pending_removal:
                                 continue
@@ -126,7 +119,6 @@ class Simulator:
         # perform our build stack
 
         for type, x, y in game_state._build_stack:
-            # printd("BUILD STACK ",type, (x,y))
             if type == UPGRADE:
                 clone.game_map[x,y][0].unit.upgrade()
                 continue
@@ -182,6 +174,7 @@ class Simulator:
 
         
         # printd(self.our_scouts)
+
             
     # True = dies
     # @timer
@@ -299,7 +292,6 @@ class Simulator:
 
     def simulate_tick(self):
         # printd(f"Begin tick #{self.tick}")
-        # printd(self.game_state.game_map[19, 6], self.pather.game_map[19][6].blocked)
         # 1. TODO: support granting shields
         self.apply_shielding()
 

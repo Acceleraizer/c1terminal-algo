@@ -1,0 +1,68 @@
+Random seed: 3764302437357417988
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Performing turn 0 of your custom algo strategy
+no: 40, now: 40.0
+Spent: 0.0
+after reflection: period = 3. predicted [0, 0, 0, 0] got [0.0, 0, 0, 0]
+Performing turn 1 of your custom algo strategy
+no: 45.0, now: 5.0
+Spent: 40.0
+COST 49.5
+Performing turn 2 of your custom algo strategy
+no: 10.0, now: 10.0
+Spent: 40.0
+COST 49.5
+Performing turn 3 of your custom algo strategy
+no: 26.0, now: 26.0
+Spent: 40.0
+COST 49.5
+DECIDING ORIENTATION
+Could not spawn FF at location [21, 10]. Location is blocked.
+Could not spawn FF at location [20, 9]. Location is blocked.
+[13, 27], (5, 8, 40, 126.0)
+[14, 27], (5, 8, 52, 136.5)
+[13, 27], (0, 0, 10, 27.5)
+[14, 27], (0, 0, 10, 27.5)
+Could not spawn FF at location [6, 10]. Location is blocked.
+Could not spawn FF at location [7, 9]. Location is blocked.
+[13, 27], (5, 8, 52, 136.5)
+True, (5, 8, 52, 136.5)
+Could not spawn FF at location [21, 10]. Location is blocked.
+Could not spawn FF at location [20, 9]. Location is blocked.
+[14, 27], (5, 8, 52, 136.5)
+False, (5, 8, 52, 136.5)
+[13, 27], (0, 0, 10, 27.5)
+(5, 8, 52, 136.5)
+[14, 27], (0, 0, 10, 27.5)
+(5, 8, 52, 136.5)
+False, (5, 8, 52, 136.5), (5, 8, 52, 136.5)
+TURN 3: (5, 0, 0, 0), [14, 0], True, [[6, 7], [14, 0]]
+Performing turn 4 of your custom algo strategy
+no: 31.0, now: 5.0
+Spent: 66.0
+after reflection: period = 4. predicted (5, 0, 0, 0) got [0.0, 0, 0, 0]
+Performing turn 5 of your custom algo strategy
+no: 11.0, now: 6.0
+Spent: 71.0
+Performing turn 6 of your custom algo strategy
+no: 11.0, now: 6.5
+Spent: 75.5
+Performing turn 7 of your custom algo strategy
+no: 11.5, now: 5.5
+Spent: 81.5
+TURN 7: (4, 1, 11, 14.0), [4, 9], True, [[6, 7], [14, 0]]
+Traceback (most recent call last):
+  File "C:\Users\wpwit\Desktop\coding_resources\correlation-one\repo\python-algo-algo-r4\algo_strategy.py", line 583, in <module>
+    algo.start()
+  File "C:\Users\wpwit\Desktop\coding_resources\correlation-one\repo\python-algo-algo-r4\gamelib\algocore.py", line 74, in start
+    self.on_turn(game_state_string)
+  File "C:\Users\wpwit\Desktop\coding_resources\correlation-one\repo\python-algo-algo-r4\algo_strategy.py", line 217, in on_turn
+    game_state.submit_turn()
+  File "C:\Users\wpwit\Desktop\coding_resources\correlation-one\repo\python-algo-algo-r4\gamelib\game_state.py", line 212, in submit_turn
+    send_command(build_string)
+  File "C:\Users\wpwit\Desktop\coding_resources\correlation-one\repo\python-algo-algo-r4\gamelib\util.py", line 31, in send_command
+    sys.stdout.flush()
+OSError: [Errno 22] Invalid argument
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='cp1252'>
+OSError: [Errno 22] Invalid argument

@@ -1,0 +1,40 @@
+Random seed: 8367126361702994061
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Mid game map cost: 27.0
+Performing turn 0 of your custom algo strategy
+after reflection: period = 2. predicted [0, 0, 0, 0] got [0, 0, 0, 0]
+Performing turn 1 of your custom algo strategy
+Damage: 14.0, 24.0
+TURN 1: (7, 0, 0, 0), [4, 9]
+Performing turn 2 of your custom algo strategy
+after reflection: period = 3. predicted (7, 0, 0, 0) got [0, 0, 0, 0]
+Performing turn 3 of your custom algo strategy
+Damage: 14.0, 102.0
+Performing turn 4 of your custom algo strategy
+Damage: 14.0, 102.0
+TURN 4: (8, 0, 5, 2.5), [4, 9]
+Performing turn 5 of your custom algo strategy
+after reflection: period = 4. predicted (8, 0, 5, 2.5) got [0, 0, 0, 0]
+Damage: 14.0, 422.0
+Performing turn 6 of your custom algo strategy
+Damage: 0.0, 176.0
+Performing turn 7 of your custom algo strategy
+Damage: 142.0, 102.0
+Performing turn 8 of your custom algo strategy
+Damage: 56.800000000000004, 32.8
+TURN 8: (0, 1, 3, 13.0), [[6, 7], [14, 0]]
+Traceback (most recent call last):
+  File "C:\Users\wpwit\Desktop\coding_resources\correlation-one\repo\python-algo-algo\algo_strategy.py", line 435, in <module>
+    algo.start()
+  File "C:\Users\wpwit\Desktop\coding_resources\correlation-one\repo\python-algo-algo\gamelib\algocore.py", line 74, in start
+    self.on_turn(game_state_string)
+  File "C:\Users\wpwit\Desktop\coding_resources\correlation-one\repo\python-algo-algo\algo_strategy.py", line 185, in on_turn
+    game_state.submit_turn()
+  File "C:\Users\wpwit\Desktop\coding_resources\correlation-one\repo\python-algo-algo\gamelib\game_state.py", line 195, in submit_turn
+    send_command(build_string)
+  File "C:\Users\wpwit\Desktop\coding_resources\correlation-one\repo\python-algo-algo\gamelib\util.py", line 31, in send_command
+    sys.stdout.flush()
+OSError: [Errno 22] Invalid argument
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='cp1252'>
+OSError: [Errno 22] Invalid argument

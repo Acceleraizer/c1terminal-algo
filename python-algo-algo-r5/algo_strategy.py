@@ -67,34 +67,39 @@ class AlgoStrategy(gamelib.AlgoCore):
         global MID_GAME_MAP_COST
         
         EARLY_GAME_MAP = \
-        {"wall_l2" :[[6, 10], [21, 10]]
-        ,"wall_l1" :  [[4, 10], [23, 10], [5, 9], [7, 9], [20, 9], [22, 9], [7, 8], [20, 8], [8, 7], [19, 7], [8, 6], [19, 6]]
-        ,"inters" : [[4, 9], [23, 9], [7, 6], [20, 6]]
+        {"wall_l2" : [[2, 13], [25, 13], [20, 12], [17, 9]]
+        ,"wall_l1" : []
+        ,"turret_l1" : [[4, 11], [24, 12], [20, 11]]
+        ,"support_l2": [[25, 12]]
+        ,"support_l1": [[19, 10], [18, 9]]
+        ,"scouts": [[21, 7]]
+        ,"demos": []
+        ,"inters" : []# [[7, 6]]
         }
         MID_GAME_MAP = \
-        {"wall_l2" : [[0, 13], [1, 13], [2, 13], [3, 13], [4, 13], [5, 13], [6, 13], [7, 13], [8, 13], [25, 13], [26, 13], [27, 13], [9, 12], [9, 11]]
-        ,"turret_l1" :[[3, 12], [5, 12], [7, 12], [8, 12]]
-        ,"wall_l1" : [[24, 12], [23, 11], [6, 10], [22, 10], [5, 9], [7, 9], [21, 9], [7, 8], [8, 8], [20, 8], [8, 7], [19, 7], [8, 6], [9, 6], [18, 6], [10, 5], [17, 5], [11, 4], [13, 4], [14, 4], [16, 4], [12, 3], [15, 3]]
-        ,"inters" : [[7,6]]
-        ,"remove" : [[19, 6], [22, 9], [23, 10], [5, 10], [6, 9]]
+        {"wall_l2" : [[23, 11], [23, 10]] + EARLY_GAME_MAP["wall_l2"]
+        ,"turret_l1" : EARLY_GAME_MAP["turret_l1"][1:]
+        ,"wall_l1" : [[0, 13], [1, 13], [19, 13], [26, 13], [27, 13], [2, 12], [2, 11], [3, 10], [4, 9], [23, 9], [5, 8], [16, 8], [6, 7], [15, 7], [7, 6], [14, 6], [8, 5], [13, 5], [9, 4], [12, 4], [10, 3], [11, 3]]
+        ,"support_l2": EARLY_GAME_MAP["support_l2"]
+        ,"support_l1": [[19, 10], [18, 9]]
         }
         MID_GAME_FORTIFICATION = \
-        {"wall_l2" : []
+        {"wall_l2" : [[26, 13], [27, 13], [23, 12], [19, 11], [18, 10]]
         ,"wall_l1" : []
         ,"turret_l1" : []
         }
 
         MID_GAME_EXTRA_LEFT = \
-        {"wall_l2" : [[9, 13], [10, 12], [10, 11], [9, 10]]
-        ,"turret_l1" : [[4, 12], [6, 12], [4, 11], [8, 11]]
+        {"wall_l2" : [[0, 13], [2, 13], [2, 12], [2, 11], [3, 11], [3, 10], [4, 10], [5, 9]]
+        ,"turret_l1" : [[1, 12]]
         }
         MID_GAME_EXTRA_RIGHT = \
-        {"wall_l2": [[20, 13], [21, 13], [22, 13], [23, 13], [24, 13]]
-        ,"turret_l1" : [[20, 12], [21, 12], [22, 12], [23, 12]]
+        {"wall_l2": [[24, 13], [19, 12], [21, 12], [21, 10], [23, 9], [22, 8]]
+        ,"turret_l1" : [[21, 11], [24, 11], [20, 10], [24, 10], [20, 9]]
         }
         MID_GAME_EXTRA_SHIELD = \
-        {"support_l2" : []
-        ,"support_l1" : [[13, 3], [14, 3], [13, 2], [14, 2]]
+        {"support_l2" : EARLY_GAME_MAP["support_l1"] + [[17, 8]]
+        ,"support_l1" : [[16, 7], [17, 7]]
         }
         MID_GAME_DEFENCE =\
         {"inters_left" : [[2, 11]]
@@ -104,7 +109,6 @@ class AlgoStrategy(gamelib.AlgoCore):
         LATE_GAME_LEFT = \
         {"wall_l2": []
         ,"turret_l1" : []
-        ,"turret_l2" : MID_GAME_MAP["turret_l1"] + MID_GAME_EXTRA_LEFT["turret_l1"]
         }
         LATE_GAME_RIGHT = \
         {"wall_l2": [[19, 8], [18, 7], [21, 7], [20, 6]]
@@ -112,8 +116,8 @@ class AlgoStrategy(gamelib.AlgoCore):
         ,"turret_l2" : [[24, 12], [24, 11], [20, 11], [19, 11]]
         }
         LATE_GAME_SHIELD = \
-        {"shield_l2": [[11, 5], [12, 5], [13, 5], [14, 5], [15, 5], [16, 5], [12, 4], [15, 4]]
-        ,"wall_l2" : [[11, 6], [12, 6], [13, 6], [14, 6], [15, 6], [16, 6]]
+        {"shield_l2": [[16, 10], [17, 10], [15, 9], [16, 9], [14, 8], [15, 8]]
+        ,"wall_l2" : [[16, 11], [17, 11], [15, 10]]
         }
 
         SINGLE_SPAWNS = \
@@ -139,30 +143,20 @@ class AlgoStrategy(gamelib.AlgoCore):
         for layout in ALL_LAYOUTS:
             self.fill_keys(layout)
 
-        global LEFT_ROUTE, RIGHT_ROUTE, LEFT_LINE, RIGHT_LINE, BREACH_LEFT, BREACH_RIGHT, NO_BREACH
-        RIGHT_ROUTE = [[26, 13], [27, 13], [25, 12], [26, 12], [24, 11], [25, 11], [23, 10], [24, 10], [22, 9], [23, 9], [21, 8], [22, 8], [20, 7], [21, 7], [19, 6], [20, 6], [18, 5], [19, 5], [17, 4], [18, 4], [16, 3], [17, 3], [15, 2], [16, 2], [14, 1], [15, 1], [13, 0], [14, 0]]
-        LEFT_ROUTE = [[0, 13], [1, 13], [1, 12], [2, 12], [2, 11], [3, 11], [3, 10], [4, 10], [4, 9], [5, 9], [5, 8], [6, 8], [6, 7], [7, 7], [7, 6], [8, 6], [8, 5], [9, 5], [9, 4], [10, 4], [10, 3], [11, 3], [11, 2], [12, 2], [12, 1], [13, 1], [13, 0], [14, 0]]
-        RIGHT_LINE = [[25, 13], [24, 12], [23, 11], [22, 10], [21, 9], [20, 8], [19, 7], [18, 6], [17, 5], [13, 4], [14, 4], [16, 4], [12, 3], [15, 3], [11, 2]]
-        LEFT_LINE = [[2, 13], [3, 12], [4, 11], [5, 10], [6, 9], [7, 8], [8, 7], [9, 6], [10, 5], [11, 4], [13, 4], [14, 4], [12, 3], [15, 3], [16, 2]]
-        NO_BREACH = 0
-        BREACH_LEFT = 1
-        BREACH_RIGHT = 2
-
         self.damage_taken_tracker = deque()
         self.damage_tracker_memory = 5
 
         self.last_attack = -1
         self.target_stats = [0,1,0,0]
         self.predicted_stats = [0,0,0,0]
-        self.predicted_breach_stats = [0,0,0,0]
         self.enemy_last_health = 30
         self.last_stats = [0,0,0,0]
 
-        self.period = 4
-        self.min_period = 3
-        self.max_period = 7
-        self.breach = NO_BREACH
-        self.breach_config = {}
+        self.period = 2
+        self.min_period = 1
+        self.max_period = 6
+        self.stable_mid_game = False
+        self.will_breach = False
         self.mid_game_threshold = 100
         self.late_game_threshold = 500
 
@@ -177,11 +171,7 @@ class AlgoStrategy(gamelib.AlgoCore):
         self.current_structures = []
         self.current_layout = {}
         self.destroying = []
-
-
-        self.print_layout(MID_GAME_MAP)
-        self.flip_all_layouts()
-        self.print_layout(MID_GAME_MAP)
+        # self.flip_all_layouts()
 
     """
     ====================================
@@ -264,21 +254,14 @@ class AlgoStrategy(gamelib.AlgoCore):
         self.reflect(game_state)
         if game_state.turn_number > 0:
             self.switch_to_mid_game(game_state)
-
-
         if self.early_game:
             self.early_game_plan(game_state)
         else:
-            if self.breach == NO_BREACH:
-                self.plan_breach(game_state)
-            else:
-                self.execute_breach(game_state)
-            
             ok = self.build_defences(game_state)
             if not ok:
                 self.interceptor_defence(game_state)
-        # if not self.early_game:
-        #     self.plan_attack(game_state)
+        if game_state.turn_number > 0:
+            self.plan_attack(game_state)
 
 
     def compute_total_cost_of_layout(self, layout):
@@ -337,29 +320,23 @@ class AlgoStrategy(gamelib.AlgoCore):
                 key += "1"
             self.current_layout[key].append(structure["loc"])
 
-    def attempt_spawn(self, game_state:gamelib.GameState, loc_list, type, layout=None):
-        if not layout:
-            layout = self.current_layout
+    def attempt_spawn(self, game_state:gamelib.GameState, loc_list, type):
         total = 0
         for loc in loc_list:
             if loc in self.destroying:
                 continue
             n = game_state.attempt_spawn(type, loc)
-            # gamelib.debug_write("spawn", type, loc, n)
             if n:
-                layout[TYPETOKEYS[type]+"1"].append(loc)
+                self.current_layout[TYPETOKEYS[type]+"1"].append(loc)
             total += 1
         return total
 
-    def attempt_upgrade(self, game_state:gamelib.GameState,loc_list, type, layout=None):
-        if not layout:
-            layout = self.current_layout
+    def attempt_upgrade(self, game_state:gamelib.GameState,loc_list, type):
         total = 0
         for loc in loc_list:
             if loc in self.destroying:
                 continue
             n = game_state.attempt_upgrade(loc)
-            # gamelib.debug_write("upgrade", type, loc, n)
             if n:
                 self.current_layout[TYPETOKEYS[type]+"2"].append(loc)
                 self.current_layout[TYPETOKEYS[type]+"1"].remove(loc)
@@ -423,14 +400,19 @@ class AlgoStrategy(gamelib.AlgoCore):
         if self.last_stats[0] > 0:
             self.period = max(self.min_period, self.period // 2)
 
-        gamelib.debug_write(f"after reflection: period = {self.period}. predicted {self.predicted_stats} got {self.last_stats}")
+        # gamelib.debug_write(f"after reflection: period = {self.period}. predicted {self.predicted_stats} got {self.last_stats}")
 
 
     def early_game_plan(self, game_state:gamelib.GameState):
         
-        self.attempt_spawn(game_state, EARLY_GAME_MAP["wall_l1"], WALL)
+        game_state.attempt_spawn(TURRET, EARLY_GAME_MAP["turret_l1"])
         self.rush_l2(game_state, EARLY_GAME_MAP["wall_l2"], WALL)
-        game_state.attempt_spawn(INTERCEPTOR, EARLY_GAME_MAP["inters"], 1)
+        self.rush_l2(game_state, EARLY_GAME_MAP["support_l2"], SUPPORT)
+        game_state.attempt_spawn(SUPPORT, EARLY_GAME_MAP["support_l1"])
+        # if game_state.turn_number == 0:
+        #     game_state.attempt_spawn(SCOUT, EARLY_GAME_MAP["scouts"], 5)
+        # else:
+        #     game_state.attempt_spawn(INTERCEPTOR, EARLY_GAME_MAP["inters"], 1)
         
 
     def switch_to_mid_game(self, game_state:gamelib.GameState):
@@ -438,24 +420,21 @@ class AlgoStrategy(gamelib.AlgoCore):
             return
         sp_avail = game_state.get_resource(SP)
         cost = self.compute_total_cost_of_layout_transition(self.current_layout, MID_GAME_MAP)
-        enough_to_switch = sp_avail >= cost
-        enemy_position_chosen = self.enemy_total_spending[SP] >= 60
-        mp_gain = 5 + int(game_state.turn_number/5)
-        major_wave_released = game_state.get_resource(MP, 1) < mp_gain+1
-        gamelib.debug_write(f"Cost: {cost} {enough_to_switch} {enemy_position_chosen} {major_wave_released} {game_state.get_resource(MP, 1)}")
-        if not (enough_to_switch and enemy_position_chosen and major_wave_released):
-            return
+        # gamelib.debug_write(f"COST {cost}")
+        # if (sp_avail >= cost or self.enemy_total_spending[SP] >= 50) or sp_avail >= cost + 5:
+        if sp_avail >= cost:
+            self.early_game = False
+            SINGLE_SPAWNS["spawn"].pop()
+            # self.decide_orientation(game_state)
 
-        self.early_game = False
-        self.decide_orientation(game_state)
-        self.attempt_remove_one(game_state, MID_GAME_MAP["remove"])
+
 
 
 
     def decide_orientation(self, game_state:gamelib.GameState):
         gamelib.debug_write("DECIDING ORIENTATION")
         spawn_location_options = [[13, 27], [14, 27]]
-        mp = 25
+        mp = 15
         cloned_game_state = gamelib.GameState(self.config, TURN_STATE)
         cloned_game_state._player_resources[0]["SP"] = 1000
         self.mid_game_plan(cloned_game_state)
@@ -480,11 +459,11 @@ class AlgoStrategy(gamelib.AlgoCore):
         # check mirror orientation
         best_loc_mirror = spawn_location_options[-1]
         best_stats_mirror = [0,0,0,0]
-        self.flip_all_layouts()
-        cloned_game_state = gamelib.GameState(self.config, TURN_STATE)
-        cloned_game_state._player_resources[0]["SP"] = 1000
-        self.mid_game_plan(cloned_game_state)
         for loc in spawn_location_options:
+            cloned_game_state = gamelib.GameState(self.config, TURN_STATE)
+            cloned_game_state._player_resources[0]["SP"] = 1000
+            self.flip_all_layouts()
+            self.mid_game_plan(cloned_game_state)
             sim = Simulator(self.config, cloned_game_state, 1)
             scenario = [[DEMOLISHER, int(mp//3), loc]]
             sim.place_mobile_units(scenario)
@@ -503,12 +482,10 @@ class AlgoStrategy(gamelib.AlgoCore):
             gamelib.debug_write(best_stats_mirror)
 
         default_is_safer, _, _ = self.compare_stats(best_stats_default, best_loc_default, best_stats_mirror, best_loc_mirror)
-        self.print_layout(MID_GAME_MAP)
-        gamelib.debug_write("default better:", default_is_safer, best_stats_default, best_stats_mirror)
+        gamelib.debug_write(default_is_safer, best_stats_default, best_stats_mirror)
         if default_is_safer:
             self.flip_all_layouts()
 
-        self.print_layout(MID_GAME_MAP)
         return 
 
         
@@ -549,13 +526,14 @@ class AlgoStrategy(gamelib.AlgoCore):
         b = self.mid_game_plan(game_state)
         if not b:
             return b
-        self.mid_game_shields(game_state)
-
         # gamelib.debug_write(f"Damage: {self.left_risk}, {self.right_risk}")
+
         if self.left_risk > self.right_risk:
+            extra_first = MID_GAME_EXTRA_LEFT
             extra_second = MID_GAME_EXTRA_RIGHT
             b = self.mid_game_left_extra(game_state)
         else:
+            extra_first = MID_GAME_EXTRA_RIGHT
             extra_second = MID_GAME_EXTRA_LEFT
             b = self.mid_game_right_extra(game_state)
 
@@ -563,18 +541,16 @@ class AlgoStrategy(gamelib.AlgoCore):
             return b
 
         self.destroy_damaged(game_state)
+        if self.left_risk < self.mid_game_threshold or self.right_risk < self.mid_game_threshold:
+            self.rush_l2(game_state, MID_GAME_EXTRA_SHIELD["support_l2"], SUPPORT)
+            self.attempt_spawn(game_state, MID_GAME_EXTRA_SHIELD["support_l1"], SUPPORT)
 
-        if extra_second == MID_GAME_EXTRA_RIGHT:
-            b = self.mid_game_right_extra(game_state)
-        else:
-            b = self.mid_game_left_extra(game_state)
-
+        self.attempt_spawn(game_state, extra_second["turret_l1"], TURRET)
+        self.rush_l2(game_state, extra_second["wall_l2"], WALL)
 
         late_game_threshold = 500
-        # if self.right_risk > late_game_threshold:
-        #     b = self.late_game_right(game_state)
-        if self.left_risk > late_game_threshold:
-            b = self.late_game_left(game_state)
+        if self.right_risk > late_game_threshold:
+            b = self.late_game_right(game_state)
 
         if not b:
             return b
@@ -597,28 +573,27 @@ class AlgoStrategy(gamelib.AlgoCore):
         cost = self.compute_total_cost_of_layout_transition(self.current_layout, MID_GAME_MAP)
         # gamelib.debug_write(cost, "!!!", game_state.get_resource(SP) )
         # self.print_layout_difference(self.current_layout, MID_GAME_MAP)
-        game_state.attempt_spawn(INTERCEPTOR, MID_GAME_MAP["inters"], 1)
         if cost >= game_state.get_resource(SP):
-            gamelib.debug_write("cannot complete mid game plan")
+            gamelib.debug_write("cannot complete mid fort")
             return False 
 
 
         self.attempt_spawn(game_state, MID_GAME_MAP['wall_l1'], WALL)
         self.attempt_spawn(game_state, MID_GAME_MAP['wall_l2'], WALL)
-        # self.attempt_spawn(game_state, MID_GAME_MAP['support_l1'], SUPPORT)
-        # self.attempt_spawn(game_state, MID_GAME_MAP['support_l2'], SUPPORT)
-        # self.attempt_upgrade(game_state, MID_GAME_MAP['support_l2'], SUPPORT)
+        self.attempt_spawn(game_state, MID_GAME_MAP['support_l1'], SUPPORT)
+        self.attempt_spawn(game_state, MID_GAME_MAP['support_l2'], SUPPORT)
+        self.attempt_upgrade(game_state, MID_GAME_MAP['support_l2'], SUPPORT)
         self.attempt_upgrade(game_state, MID_GAME_MAP['wall_l2'], WALL)
         self.attempt_spawn(game_state, MID_GAME_MAP['turret_l1'], TURRET)
         
-        # # Phase 1 done
-        # self.attempt_spawn(game_state, MID_GAME_FORTIFICATION['turret_l1'], TURRET)
-        # self.attempt_spawn(game_state, MID_GAME_FORTIFICATION['wall_l1'], WALL)
+        # Phase 1 done
+        self.attempt_spawn(game_state, MID_GAME_FORTIFICATION['turret_l1'], TURRET)
+        self.attempt_spawn(game_state, MID_GAME_FORTIFICATION['wall_l1'], WALL)
 
-        # n, up = self.rush_l2(game_state, MID_GAME_FORTIFICATION["wall_l2"], WALL)
-        # if self.compute_total_cost_of_layout_transition(self.current_layout, MID_GAME_FORTIFICATION) > 0:
-        #     gamelib.debug_write("cannot complete mid fort")
-        #     return game_state.turn_number < 6
+        n, up = self.rush_l2(game_state, MID_GAME_FORTIFICATION["wall_l2"], WALL)
+        if self.compute_total_cost_of_layout_transition(self.current_layout, MID_GAME_FORTIFICATION) > 0:
+            gamelib.debug_write("cannot complete mid fort")
+            return game_state.turn_number < 6
         # Phase 1.5 done
         return True
 
@@ -638,55 +613,41 @@ class AlgoStrategy(gamelib.AlgoCore):
             return game_state.turn_number<10
         return True
 
-
     def mid_game_right_extra(self, game_state:gamelib.GameState):
         MID_GAME_EXTRA_RIGHT["wall_l2"].sort(key=lambda x: -x[1])
         MID_GAME_EXTRA_RIGHT["turret_l1"].sort(key=lambda x: -x[1])
 
-        self.rush_l2(game_state, MID_GAME_EXTRA_RIGHT["wall_l2"], WALL)
-        self.attempt_spawn(game_state, MID_GAME_EXTRA_RIGHT["turret_l1"], TURRET)
+        n, up = self.rush_l2(game_state, MID_GAME_EXTRA_RIGHT["wall_l2"][:4], WALL)
+        n += self.attempt_spawn(game_state, MID_GAME_EXTRA_RIGHT["turret_l1"][:3], TURRET)
+        self.rush_l2(game_state, MID_GAME_EXTRA_RIGHT["wall_l2"][4:], WALL)
+        self.attempt_spawn(game_state, MID_GAME_EXTRA_RIGHT["turret_l1"][3:], TURRET)
 
         if self.compute_total_cost_of_layout_transition(self.current_layout, MID_GAME_EXTRA_RIGHT) > 0:
             # self.print_layout_difference(self.current_layout, MID_GAME_EXTRA_RIGHT)
-            gamelib.debug_write("cannot complete right extra")
+            # gamelib.debug_write("cannot complete right extra")
             return game_state.turn_number<10
         return True
 
-    def mid_game_shields(self, game_state:gamelib.GameState):
-        self.attempt_spawn(game_state, MID_GAME_EXTRA_SHIELD["support_l1"], SUPPORT)
-        if self.compute_total_cost_of_layout_transition(self.current_layout, MID_GAME_EXTRA_SHIELD) > 0:
-            # self.print_layout_difference(self.current_layout, MID_GAME_EXTRA_RIGHT)
-            gamelib.debug_write("cannot complete mid game shields")
-            return False
-        return True
 
     def late_game_right(self, game_state:gamelib.GameState):
-        # self.rush_l2(game_state, LATE_GAME_RIGHT["wall_l2"], WALL)
-        # self.attempt_spawn(game_state, LATE_GAME_RIGHT["turret_l1"], TURRET)
-        # self.attempt_upgrade(game_state, LATE_GAME_RIGHT["turret_l2"], TURRET)
-
-        # if self.compute_total_cost_of_layout_transition(self.current_layout, LATE_GAME_RIGHT) > 0:
-        #     # self.print_layout_difference(self.current_layout, LATE_GAME_RIGHT)
-        #     gamelib.debug_write("cannot complete right late game")
-        #     return game_state.turn_number< 22
-        return True
-
-    
-    def late_game_left(self, game_state:gamelib.GameState):
-        self.rush_l2(game_state, LATE_GAME_LEFT["wall_l2"], WALL)
-        self.attempt_spawn(game_state, LATE_GAME_LEFT["turret_l1"], TURRET)
-        self.attempt_upgrade(game_state, LATE_GAME_LEFT["turret_l2"], TURRET)
+        self.rush_l2(game_state, LATE_GAME_RIGHT["wall_l2"], WALL)
+        self.attempt_spawn(game_state, LATE_GAME_RIGHT["turret_l1"], TURRET)
+        self.attempt_upgrade(game_state, LATE_GAME_RIGHT["turret_l2"], TURRET)
 
         if self.compute_total_cost_of_layout_transition(self.current_layout, LATE_GAME_RIGHT) > 0:
             # self.print_layout_difference(self.current_layout, LATE_GAME_RIGHT)
-            gamelib.debug_write("cannot complete right late game")
-            return game_state.turn_number< 20
+            # gamelib.debug_write("cannot complete right late game")
+            return game_state.turn_number< 22
         return True
 
     
     def late_game_shields(self, game_state:gamelib.GameState):
-        self.rush_l2(game_state, LATE_GAME_SHIELD["shield_l2"], SUPPORT)
-        self.rush_l2(game_state, LATE_GAME_SHIELD["wall_l2"], WALL)
+        for n in range (len(LATE_GAME_SHIELD["wall_l2"])):
+            set = (LATE_GAME_SHIELD["wall_l2"][n], LATE_GAME_SHIELD["shield_l2"][2*n],  LATE_GAME_SHIELD["shield_l2"][2*n+1])
+            done = game_state.contains_stationary_unit(set[2])
+            self.rush_l2(game_state, [set[0]], WALL)
+            self.rush_l2(game_state, [set[1]], SUPPORT)
+            n, up = self.rush_l2(game_state, [set[2]], SUPPORT)
             
         if self.compute_total_cost_of_layout_transition(self.current_layout, LATE_GAME_SHIELD) > 0:
             gamelib.debug_write("cannot complete late game shields")
@@ -719,107 +680,14 @@ class AlgoStrategy(gamelib.AlgoCore):
 
 
     def plan_breach(self, game_state:gamelib.GameState):
-        if game_state.turn_number < self.last_attack + self.period:
-            return
-
-        mp = game_state.project_future_MP(1) -1
-        spawn_options = [[HYBRID_SPAWNS["spawn_scout"][i], HYBRID_SPAWNS["spawn_demos"][i]] for i in range(len(HYBRID_SPAWNS["spawn_demos"]))]
-
-        max_demo = int(mp//3)
-        min_demo = int(max_demo//2)
-        gamelib.debug_write(f"Considering {min_demo} to {max_demo} demos")
-
-        best_stats_left = self.target_stats
-        best_stats_right = self.target_stats
-        best_config_left = {"demos":min_demo,"scout_loc":spawn_options[0][0],"demo_loc":spawn_options[0][1]}
-        best_config_right = {"demos":min_demo,"scout_loc":spawn_options[0][0],"demo_loc":spawn_options[0][1]}
-
-        for n in range(2):
-            if n == 0:
-                line = RIGHT_LINE
-                route = RIGHT_ROUTE
-            else:
-                line = LEFT_LINE
-                route = LEFT_ROUTE
-            best_stats = best_stats_left
-            best_config = best_config_left
-            cloned_game_state = gamelib.GameState(self.config, TURN_STATE)
-            cloned_game_state._player_resources[0]["SP"] = 1000
-            cloned_game_state.attempt_spawn(WALL, line)
-            for scout_loc, demo_loc in spawn_options:
-                for demos in range(min_demo, max_demo+1):
-                    scouts = int(mp - 3*demos)
-                    scenario = [[DEMOLISHER, demos, demo_loc], [SCOUT, scouts, scout_loc]]
-                    sim = Simulator(self.config, cloned_game_state, clear=route)
-                    sim.place_mobile_units(scenario)
-                    stats = sim.simulate()
-                    gamelib.debug_write(f"Demos {demos}@{demo_loc} Scouts {scouts}@{scout_loc}", stats)
-                    b, best_stats, _ = self.compare_stats(best_stats, None, stats, None)
-                    if b:
-                        best_config["demos"] = demos
-                        best_config["scout_loc"] = scout_loc
-                        best_config["demo_loc"] = demo_loc
-
-            if n == 0:
-                best_stats_right = best_stats
-                best_config_right = best_config
-            else:
-                best_stats_left = best_stats
-                best_config_left = best_config
 
 
-        gamelib.debug_write("LEFT", best_config_left,best_stats_left)
-        gamelib.debug_write("RIGHT", best_config_right,best_stats_right)
-
-        right, stats, _ = self.compare_stats(best_stats_left, None, best_stats_right, None)
-        
-        self.predicted_breach_stats = best_stats
-        self.last_stats = [0,0,0,0]
-        self.last_attack = game_state.turn_number + 1
-
-        if right:
-            self.breach = BREACH_RIGHT
-            self.breach_config = best_config_right
-        else:
-            self.breach = BREACH_LEFT
-            self.breach_config = best_config_left
-
-        self.prepare_breach(game_state)
-
-
-    def prepare_breach(self, game_state:gamelib.GameState):
-        line = LEFT_LINE if self.breach == BREACH_LEFT else RIGHT_LINE
-        route = LEFT_ROUTE if self.breach == BREACH_LEFT else RIGHT_ROUTE
-
-        for loc in route:
-            self.attempt_remove_one(game_state, loc)
-        return
-
-
-    def execute_breach(self, game_state:gamelib.GameState):
-        demos = self.breach_config["demos"]
-        demo_loc = self.breach_config["demo_loc"]
-        scout_loc = self.breach_config["scout_loc"]
-        gamelib.debug_write("EXECUTING BREACH", self.breach, self.breach_config, game_state.turn_number, self.last_attack, self.period)
-        game_state.attempt_spawn(DEMOLISHER, demo_loc, demos)
-        game_state.attempt_spawn(SCOUT, scout_loc, 1000)
-        self.prepare_breach(game_state)   
-
-        line = LEFT_LINE if self.breach == BREACH_LEFT else RIGHT_LINE
-        self.attempt_spawn(game_state, line, WALL)
-
-        for loc in MID_GAME_MAP["remove"]:
-            self.attempt_remove_one(game_state, loc)
-        
-        self.breach = NO_BREACH
-        return
+        return False
 
 
     def plan_attack(self, game_state:gamelib.GameState):
         if game_state.turn_number < self.last_attack + self.period:
             return
-
-        return self.plan_breach(game_state)
 
         mp = game_state.get_resource(MP)
         spawn_location_options = SINGLE_SPAWNS["spawn"]
@@ -899,9 +767,6 @@ class AlgoStrategy(gamelib.AlgoCore):
             gamelib.debug_write(key, "ref has", refhas)
             gamelib.debug_write(key, "other has", otherhas)
 
-    def print_layout(self, layout):
-        for key in STRUCTUREKEYS:
-            gamelib.debug_write(key,layout[key])
 
 
 if __name__ == "__main__":

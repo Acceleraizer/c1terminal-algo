@@ -60,14 +60,6 @@ class ShortestPathFinder:
             else:
                 self.game_map[location[0]][location[1]].blocked = False
 
-    def initialize_blocked_alt(self):
-        for loc in self.game_state.game_map:
-            for simunit in self.game_state.game_map[loc]:
-                if simunit.unit.stationary:
-                    self.game_map[loc[0]][loc[1]].blocked = True
-                    break
-                self.game_map[loc[0]][loc[1]].blocked = False
-
     def initialize_ifnot(self, game_state):
         if not self.initialized:
             self.initialize_map(game_state)

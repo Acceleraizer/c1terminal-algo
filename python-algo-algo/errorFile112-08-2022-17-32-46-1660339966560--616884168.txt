@@ -1,0 +1,461 @@
+Random seed: 2554379400451074245
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Performing turn 0 of your custom algo strategy
+after reflection: period = 3. predicted [0, 0, 0, 0] got [0.0, 0, 0, 0]
+build, 1
+upg, 1
+build, 1
+upg, 1
+build, 1
+upg, 1
+build, 1
+upg, 1
+build, 1
+upg, 1
+Performing turn 1 of your custom algo strategy
+COST 13.5
+build, 0
+upg, 0
+build, 0
+upg, 0
+build, 0
+upg, 0
+build, 0
+upg, 0
+build, 0
+upg, 0
+Performing turn 2 of your custom algo strategy
+COST 13.5
+build, 0
+upg, 0
+build, 0
+upg, 0
+build, 0
+upg, 0
+build, 0
+upg, 0
+build, 0
+upg, 0
+Performing turn 3 of your custom algo strategy
+after reflection: period = 2. predicted (11, 0, 0, 0) got [11.0, 0, 0, 0]
+COST 13.5
+build, 1
+build, 1
+build, 1
+build, 1
+build, 1
+build, 1
+build, 1
+build, 1
+build, 1
+build, 1
+build, 1
+build, 1
+build, 1
+build, 1
+build, 1
+build, 1
+build, 1
+build, 1
+build, 1
+build, 1
+build, 1
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+upg, 0
+upg, 1
+upg, 1
+upg, 0
+upg, 0
+upg, 0
+upg, 0
+build, 0
+build, 0
+build, 0
+build, 0
+upg, 1
+build, 0
+upg, 1
+build, 1
+upg, 1
+build, 1
+upg, 1
+build, 1
+upg, 1
+build, 1
+upg, 1
+build, 1
+upg, 0
+???
+build, 1
+???
+upg, 0
+build, 1
+upg, 0
+build, 0
+build, 0
+build, 0
+build, 0
+upg, 0
+build, 0
+upg, 0
+build, 0
+build, 0
+wall_l1, ref has, [[0, 13], [1, 13], [2, 11], [3, 10], [4, 9], [5, 8], [16, 8], [6, 7], [7, 7], [8, 7], [9, 7], [10, 7], [11, 7], [12, 7], [13, 7], [14, 7], [15, 7], [19, 12], [21, 12], [21, 10]]
+wall_l1, other has, []
+wall_l2, ref has, [[17, 9], [20, 12], [2, 13], [25, 13], [23, 11], [23, 10], [26, 13], [27, 13], [23, 12], [19, 11], [18, 10]]
+wall_l2, other has, [[19, 12], [21, 12], [21, 10], [23, 9], [22, 8]]
+turret_l1, ref has, [[20, 11], [2, 12], [24, 12]]
+turret_l1, other has, [[21, 11], [24, 11], [20, 10], [24, 10], [20, 9]]
+turret_l2, ref has, []
+turret_l2, other has, []
+support_l1, ref has, [[18, 9], [19, 10]]
+support_l1, other has, []
+support_l2, ref has, [[25, 12]]
+support_l2, other has, []
+cannot complete right extra
+Performing turn 4 of your custom algo strategy
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+upg, 0
+upg, 0
+upg, 0
+upg, 0
+upg, 0
+upg, 0
+upg, 0
+build, 0
+build, 0
+build, 0
+build, 0
+upg, 0
+build, 0
+upg, 0
+build, 0
+upg, 0
+build, 0
+upg, 0
+build, 0
+upg, 0
+build, 0
+upg, 0
+build, 1
+upg, 1
+???
+build, 1
+???
+upg, 1
+build, 0
+upg, 0
+build, 0
+build, 0
+build, 0
+build, 1
+upg, 0
+build, 1
+upg, 0
+build, 0
+build, 0
+wall_l1, ref has, [[6, 7], [7, 7], [8, 7], [9, 7], [10, 7], [11, 7], [12, 7], [13, 7], [14, 7], [15, 7], [5, 8], [16, 8], [4, 9], [3, 10], [21, 10], [2, 11], [0, 13], [1, 13], [23, 9], [22, 8]]
+wall_l1, other has, []
+wall_l2, ref has, [[17, 9], [18, 10], [23, 10], [19, 11], [23, 11], [20, 12], [23, 12], [2, 13], [25, 13], [26, 13], [27, 13]]
+wall_l2, other has, [[21, 10], [23, 9], [22, 8]]
+turret_l1, ref has, [[20, 11], [2, 12], [24, 12]]
+turret_l1, other has, [[21, 11], [24, 11], [20, 10], [24, 10], [20, 9]]
+turret_l2, ref has, []
+turret_l2, other has, []
+support_l1, ref has, [[18, 9], [19, 10]]
+support_l1, other has, []
+support_l2, ref has, [[25, 12]]
+support_l2, other has, []
+cannot complete right extra
+Performing turn 5 of your custom algo strategy
+after reflection: period = 1. predicted (3, 1, 13, 15.0) got [1.0, 0, 0, 0]
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+upg, 0
+upg, 0
+upg, 0
+upg, 0
+upg, 0
+upg, 0
+upg, 0
+build, 0
+build, 0
+build, 0
+build, 0
+upg, 0
+build, 0
+upg, 0
+build, 0
+upg, 0
+build, 0
+upg, 0
+build, 0
+upg, 0
+build, 0
+upg, 0
+build, 0
+upg, 0
+???
+build, 0
+???
+upg, 0
+build, 0
+upg, 1
+build, 0
+build, 0
+build, 0
+build, 0
+upg, 1
+build, 0
+upg, 1
+build, 0
+build, 0
+wall_l1, ref has, [[6, 7], [7, 7], [8, 7], [9, 7], [10, 7], [11, 7], [12, 7], [13, 7], [14, 7], [15, 7], [5, 8], [16, 8], [4, 9], [3, 10], [2, 11], [0, 13], [1, 13]]
+wall_l1, other has, []
+wall_l2, ref has, [[17, 9], [18, 10], [23, 10], [19, 11], [23, 11], [20, 12], [23, 12], [2, 13], [25, 13], [26, 13], [27, 13]]
+wall_l2, other has, []
+turret_l1, ref has, [[20, 11], [2, 12], [24, 12]]
+turret_l1, other has, [[21, 11], [24, 11], [20, 10], [24, 10], [20, 9]]
+turret_l2, ref has, []
+turret_l2, other has, []
+support_l1, ref has, [[18, 9], [19, 10]]
+support_l1, other has, []
+support_l2, ref has, [[25, 12]]
+support_l2, other has, []
+cannot complete right extra
+Performing turn 6 of your custom algo strategy
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+upg, 0
+upg, 0
+upg, 0
+upg, 0
+upg, 0
+upg, 0
+upg, 0
+build, 0
+build, 0
+build, 0
+build, 0
+upg, 0
+build, 0
+upg, 0
+build, 0
+upg, 0
+build, 0
+upg, 0
+build, 0
+upg, 0
+build, 0
+upg, 0
+build, 0
+upg, 0
+???
+build, 0
+???
+upg, 0
+build, 0
+upg, 0
+build, 1
+build, 0
+build, 0
+build, 0
+upg, 0
+build, 0
+upg, 0
+build, 0
+build, 0
+wall_l1, ref has, [[6, 7], [7, 7], [8, 7], [9, 7], [10, 7], [11, 7], [12, 7], [13, 7], [14, 7], [15, 7], [5, 8], [16, 8], [4, 9], [3, 10], [2, 11], [0, 13], [1, 13]]
+wall_l1, other has, []
+wall_l2, ref has, [[17, 9], [18, 10], [23, 10], [19, 11], [23, 11], [20, 12], [23, 12], [2, 13], [25, 13], [26, 13], [27, 13]]
+wall_l2, other has, []
+turret_l1, ref has, [[20, 11], [2, 12], [24, 12]]
+turret_l1, other has, [[24, 11], [20, 10], [24, 10], [20, 9]]
+turret_l2, ref has, []
+turret_l2, other has, []
+support_l1, ref has, [[18, 9], [19, 10]]
+support_l1, other has, []
+support_l2, ref has, [[25, 12]]
+support_l2, other has, []
+cannot complete right extra
+Performing turn 7 of your custom algo strategy
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+build, 0
+upg, 0
+upg, 0
+upg, 0
+upg, 0
+upg, 0
+upg, 0
+upg, 0
+build, 0
+build, 0
+build, 0
+build, 0
+upg, 0
+build, 0
+upg, 0
+build, 0
+upg, 0
+build, 0
+upg, 0
+build, 0
+upg, 0
+build, 0
+upg, 0
+build, 0
+upg, 0
+???
+build, 0
+???
+upg, 0
+build, 0
+upg, 0
+build, 0
+build, 0
+build, 0
+build, 0
+upg, 0
+build, 0
+upg, 0
+build, 0
+build, 0
+wall_l1, ref has, [[6, 7], [7, 7], [8, 7], [9, 7], [10, 7], [11, 7], [12, 7], [13, 7], [14, 7], [15, 7], [5, 8], [16, 8], [4, 9], [3, 10], [2, 11], [0, 13], [1, 13]]
+wall_l1, other has, []
+wall_l2, ref has, [[17, 9], [18, 10], [23, 10], [19, 11], [23, 11], [20, 12], [23, 12], [2, 13], [25, 13], [26, 13], [27, 13]]
+wall_l2, other has, []
+turret_l1, ref has, [[20, 11], [2, 12], [24, 12]]
+turret_l1, other has, [[24, 11], [20, 10], [24, 10], [20, 9]]
+turret_l2, ref has, []
+turret_l2, other has, []
+support_l1, ref has, [[18, 9], [19, 10]]
+support_l1, other has, []
+support_l2, ref has, [[25, 12]]
+support_l2, other has, []
+cannot complete right extra
+Traceback (most recent call last):
+  File "C:\Users\wpwit\Desktop\coding_resources\correlation-one\repo\python-algo-algo\algo_strategy.py", line 764, in <module>
+    algo.start()
+  File "C:\Users\wpwit\Desktop\coding_resources\correlation-one\repo\python-algo-algo\gamelib\algocore.py", line 74, in start
+    self.on_turn(game_state_string)
+  File "C:\Users\wpwit\Desktop\coding_resources\correlation-one\repo\python-algo-algo\algo_strategy.py", line 237, in on_turn
+    game_state.submit_turn()
+  File "C:\Users\wpwit\Desktop\coding_resources\correlation-one\repo\python-algo-algo\gamelib\game_state.py", line 212, in submit_turn
+    send_command(build_string)
+  File "C:\Users\wpwit\Desktop\coding_resources\correlation-one\repo\python-algo-algo\gamelib\util.py", line 31, in send_command
+    sys.stdout.flush()
+OSError: [Errno 22] Invalid argument
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='cp1252'>
+OSError: [Errno 22] Invalid argument

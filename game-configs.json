@@ -12,6 +12,7 @@
   },
   "unitInformation": [
     {
+      "icon": "S3_filter",
       "cost1": 0.5,
       "getHitRadius":0.01,
       "display":"Filter",
@@ -26,6 +27,7 @@
       }
     },
     {
+      "icon": "S3_encryptor",
       "cost1":4.0,
       "getHitRadius":0.01,
       "shieldPerUnit":3.0,
@@ -46,6 +48,7 @@
       }
     },
     {
+      "icon": "S3_destructor",
       "attackDamageWalker":16.0,
       "cost1":6.0,
       "getHitRadius":0.01,
@@ -63,6 +66,7 @@
 
 
     {
+      "icon": "S3_ping",
       "attackDamageTower":2.0,
       "attackDamageWalker":2.0,
       "playerBreachDamage":1.0,
@@ -81,6 +85,7 @@
       "selfDestructStepsRequired": 5
     },
     {
+      "icon": "S3_emp",
       "attackDamageWalker":16.0,
       "attackDamageTower":16.0,
       "playerBreachDamage":1.0,
@@ -99,6 +104,7 @@
       "selfDestructStepsRequired": 5
     },
     {
+      "icon": "S3_scrambler",
       "attackDamageWalker":20.0,
       "playerBreachDamage":1.0,
       "cost2":1.0,
@@ -117,11 +123,17 @@
     },
     {
       "display":"Remove",
-      "shorthand":"RM"
+      "shorthand":"RM",
+      "icon": "S3_removal",
+      "iconxScale": 0.4,
+      "iconyScale": 0.4
     },
     {
       "display":"Upgrade",
-      "shorthand":"UP"
+      "shorthand":"UP",
+      "icon": "S3_upgrade",
+      "iconxScale": 0.4,
+      "iconyScale": 0.4
     }
   ],
   "timingAndReplay":{
