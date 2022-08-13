@@ -1,0 +1,249 @@
+Random seed: 3104492821338758269
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Performing turn 0 of your custom algo strategy
+after reflection: period = 5. predicted [0, 0, 0, 0] got [0.0, 0, 0, 0]
+TURN 0
+[False, False]
+-1
+[]
+[]
+Performing turn 1 of your custom algo strategy
+TURN 1
+[False, False]
+-1
+[]
+[]
+Cost: 57.5 False False True 5.8
+Performing turn 2 of your custom algo strategy
+TURN 2
+[False, False]
+-1
+[]
+[]
+Cost: 57.5 False False True 6.3
+Performing turn 3 of your custom algo strategy
+TURN 3
+[False, False]
+-1
+[]
+[]
+Cost: 57.5 False False True 6.7
+Performing turn 4 of your custom algo strategy
+TURN 4
+[False, False]
+-1
+[]
+[]
+Cost: 57.5 False False True 7.0
+Performing turn 5 of your custom algo strategy
+TURN 5
+[False, False]
+-1
+[]
+[]
+Cost: 57.5 False False True 7.3
+Performing turn 6 of your custom algo strategy
+TURN 6
+[False, False]
+-1
+[]
+[]
+Cost: 57.5 True False True 7.5
+Performing turn 7 of your custom algo strategy
+TURN 7
+[False, False]
+-1
+[]
+[]
+Cost: 57.5 True False True 7.6
+Performing turn 8 of your custom algo strategy
+TURN 8
+[False, False]
+-1
+[]
+[]
+Cost: 57.5 True False True 7.7
+Performing turn 9 of your custom algo strategy
+TURN 9
+[False, False]
+-1
+[]
+[]
+Cost: 57.5 True False True 7.8
+Performing turn 10 of your custom algo strategy
+TURN 10
+[False, False]
+-1
+[]
+[]
+Cost: 57.5 True False True 8.9
+Performing turn 11 of your custom algo strategy
+TURN 11
+[False, False]
+-1
+[]
+[]
+Cost: 57.5 True False True 9.7
+Performing turn 12 of your custom algo strategy
+TURN 12
+[False, False]
+-1
+[]
+[]
+Cost: 57.5 True False True 10.3
+Performing turn 13 of your custom algo strategy
+TURN 13
+[False, False]
+-1
+[]
+[]
+Cost: 57.5 True False True 10.7
+Performing turn 14 of your custom algo strategy
+TURN 14
+[False, False]
+-1
+[]
+[]
+Cost: 57.5 True False True 11.0
+Performing turn 15 of your custom algo strategy
+TURN 15
+[False, False]
+-1
+[]
+[]
+Cost: 57.5 True False True 11.3
+DECIDING ORIENTATION
+Could not spawn FF at location [21, 10]. Location is blocked.
+Could not spawn FF at location [5, 9]. Location is blocked.
+Could not spawn FF at location [20, 9]. Location is blocked.
+Could not spawn FF at location [7, 8]. Location is blocked.
+Could not spawn FF at location [20, 8]. Location is blocked.
+Could not spawn FF at location [8, 7]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [8, 6]. Location is blocked.
+Could not spawn FF at location [6, 10]. Location is blocked.
+Could not spawn FF at location [7, 9]. Location is blocked.
+[13, 27], (8, 0, 18, 9.0)
+[14, 27], (8, 6, 26, 53.5)
+[13, 27], (25, 0, 13, 6.5)
+[14, 27], (0, 2, 8, 15.0)
+Could not spawn FF at location [6, 10]. Location is blocked.
+Could not spawn FF at location [22, 9]. Location is blocked.
+Could not spawn FF at location [7, 9]. Location is blocked.
+Could not spawn FF at location [20, 8]. Location is blocked.
+Could not spawn FF at location [7, 8]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [8, 7]. Location is blocked.
+Could not spawn FF at location [19, 6]. Location is blocked.
+Could not spawn FF at location [21, 10]. Location is blocked.
+Could not spawn FF at location [20, 9]. Location is blocked.
+[13, 27], (8, 6, 26, 53.5)
+True, (8, 6, 26, 53.5)
+[14, 27], (8, 0, 18, 9.0)
+False, (8, 6, 26, 53.5)
+[13, 27], (0, 2, 8, 15.0)
+(8, 6, 26, 53.5)
+[14, 27], (25, 0, 13, 6.5)
+(25, 0, 13, 6.5)
+wall_l1, [[27, 13], [26, 13], [1, 13], [0, 13], [4, 11], [6, 10], [5, 10], [22, 9], [7, 9], [20, 8], [7, 8], [19, 7], [8, 7], [19, 6], [18, 6], [9, 6], [17, 5], [10, 5], [16, 4], [14, 4], [13, 4], [11, 4], [15, 3], [12, 3]]
+wall_l2, [[25, 13], [24, 13], [23, 13], [22, 13], [21, 13], [20, 13], [19, 13], [4, 13], [2, 13], [21, 10], [20, 9]]
+turret_l1, [[24, 12], [22, 12], [21, 12], [20, 12], [3, 12]]
+turret_l2, []
+support_l1, []
+support_l2, []
+default better:, False, (25, 0, 13, 6.5), (25, 0, 13, 6.5)
+TURN 15 REINFORCING FLANK 0
+TURN 15 REINFORCING FLANK 1
+cannot complete right extra
+Performing turn 16 of your custom algo strategy
+after reflection: period = 6. predicted [0, 0, 0, 0] got [0.0, 0, 0, 0]
+TURN 16
+[False, False]
+-1
+[]
+[]
+TURN 16 REINFORCING FLANK 0
+cannot complete right extra
+Performing turn 17 of your custom algo strategy
+TURN 17
+[False, False]
+16
+[16]
+[14]
+TURN 17 REINFORCING FLANK 0
+cannot complete right extra
+Performing turn 18 of your custom algo strategy
+TURN 18
+[False, False]
+16
+[16]
+[14]
+cannot complete left extra
+Performing turn 19 of your custom algo strategy
+TURN 19
+[False, False]
+16
+[16]
+[14]
+cannot complete left extra
+Performing turn 20 of your custom algo strategy
+TURN 20
+[False, False]
+16
+[16]
+[14]
+TURN 20 ==== PREPARING ALL BREACHES
+cannot complete left extra
+Performing turn 21 of your custom algo strategy
+TURN 21
+[False, False]
+16
+[16]
+[14]
+Considering 1 to 6 demos
+Could not spawn FF at location [25, 13]. Location is blocked.
+Could not spawn FF at location [24, 12]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [18, 6]. Location is blocked.
+Could not spawn FF at location [17, 5]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [16, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+0, [[[14, 0], [13, 0]], [[14, 0], [15, 1]]]
+{'spawn_scout': [[14, 0], [14, 0]], 'spawn_demos': [[13, 0], [15, 1]], 'wall_l1': [], 'wall_l2': [], 'turret_l1': [], 'turret_l2': [], 'support_l1': [], 'support_l2': []}
+right_route Trying scout @ [14, 0] and demo at [13, 0]
+right_route Trying scout @ [14, 0] and demo at [15, 1]
+Could not spawn FF at location [2, 13]. Location is blocked.
+Could not spawn FF at location [3, 12]. Location is blocked.
+Could not spawn FF at location [4, 11]. Location is blocked.
+Could not spawn FF at location [5, 10]. Location is blocked.
+Could not spawn FF at location [7, 8]. Location is blocked.
+Could not spawn FF at location [8, 7]. Location is blocked.
+Could not spawn FF at location [9, 6]. Location is blocked.
+Could not spawn FF at location [10, 5]. Location is blocked.
+Could not spawn FF at location [11, 4]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+1, [[[13, 0], [14, 0]], [[13, 0], [12, 1]]]
+{'spawn_scout': [[14, 0], [14, 0]], 'spawn_demos': [[13, 0], [15, 1]], 'wall_l1': [], 'wall_l2': [], 'turret_l1': [], 'turret_l2': [], 'support_l1': [], 'support_l2': []}
+left route Trying scout @ [13, 0] and demo at [14, 0]
+left route Trying scout @ [13, 0] and demo at [12, 1]
+LEFT, {'demos': 5, 'scouts': 5, 'scout_loc': [13, 0], 'demo_loc': [12, 1]}, (10, 5, 34, 97.5)
+RIGHT, {'demos': 5, 'scouts': 5, 'scout_loc': [14, 0], 'demo_loc': [15, 1]}, (9, 6, 33, 90.5)
+TURN 21 ==== EXECUTING BREACH
+EXECUTING BREACH, 1, {'demos': 5, 'scouts': 5, 'scout_loc': [13, 0], 'demo_loc': [12, 1]}, 21, 21, 6
+cannot complete left extra
+Performing turn 22 of your custom algo strategy
+after reflection: period = 7. predicted [0, 0, 0, 0] got [0.0, 0, 0, 0]
+TURN 22
+[False, False]
+16
+[16]
+[14]
+cannot complete left extra
+Got EOF, parent game process must have died, exiting for cleanup

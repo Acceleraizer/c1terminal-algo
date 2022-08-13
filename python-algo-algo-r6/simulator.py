@@ -54,7 +54,7 @@ class Simunit:
         return f"{'Enemy' if self.unit.player_index else 'Our' } {self.unit.unit_type} {self.count}x, [{self.unit.x},{self.unit.y}]"
 
 class Simulator:
-    def __init__(self, config, game_state : gamelib.GameState, perspective=0, clear=[], ignore_remove=False):
+    def __init__(self, config, game_state : gamelib.GameState, perspective=0, clear=[]):
         global WALL, SUPPORT, TURRET, SCOUT, DEMOLISHER, INTERCEPTOR, MP, SP, REMOVE, UPGRADE
         WALL = config["unitInformation"][0]["shorthand"]
         SUPPORT = config["unitInformation"][1]["shorthand"]
@@ -76,7 +76,7 @@ class Simulator:
         self.our_unit_support_pairs = deque()
         self.graveyard:List[Simunit] = []
 
-        self.game_state:gamelib.GameState = self.clone_game(game_state, perspective, clear, ignore_remove)
+        self.game_state:gamelib.GameState = self.clone_game(game_state, perspective, clear)
 
         self.tick = 0
         self.damage = 0
@@ -93,7 +93,7 @@ class Simulator:
         # printd(f"Turrets: {self.their_turrets}")
 
     # if perspective==1 we swap all structure player alignments
-    def clone_game(self, game_state:gamelib.GameState, perspective, clear, ignore_remove):
+    def clone_game(self, game_state:gamelib.GameState, perspective, clear):
         clone = gamelib.GameState.__new__(gamelib.GameState)
         clone.game_map = gamelib.GameMap(game_state.config)
         # convert units to simunits
@@ -106,7 +106,7 @@ class Simulator:
                             # printd("IGNORING UNIT AT ", (x,y))
                             continue
                         for unit in game_state.game_map[x,y]:
-                            if not unit.stationary or (unit.pending_removal and not ignore_remove): 
+                            if not unit.stationary or unit.pending_removal:
                                 continue
                             
                             clonedunit = deepcopy(unit)
@@ -183,52 +183,17 @@ class Simulator:
         
         # printd(self.our_scouts)
             
-
-    def compute_path(self, simunit:Simunit):
-        x,y = simunit.unit.x, simunit.unit.y
-        path = self.pather.navigate_multiple_endpoints([x,y], 
-            self.game_state.game_map.edges[simunit.target_edge], 
-            self.game_state)
-        simunit.update_path(path)
-        simunit.repath = False
-
-
-    def sq_dist(self, location_1, location_2):
-        x1, y1 = location_1
-        x2, y2 = location_2
-
-        return (x1 - x2)**2 + (y1 - y2)**2
-    # returns a list of ticks where the unit will be in the blast radius
-    # by default enemy controls interceptor (so should use perspective=1)
-    def simulate_interceptor_blast(self, blast_loc, start_loc):
-        gameunit = gamelib.GameUnit(SCOUT, self.config, 2, x=start_loc[0], y=start_loc[1])
-        self.place_mobile_units(gameunit)
-        list_in_range = []
-        tick = 0
-        max_health = 0
-        if self.sq_dist(blast_loc, start_loc) <= 81:
-            list_in_range.append(tick)
-
-        while len(self.our_scouts) > 0:
-            tick += 1
-            self.apply_shielding()
-            max_health = max(max_health, self.our_scouts[0].base_health)
-            self.move_all_units()
-            loc = [gameunit.x, gameunit.y]
-            if self.sq_dist(blast_loc, loc) <= 81:
-                list_in_range.append(tick)
-            self.clean_graveyard()
-
-        return list_in_range, max_health
-            
-
     # True = dies
     # @timer
     def move_unit(self, simunit:Simunit):
         x,y = simunit.unit.x, simunit.unit.y
 
         if simunit.repath:
-            self.compute_path(simunit)
+            path = self.pather.navigate_multiple_endpoints([x,y], 
+                self.game_state.game_map.edges[simunit.target_edge], 
+                self.game_state)
+            simunit.update_path(path)
+            simunit.repath = False
             # self.pather.print_map()
             # if self.game_state.turn_number == 14:
             # self.print_path(simunit)
@@ -471,9 +436,6 @@ class Simulator:
             simunit.basecount = simunit.count
         for simunit in self.our_inters:
             simunit.basecount = simunit.count
-
-
-
 
 
     def print_path(self, simunit:Simunit):
