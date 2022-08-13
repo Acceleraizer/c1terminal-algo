@@ -1,0 +1,18 @@
+Random seed: 4911546080859691333
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Performing turn 0 of your custom algo strategy
+Performing turn 1 of your custom algo strategy
+Performing turn 2 of your custom algo strategy
+Performing turn 3 of your custom algo strategy
+cannot complete mid fort
+Performing turn 4 of your custom algo strategy
+cannot complete mid fort
+cannot complete late game shields
+Performing turn 5 of your custom algo strategy
+cannot complete late game shields
+Performing turn 6 of your custom algo strategy
+cannot complete late game shields
+Performing turn 7 of your custom algo strategy
+cannot complete late game shields
+Got EOF, parent game process must have died, exiting for cleanup

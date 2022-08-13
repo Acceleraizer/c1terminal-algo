@@ -1,0 +1,676 @@
+Random seed: 6493702251464162719
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+wall_l1, [[5, 9], [7, 9], [7, 8], [8, 7], [8, 6], [24, 12], [23, 11], [6, 10], [22, 10], [5, 9], [7, 9], [21, 9], [7, 8], [8, 8], [20, 8], [8, 7], [19, 7], [8, 6], [9, 6], [18, 6], [10, 5], [17, 5], [11, 4], [13, 4], [14, 4], [16, 4], [12, 3], [15, 3]]
+wall_l2, [[6, 10], [0, 13], [1, 13], [2, 13], [3, 13], [4, 13], [5, 13], [6, 13], [7, 13], [8, 13], [25, 13], [26, 13], [27, 13], [9, 12], [9, 11]]
+turret_l1, [[3, 12], [5, 12], [7, 12], [8, 12]]
+turret_l2, []
+support_l1, []
+support_l2, []
+wall_l1, [[22, 9], [20, 9], [20, 8], [19, 7], [19, 6], [3, 12], [4, 11], [21, 10], [5, 10], [22, 9], [20, 9], [6, 9], [20, 8], [19, 8], [7, 8], [19, 7], [8, 7], [19, 6], [18, 6], [9, 6], [17, 5], [10, 5], [16, 4], [14, 4], [13, 4], [11, 4], [15, 3], [12, 3]]
+wall_l2, [[21, 10], [27, 13], [26, 13], [25, 13], [24, 13], [23, 13], [22, 13], [21, 13], [20, 13], [19, 13], [2, 13], [1, 13], [0, 13], [18, 12], [18, 11]]
+turret_l1, [[24, 12], [22, 12], [20, 12], [19, 12]]
+turret_l2, []
+support_l1, []
+support_l2, []
+Performing turn 0 of your custom algo strategy
+ON REFLECTION
+, 0, {'wall_l1': [], 'wall_l2': [], 'turret_l1': [], 'turret_l2': [], 'support_l1': [], 'support_l2': []}
+after reflection: period = 5. predicted [0, 0, 0, 0] got [0.0, 0, 0, 0]
+Performing turn 1 of your custom algo strategy
+ON REFLECTION
+, 1, {'wall_l1': [[8, 6], [19, 6], [8, 7], [19, 7], [7, 8], [20, 8], [5, 9], [7, 9], [20, 9], [22, 9], [4, 10], [23, 10]], 'wall_l2': [[6, 10], [21, 10]], 'turret_l1': [], 'turret_l2': [], 'support_l1': [], 'support_l2': []}
+Cost: 59.5 False False False 8.8
+Performing turn 2 of your custom algo strategy
+ON REFLECTION
+, 2, {'wall_l1': [[8, 6], [19, 6], [8, 7], [19, 7], [7, 8], [20, 8], [5, 9], [7, 9], [20, 9], [22, 9], [4, 10], [23, 10]], 'wall_l2': [[6, 10], [21, 10]], 'turret_l1': [], 'turret_l2': [], 'support_l1': [], 'support_l2': []}
+Cost: 59.5 False False False 11.6
+Performing turn 3 of your custom algo strategy
+ON REFLECTION
+, 3, {'wall_l1': [[8, 6], [19, 6], [8, 7], [19, 7], [7, 8], [20, 8], [5, 9], [7, 9], [20, 9], [22, 9], [4, 10], [23, 10]], 'wall_l2': [[6, 10], [21, 10]], 'turret_l1': [], 'turret_l2': [], 'support_l1': [], 'support_l2': []}
+Cost: 59.5 False False True 5.5
+Performing turn 4 of your custom algo strategy
+ON REFLECTION
+, 4, {'wall_l1': [[8, 6], [19, 6], [8, 7], [19, 7], [7, 8], [20, 8], [5, 9], [7, 9], [20, 9], [22, 9], [4, 10], [23, 10]], 'wall_l2': [[6, 10], [21, 10]], 'turret_l1': [], 'turret_l2': [], 'support_l1': [], 'support_l2': []}
+Cost: 59.5 False False False 9.1
+Performing turn 5 of your custom algo strategy
+ON REFLECTION
+, 5, {'wall_l1': [[8, 6], [19, 6], [8, 7], [19, 7], [7, 8], [20, 8], [5, 9], [7, 9], [20, 9], [22, 9], [4, 10], [23, 10]], 'wall_l2': [[6, 10], [21, 10]], 'turret_l1': [], 'turret_l2': [], 'support_l1': [], 'support_l2': []}
+Cost: 59.5 False True False 11.8
+Performing turn 6 of your custom algo strategy
+ON REFLECTION
+, 6, {'wall_l1': [[8, 6], [19, 6], [8, 7], [19, 7], [7, 8], [20, 8], [5, 9], [7, 9], [20, 9], [22, 9], [4, 10], [23, 10]], 'wall_l2': [[6, 10], [21, 10]], 'turret_l1': [], 'turret_l2': [], 'support_l1': [], 'support_l2': []}
+Cost: 59.5 True True False 13.9
+Performing turn 7 of your custom algo strategy
+ON REFLECTION
+, 7, {'wall_l1': [[8, 6], [19, 6], [8, 7], [19, 7], [7, 8], [20, 8], [5, 9], [7, 9], [20, 9], [22, 9], [4, 10], [23, 10]], 'wall_l2': [[6, 10], [21, 10]], 'turret_l1': [], 'turret_l2': [], 'support_l1': [], 'support_l2': []}
+Cost: 59.5 True True True 5.7
+DECIDING ORIENTATION
+Could not spawn FF at location [22, 9]. Location is blocked.
+Could not spawn FF at location [20, 9]. Location is blocked.
+Could not spawn FF at location [20, 8]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [19, 6]. Location is blocked.
+Could not spawn FF at location [21, 10]. Location is blocked.
+Could not spawn FF at location [22, 9]. Location is blocked.
+Could not spawn FF at location [20, 9]. Location is blocked.
+Could not spawn FF at location [20, 8]. Location is blocked.
+Could not spawn FF at location [7, 8]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [8, 7]. Location is blocked.
+Could not spawn FF at location [19, 6]. Location is blocked.
+Could not spawn FF at location [21, 10]. Location is blocked.
+[13, 27], (8, 0, 35, 29.5)
+[14, 27], (8, 0, 19, 26.0)
+[13, 27], (0, 3, 26, 50.5)
+[14, 27], (25, 0, 17, 20.5)
+Could not spawn FF at location [5, 9]. Location is blocked.
+Could not spawn FF at location [7, 9]. Location is blocked.
+Could not spawn FF at location [7, 8]. Location is blocked.
+Could not spawn FF at location [8, 7]. Location is blocked.
+Could not spawn FF at location [8, 6]. Location is blocked.
+Could not spawn FF at location [6, 10]. Location is blocked.
+Could not spawn FF at location [5, 9]. Location is blocked.
+Could not spawn FF at location [7, 9]. Location is blocked.
+Could not spawn FF at location [7, 8]. Location is blocked.
+Could not spawn FF at location [20, 8]. Location is blocked.
+Could not spawn FF at location [8, 7]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [8, 6]. Location is blocked.
+Could not spawn FF at location [6, 10]. Location is blocked.
+[13, 27], (8, 8, 53, 118.5)
+True, (8, 8, 53, 118.5)
+[14, 27], (8, 8, 39, 111.5)
+False, (8, 8, 53, 118.5)
+[13, 27], (0, 2, 12, 39.5)
+(8, 8, 53, 118.5)
+[14, 27], (1, 3, 14, 46.0)
+(8, 8, 53, 118.5)
+wall_l1, [[5, 9], [7, 9], [7, 8], [8, 7], [8, 6], [24, 12], [23, 11], [6, 10], [22, 10], [5, 9], [7, 9], [21, 9], [7, 8], [8, 8], [20, 8], [8, 7], [19, 7], [8, 6], [9, 6], [18, 6], [10, 5], [17, 5], [11, 4], [13, 4], [14, 4], [16, 4], [12, 3], [15, 3]]
+wall_l2, [[6, 10], [0, 13], [1, 13], [2, 13], [3, 13], [4, 13], [5, 13], [6, 13], [7, 13], [8, 13], [25, 13], [26, 13], [27, 13], [9, 12], [9, 11]]
+turret_l1, [[3, 12], [5, 12], [7, 12], [8, 12]]
+turret_l2, []
+support_l1, []
+support_l2, []
+default better:, False, (25, 0, 17, 20.5), (8, 8, 53, 118.5)
+wall_l1, [[5, 9], [7, 9], [7, 8], [8, 7], [8, 6], [24, 12], [23, 11], [6, 10], [22, 10], [5, 9], [7, 9], [21, 9], [7, 8], [8, 8], [20, 8], [8, 7], [19, 7], [8, 6], [9, 6], [18, 6], [10, 5], [17, 5], [11, 4], [13, 4], [14, 4], [16, 4], [12, 3], [15, 3]]
+wall_l2, [[6, 10], [0, 13], [1, 13], [2, 13], [3, 13], [4, 13], [5, 13], [6, 13], [7, 13], [8, 13], [25, 13], [26, 13], [27, 13], [9, 12], [9, 11]]
+turret_l1, [[3, 12], [5, 12], [7, 12], [8, 12]]
+turret_l2, []
+support_l1, []
+support_l2, []
+Considering 1 to 3 demos
+Could not spawn FF at location [20, 8]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [7, 8]. Location is blocked.
+Could not spawn FF at location [8, 7]. Location is blocked.
+LEFT, {'demos': 1, 'scouts': 6, 'scout_loc': [13, 0], 'demo_loc': [14, 0]}, [0, 1, 0, 0]
+RIGHT, {'demos': 1, 'scouts': 6, 'scout_loc': [13, 0], 'demo_loc': [14, 0]}, (6, 0, 6, 6.0)
+[0, 1, 0, 0], [0, 1, 0, 0], WHY???
+cannot complete mid game shields
+cannot complete right extra
+ABOUT TO DESTROY
+, 7, {'wall_l1': [[8, 6], [19, 6], [8, 7], [19, 7], [7, 8], [20, 8], [5, 9], [7, 9], [20, 9], [22, 9], [4, 10], [23, 10], [3, 12], [4, 11], [5, 10], [6, 9], [19, 8], [18, 6], [9, 6], [17, 5], [10, 5], [16, 4], [14, 4], [13, 4], [11, 4], [15, 3], [12, 3], [24, 12], [23, 11], [22, 10], [21, 9], [8, 8], [9, 6], [18, 6], [10, 5], [17, 5], [11, 4], [13, 4], [14, 4], [16, 4], [12, 3], [15, 3], [24, 12], [23, 11], [22, 10], [21, 9], [8, 8], [9, 6], [18, 6], [10, 5], [17, 5], [11, 4], [13, 4], [14, 4], [16, 4], [12, 3], [15, 3], [20, 13], [21, 13], [22, 13]], 'wall_l2': [[6, 10], [21, 10], [27, 13], [26, 13], [25, 13], [24, 13], [23, 13], [22, 13], [21, 13], [20, 13], [19, 13], [2, 13], [1, 13], [0, 13], [18, 12], [18, 11], [0, 13], [1, 13], [2, 13], [3, 13], [4, 13], [5, 13], [6, 13], [7, 13], [8, 13], [25, 13], [26, 13], [27, 13], [9, 12], [9, 11], [0, 13], [1, 13], [2, 13], [3, 13], [4, 13], [5, 13], [6, 13], [7, 13], [8, 13], [25, 13], [26, 13], [27, 13], [9, 12], [9, 11]], 'turret_l1': [[24, 12], [22, 12], [20, 12], [19, 12], [3, 12], [5, 12], [7, 12], [8, 12], [3, 12], [5, 12], [7, 12], [8, 12]], 'turret_l2': [], 'support_l1': [[13, 3]], 'support_l2': []}
+cannot complete late game shields
+Performing turn 8 of your custom algo strategy
+ON REFLECTION
+, 8, {'wall_l1': [[12, 3], [15, 3], [11, 4], [13, 4], [14, 4], [16, 4], [10, 5], [17, 5], [8, 6], [9, 6], [18, 6], [8, 7], [19, 7], [7, 8], [8, 8], [20, 8], [5, 9], [7, 9], [20, 9], [21, 9], [4, 10], [22, 10], [23, 11], [24, 12], [20, 13], [21, 13], [22, 13]], 'wall_l2': [[6, 10], [21, 10], [9, 11], [9, 12], [0, 13], [1, 13], [2, 13], [3, 13], [4, 13], [5, 13], [6, 13], [7, 13], [8, 13], [25, 13], [26, 13], [27, 13]], 'turret_l1': [[3, 12], [5, 12], [7, 12], [8, 12]], 'turret_l2': [], 'support_l1': [[13, 3]], 'support_l2': []}
+Considering 1 to 3 demos
+Could not spawn FF at location [25, 13]. Location is blocked.
+Could not spawn FF at location [24, 12]. Location is blocked.
+Could not spawn FF at location [23, 11]. Location is blocked.
+Could not spawn FF at location [22, 10]. Location is blocked.
+Could not spawn FF at location [21, 9]. Location is blocked.
+Could not spawn FF at location [20, 8]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [18, 6]. Location is blocked.
+Could not spawn FF at location [17, 5]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [16, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+Could not spawn FF at location [2, 13]. Location is blocked.
+Could not spawn FF at location [3, 12]. Location is blocked.
+Could not spawn FF at location [7, 8]. Location is blocked.
+Could not spawn FF at location [8, 7]. Location is blocked.
+Could not spawn FF at location [9, 6]. Location is blocked.
+Could not spawn FF at location [10, 5]. Location is blocked.
+Could not spawn FF at location [11, 4]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+LEFT, {'demos': 1, 'scouts': 8, 'scout_loc': [14, 0], 'demo_loc': [15, 1]}, [0, 1, 0, 0]
+RIGHT, {'demos': 1, 'scouts': 8, 'scout_loc': [14, 0], 'demo_loc': [15, 1]}, (7, 1, 19, 18.0)
+[0, 1, 0, 0], [0, 1, 0, 0], WHY???
+cannot complete mid game shields
+cannot complete right extra
+ABOUT TO DESTROY
+, 8, {'wall_l1': [[12, 3], [15, 3], [11, 4], [13, 4], [14, 4], [16, 4], [10, 5], [17, 5], [8, 6], [9, 6], [18, 6], [8, 7], [19, 7], [7, 8], [8, 8], [20, 8], [5, 9], [7, 9], [20, 9], [21, 9], [4, 10], [22, 10], [23, 11], [24, 12], [21, 13], [22, 13], [23, 13]], 'wall_l2': [[6, 10], [21, 10], [9, 11], [9, 12], [0, 13], [1, 13], [2, 13], [3, 13], [4, 13], [5, 13], [6, 13], [7, 13], [8, 13], [25, 13], [26, 13], [27, 13], [20, 13]], 'turret_l1': [[3, 12], [5, 12], [7, 12], [8, 12]], 'turret_l2': [], 'support_l1': [[13, 3], [14, 3]], 'support_l2': []}
+cannot complete late game shields
+Performing turn 9 of your custom algo strategy
+ON REFLECTION
+, 9, {'wall_l1': [[12, 3], [15, 3], [11, 4], [13, 4], [14, 4], [16, 4], [10, 5], [17, 5], [8, 6], [9, 6], [18, 6], [8, 7], [19, 7], [7, 8], [8, 8], [20, 8], [5, 9], [7, 9], [20, 9], [21, 9], [4, 10], [22, 10], [23, 11], [24, 12], [21, 13], [22, 13], [23, 13]], 'wall_l2': [[6, 10], [21, 10], [9, 11], [9, 12], [0, 13], [1, 13], [2, 13], [3, 13], [4, 13], [5, 13], [6, 13], [7, 13], [8, 13], [20, 13], [25, 13], [26, 13], [27, 13]], 'turret_l1': [[3, 12], [5, 12], [7, 12], [8, 12]], 'turret_l2': [], 'support_l1': [[13, 3], [14, 3]], 'support_l2': []}
+Considering 1 to 4 demos
+Could not spawn FF at location [25, 13]. Location is blocked.
+Could not spawn FF at location [24, 12]. Location is blocked.
+Could not spawn FF at location [23, 11]. Location is blocked.
+Could not spawn FF at location [22, 10]. Location is blocked.
+Could not spawn FF at location [21, 9]. Location is blocked.
+Could not spawn FF at location [20, 8]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [18, 6]. Location is blocked.
+Could not spawn FF at location [17, 5]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [16, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+Could not spawn FF at location [2, 13]. Location is blocked.
+Could not spawn FF at location [3, 12]. Location is blocked.
+Could not spawn FF at location [7, 8]. Location is blocked.
+Could not spawn FF at location [8, 7]. Location is blocked.
+Could not spawn FF at location [9, 6]. Location is blocked.
+Could not spawn FF at location [10, 5]. Location is blocked.
+Could not spawn FF at location [11, 4]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+LEFT, {'demos': 3, 'scouts': 4, 'scout_loc': [14, 0], 'demo_loc': [13, 0]}, (1, 0, 4, 14.0)
+RIGHT, {'demos': 3, 'scouts': 4, 'scout_loc': [14, 0], 'demo_loc': [13, 0]}, (10, 0, 7, 9.5)
+(1, 0, 4, 14.0), [0, 1, 0, 0], WHY???
+cannot complete mid game shields
+cannot complete right extra
+ABOUT TO DESTROY
+, 9, {'wall_l1': [[12, 3], [15, 3], [11, 4], [13, 4], [14, 4], [16, 4], [10, 5], [17, 5], [8, 6], [9, 6], [18, 6], [8, 7], [19, 7], [7, 8], [8, 8], [20, 8], [5, 9], [7, 9], [20, 9], [21, 9], [4, 10], [22, 10], [23, 11], [24, 12], [21, 13], [22, 13], [23, 13], [24, 13]], 'wall_l2': [[6, 10], [21, 10], [9, 11], [9, 12], [0, 13], [1, 13], [2, 13], [3, 13], [4, 13], [5, 13], [6, 13], [7, 13], [8, 13], [20, 13], [25, 13], [26, 13], [27, 13]], 'turret_l1': [[3, 12], [5, 12], [7, 12], [8, 12]], 'turret_l2': [], 'support_l1': [[13, 3], [14, 3], [13, 2]], 'support_l2': []}
+cannot complete late game shields
+Performing turn 10 of your custom algo strategy
+ON REFLECTION
+, 10, {'wall_l1': [[12, 3], [15, 3], [11, 4], [13, 4], [14, 4], [16, 4], [10, 5], [17, 5], [8, 6], [9, 6], [11, 6], [18, 6], [8, 7], [19, 7], [7, 8], [8, 8], [20, 8], [5, 9], [7, 9], [20, 9], [21, 9], [4, 10], [22, 10], [23, 11], [24, 12], [21, 13], [22, 13], [23, 13], [24, 13]], 'wall_l2': [[6, 10], [21, 10], [9, 11], [9, 12], [0, 13], [1, 13], [2, 13], [3, 13], [4, 13], [5, 13], [6, 13], [7, 13], [8, 13], [20, 13], [25, 13], [26, 13], [27, 13]], 'turret_l1': [[3, 12], [5, 12], [7, 12], [8, 12]], 'turret_l2': [], 'support_l1': [[13, 2], [13, 3], [14, 3]], 'support_l2': []}
+Considering 1 to 5 demos
+Could not spawn FF at location [25, 13]. Location is blocked.
+Could not spawn FF at location [24, 12]. Location is blocked.
+Could not spawn FF at location [23, 11]. Location is blocked.
+Could not spawn FF at location [22, 10]. Location is blocked.
+Could not spawn FF at location [21, 9]. Location is blocked.
+Could not spawn FF at location [20, 8]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [18, 6]. Location is blocked.
+Could not spawn FF at location [17, 5]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [16, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+Could not spawn FF at location [2, 13]. Location is blocked.
+Could not spawn FF at location [3, 12]. Location is blocked.
+Could not spawn FF at location [7, 8]. Location is blocked.
+Could not spawn FF at location [8, 7]. Location is blocked.
+Could not spawn FF at location [9, 6]. Location is blocked.
+Could not spawn FF at location [10, 5]. Location is blocked.
+Could not spawn FF at location [11, 4]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+LEFT, {'demos': 5, 'scouts': 0, 'scout_loc': [14, 0], 'demo_loc': [13, 0]}, (5, 2, 28, 95.5)
+RIGHT, {'demos': 5, 'scouts': 0, 'scout_loc': [14, 0], 'demo_loc': [13, 0]}, (12, 0, 4, 11.0)
+(5, 2, 28, 95.5), [0, 1, 0, 0], WHY???
+cannot complete right extra
+Performing turn 11 of your custom algo strategy
+ON REFLECTION
+, 11, {'wall_l1': [[12, 3], [15, 3], [11, 4], [13, 4], [14, 4], [16, 4], [10, 5], [17, 5], [8, 6], [9, 6], [11, 6], [18, 6], [8, 7], [19, 7], [7, 8], [8, 8], [20, 8], [5, 9], [7, 9], [20, 9], [21, 9], [4, 10], [22, 10], [23, 11], [24, 12], [21, 13], [22, 13], [23, 13], [24, 13]], 'wall_l2': [[6, 10], [21, 10], [9, 11], [9, 12], [0, 13], [1, 13], [2, 13], [3, 13], [4, 13], [5, 13], [6, 13], [7, 13], [8, 13], [20, 13], [25, 13], [26, 13], [27, 13]], 'turret_l1': [[3, 12], [5, 12], [7, 12], [8, 12]], 'turret_l2': [], 'support_l1': [[13, 2], [14, 2], [13, 3], [14, 3]], 'support_l2': []}
+Considering 1 to 5 demos
+Could not spawn FF at location [25, 13]. Location is blocked.
+Could not spawn FF at location [24, 12]. Location is blocked.
+Could not spawn FF at location [23, 11]. Location is blocked.
+Could not spawn FF at location [22, 10]. Location is blocked.
+Could not spawn FF at location [21, 9]. Location is blocked.
+Could not spawn FF at location [20, 8]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [18, 6]. Location is blocked.
+Could not spawn FF at location [17, 5]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [16, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+Could not spawn FF at location [2, 13]. Location is blocked.
+Could not spawn FF at location [3, 12]. Location is blocked.
+Could not spawn FF at location [7, 8]. Location is blocked.
+Could not spawn FF at location [8, 7]. Location is blocked.
+Could not spawn FF at location [9, 6]. Location is blocked.
+Could not spawn FF at location [10, 5]. Location is blocked.
+Could not spawn FF at location [11, 4]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+LEFT, {'demos': 5, 'scouts': 1, 'scout_loc': [14, 0], 'demo_loc': [13, 0]}, (6, 2, 28, 95.5)
+RIGHT, {'demos': 5, 'scouts': 1, 'scout_loc': [14, 0], 'demo_loc': [13, 0]}, (12, 0, 4, 11.0)
+(6, 2, 28, 95.5), [0, 1, 0, 0], WHY???
+cannot complete right extra
+Performing turn 12 of your custom algo strategy
+ON REFLECTION
+, 12, {'wall_l1': [[12, 3], [15, 3], [11, 4], [13, 4], [14, 4], [16, 4], [10, 5], [17, 5], [8, 6], [9, 6], [11, 6], [18, 6], [8, 7], [19, 7], [7, 8], [8, 8], [20, 8], [5, 9], [7, 9], [20, 9], [21, 9], [4, 10], [22, 10], [23, 11], [24, 12]], 'wall_l2': [[6, 10], [21, 10], [9, 11], [9, 12], [0, 13], [1, 13], [2, 13], [3, 13], [4, 13], [6, 13], [7, 13], [8, 13], [20, 13], [21, 13], [22, 13], [23, 13], [24, 13], [25, 13], [26, 13], [27, 13]], 'turret_l1': [[3, 12], [5, 12], [7, 12], [8, 12]], 'turret_l2': [], 'support_l1': [[13, 2], [14, 2], [13, 3], [14, 3]], 'support_l2': []}
+Considering 1 to 5 demos
+Could not spawn FF at location [25, 13]. Location is blocked.
+Could not spawn FF at location [24, 12]. Location is blocked.
+Could not spawn FF at location [23, 11]. Location is blocked.
+Could not spawn FF at location [22, 10]. Location is blocked.
+Could not spawn FF at location [21, 9]. Location is blocked.
+Could not spawn FF at location [20, 8]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [18, 6]. Location is blocked.
+Could not spawn FF at location [17, 5]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [16, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+Could not spawn FF at location [2, 13]. Location is blocked.
+Could not spawn FF at location [3, 12]. Location is blocked.
+Could not spawn FF at location [7, 8]. Location is blocked.
+Could not spawn FF at location [8, 7]. Location is blocked.
+Could not spawn FF at location [9, 6]. Location is blocked.
+Could not spawn FF at location [10, 5]. Location is blocked.
+Could not spawn FF at location [11, 4]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+LEFT, {'demos': 5, 'scouts': 2, 'scout_loc': [14, 0], 'demo_loc': [13, 0]}, (5, 3, 28, 98.0)
+RIGHT, {'demos': 5, 'scouts': 2, 'scout_loc': [14, 0], 'demo_loc': [13, 0]}, (14, 0, 4, 11.0)
+(5, 3, 28, 98.0), [0, 1, 0, 0], WHY???
+cannot complete left extra
+Performing turn 13 of your custom algo strategy
+ON REFLECTION
+, 13, {'wall_l1': [[12, 3], [15, 3], [11, 4], [13, 4], [14, 4], [16, 4], [10, 5], [17, 5], [8, 6], [9, 6], [11, 6], [18, 6], [8, 7], [19, 7], [7, 8], [8, 8], [20, 8], [5, 9], [7, 9], [20, 9], [21, 9], [4, 10], [9, 10], [22, 10], [23, 11], [10, 12], [24, 12]], 'wall_l2': [[6, 10], [21, 10], [9, 11], [9, 12], [0, 13], [1, 13], [2, 13], [3, 13], [4, 13], [5, 13], [6, 13], [7, 13], [8, 13], [9, 13], [20, 13], [21, 13], [22, 13], [23, 13], [24, 13], [25, 13], [26, 13], [27, 13]], 'turret_l1': [[3, 12], [5, 12], [7, 12], [8, 12]], 'turret_l2': [], 'support_l1': [[13, 2], [14, 2], [13, 3], [14, 3]], 'support_l2': []}
+Considering 2 to 6 demos
+Could not spawn FF at location [25, 13]. Location is blocked.
+Could not spawn FF at location [24, 12]. Location is blocked.
+Could not spawn FF at location [23, 11]. Location is blocked.
+Could not spawn FF at location [22, 10]. Location is blocked.
+Could not spawn FF at location [21, 9]. Location is blocked.
+Could not spawn FF at location [20, 8]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [18, 6]. Location is blocked.
+Could not spawn FF at location [17, 5]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [16, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+Could not spawn FF at location [2, 13]. Location is blocked.
+Could not spawn FF at location [3, 12]. Location is blocked.
+Could not spawn FF at location [7, 8]. Location is blocked.
+Could not spawn FF at location [8, 7]. Location is blocked.
+Could not spawn FF at location [9, 6]. Location is blocked.
+Could not spawn FF at location [10, 5]. Location is blocked.
+Could not spawn FF at location [11, 4]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+LEFT, {'demos': 6, 'scouts': 0, 'scout_loc': [14, 0], 'demo_loc': [13, 0]}, (6, 4, 30, 107.5)
+RIGHT, {'demos': 6, 'scouts': 0, 'scout_loc': [14, 0], 'demo_loc': [13, 0]}, (12, 0, 6, 15.0)
+(6, 4, 30, 107.5), [0, 1, 0, 0], WHY???
+cannot complete left extra
+Performing turn 14 of your custom algo strategy
+ON REFLECTION
+, 14, {'wall_l1': [[12, 3], [15, 3], [11, 4], [13, 4], [14, 4], [16, 4], [10, 5], [17, 5], [8, 6], [9, 6], [11, 6], [18, 6], [8, 7], [19, 7], [7, 8], [8, 8], [20, 8], [5, 9], [7, 9], [20, 9], [21, 9], [4, 10], [22, 10], [23, 11], [24, 12]], 'wall_l2': [[6, 10], [9, 10], [21, 10], [9, 11], [10, 11], [9, 12], [10, 12], [0, 13], [1, 13], [2, 13], [3, 13], [4, 13], [5, 13], [6, 13], [7, 13], [8, 13], [9, 13], [20, 13], [21, 13], [22, 13], [23, 13], [24, 13], [25, 13], [26, 13], [27, 13]], 'turret_l1': [[3, 12], [5, 12], [7, 12], [8, 12]], 'turret_l2': [], 'support_l1': [[13, 2], [14, 2], [13, 3], [14, 3]], 'support_l2': []}
+Considering 2 to 6 demos
+Could not spawn FF at location [25, 13]. Location is blocked.
+Could not spawn FF at location [24, 12]. Location is blocked.
+Could not spawn FF at location [23, 11]. Location is blocked.
+Could not spawn FF at location [22, 10]. Location is blocked.
+Could not spawn FF at location [21, 9]. Location is blocked.
+Could not spawn FF at location [20, 8]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [18, 6]. Location is blocked.
+Could not spawn FF at location [17, 5]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [16, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+Could not spawn FF at location [2, 13]. Location is blocked.
+Could not spawn FF at location [3, 12]. Location is blocked.
+Could not spawn FF at location [7, 8]. Location is blocked.
+Could not spawn FF at location [8, 7]. Location is blocked.
+Could not spawn FF at location [9, 6]. Location is blocked.
+Could not spawn FF at location [10, 5]. Location is blocked.
+Could not spawn FF at location [11, 4]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+LEFT, {'demos': 6, 'scouts': 1, 'scout_loc': [14, 0], 'demo_loc': [13, 0]}, (7, 5, 31, 113.5)
+RIGHT, {'demos': 6, 'scouts': 1, 'scout_loc': [14, 0], 'demo_loc': [13, 0]}, (13, 0, 6, 15.0)
+(7, 5, 31, 113.5), [0, 1, 0, 0], WHY???
+ABOUT TO DESTROY
+, 14, {'wall_l1': [[12, 3], [15, 3], [11, 4], [13, 4], [14, 4], [16, 4], [10, 5], [17, 5], [8, 6], [9, 6], [11, 6], [18, 6], [8, 7], [19, 7], [7, 8], [8, 8], [20, 8], [5, 9], [7, 9], [20, 9], [21, 9], [4, 10], [22, 10], [23, 11], [24, 12]], 'wall_l2': [[6, 10], [9, 10], [21, 10], [9, 11], [10, 11], [9, 12], [10, 12], [0, 13], [1, 13], [2, 13], [3, 13], [4, 13], [5, 13], [6, 13], [7, 13], [8, 13], [9, 13], [20, 13], [21, 13], [22, 13], [23, 13], [24, 13], [25, 13], [26, 13], [27, 13]], 'turret_l1': [[3, 12], [5, 12], [7, 12], [8, 12]], 'turret_l2': [], 'support_l1': [[13, 2], [14, 2], [13, 3], [14, 3]], 'support_l2': []}
+cannot complete right extra
+Performing turn 15 of your custom algo strategy
+ON REFLECTION
+, 15, {'wall_l1': [[12, 3], [15, 3], [11, 4], [13, 4], [14, 4], [16, 4], [10, 5], [17, 5], [8, 6], [9, 6], [11, 6], [18, 6], [8, 7], [19, 7], [7, 8], [8, 8], [20, 8], [5, 9], [7, 9], [20, 9], [21, 9], [4, 10], [22, 10], [23, 11], [24, 12]], 'wall_l2': [[6, 10], [9, 10], [21, 10], [9, 11], [10, 11], [9, 12], [10, 12], [0, 13], [1, 13], [2, 13], [3, 13], [4, 13], [5, 13], [6, 13], [7, 13], [8, 13], [9, 13], [20, 13], [21, 13], [22, 13], [23, 13], [24, 13], [25, 13], [26, 13], [27, 13]], 'turret_l1': [[3, 12], [5, 12], [7, 12], [8, 12]], 'turret_l2': [], 'support_l1': [[13, 2], [14, 2], [13, 3], [14, 3]], 'support_l2': []}
+Considering 2 to 6 demos
+Could not spawn FF at location [25, 13]. Location is blocked.
+Could not spawn FF at location [24, 12]. Location is blocked.
+Could not spawn FF at location [23, 11]. Location is blocked.
+Could not spawn FF at location [22, 10]. Location is blocked.
+Could not spawn FF at location [21, 9]. Location is blocked.
+Could not spawn FF at location [20, 8]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [18, 6]. Location is blocked.
+Could not spawn FF at location [17, 5]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [16, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+Could not spawn FF at location [2, 13]. Location is blocked.
+Could not spawn FF at location [3, 12]. Location is blocked.
+Could not spawn FF at location [7, 8]. Location is blocked.
+Could not spawn FF at location [8, 7]. Location is blocked.
+Could not spawn FF at location [9, 6]. Location is blocked.
+Could not spawn FF at location [10, 5]. Location is blocked.
+Could not spawn FF at location [11, 4]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+LEFT, {'demos': 6, 'scouts': 1, 'scout_loc': [14, 0], 'demo_loc': [13, 0]}, (7, 6, 32, 119.5)
+RIGHT, {'demos': 6, 'scouts': 1, 'scout_loc': [14, 0], 'demo_loc': [13, 0]}, (13, 0, 6, 15.0)
+(7, 6, 32, 119.5), [0, 1, 0, 0], WHY???
+ABOUT TO DESTROY
+, 15, {'wall_l1': [[12, 3], [15, 3], [11, 4], [13, 4], [14, 4], [16, 4], [10, 5], [17, 5], [8, 6], [9, 6], [11, 6], [18, 6], [8, 7], [19, 7], [7, 8], [8, 8], [20, 8], [5, 9], [7, 9], [20, 9], [21, 9], [4, 10], [22, 10], [23, 11], [24, 12]], 'wall_l2': [[6, 10], [9, 10], [21, 10], [9, 11], [10, 11], [9, 12], [10, 12], [0, 13], [1, 13], [2, 13], [3, 13], [4, 13], [5, 13], [6, 13], [7, 13], [8, 13], [9, 13], [20, 13], [21, 13], [22, 13], [23, 13], [24, 13], [25, 13], [26, 13], [27, 13]], 'turret_l1': [[3, 12], [5, 12], [7, 12], [8, 12]], 'turret_l2': [], 'support_l1': [[13, 2], [14, 2], [13, 3], [14, 3]], 'support_l2': []}
+cannot complete right extra
+Performing turn 16 of your custom algo strategy
+ON REFLECTION
+, 16, {'wall_l1': [[12, 3], [15, 3], [11, 4], [13, 4], [14, 4], [16, 4], [10, 5], [17, 5], [8, 6], [9, 6], [11, 6], [18, 6], [8, 7], [19, 7], [7, 8], [8, 8], [20, 8], [5, 9], [7, 9], [20, 9], [21, 9], [4, 10], [22, 10], [23, 11], [24, 12]], 'wall_l2': [[6, 10], [9, 10], [21, 10], [9, 11], [10, 11], [9, 12], [10, 12], [0, 13], [1, 13], [2, 13], [3, 13], [4, 13], [5, 13], [6, 13], [7, 13], [8, 13], [9, 13], [20, 13], [21, 13], [22, 13], [23, 13], [24, 13], [25, 13], [26, 13], [27, 13]], 'turret_l1': [[3, 12], [5, 12], [7, 12], [8, 12], [20, 12]], 'turret_l2': [], 'support_l1': [[13, 2], [14, 2], [13, 3], [14, 3]], 'support_l2': []}
+Considering 2 to 6 demos
+Could not spawn FF at location [25, 13]. Location is blocked.
+Could not spawn FF at location [24, 12]. Location is blocked.
+Could not spawn FF at location [23, 11]. Location is blocked.
+Could not spawn FF at location [22, 10]. Location is blocked.
+Could not spawn FF at location [21, 9]. Location is blocked.
+Could not spawn FF at location [20, 8]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [18, 6]. Location is blocked.
+Could not spawn FF at location [17, 5]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [16, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+Could not spawn FF at location [2, 13]. Location is blocked.
+Could not spawn FF at location [3, 12]. Location is blocked.
+Could not spawn FF at location [7, 8]. Location is blocked.
+Could not spawn FF at location [8, 7]. Location is blocked.
+Could not spawn FF at location [9, 6]. Location is blocked.
+Could not spawn FF at location [10, 5]. Location is blocked.
+Could not spawn FF at location [11, 4]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+LEFT, {'demos': 6, 'scouts': 1, 'scout_loc': [14, 0], 'demo_loc': [13, 0]}, (7, 7, 33, 125.5)
+RIGHT, {'demos': 6, 'scouts': 1, 'scout_loc': [14, 0], 'demo_loc': [13, 0]}, (13, 0, 6, 15.0)
+(7, 7, 33, 125.5), [0, 1, 0, 0], WHY???
+ABOUT TO DESTROY
+, 16, {'wall_l1': [[12, 3], [15, 3], [11, 4], [13, 4], [14, 4], [16, 4], [10, 5], [17, 5], [8, 6], [9, 6], [11, 6], [18, 6], [8, 7], [19, 7], [7, 8], [8, 8], [20, 8], [5, 9], [7, 9], [20, 9], [21, 9], [4, 10], [22, 10], [23, 11], [24, 12]], 'wall_l2': [[6, 10], [9, 10], [21, 10], [9, 11], [10, 11], [9, 12], [10, 12], [0, 13], [1, 13], [2, 13], [3, 13], [4, 13], [5, 13], [6, 13], [7, 13], [8, 13], [9, 13], [20, 13], [21, 13], [22, 13], [23, 13], [24, 13], [25, 13], [26, 13], [27, 13]], 'turret_l1': [[3, 12], [5, 12], [7, 12], [8, 12], [20, 12]], 'turret_l2': [], 'support_l1': [[13, 2], [14, 2], [13, 3], [14, 3]], 'support_l2': []}
+cannot complete right extra
+Performing turn 17 of your custom algo strategy
+ON REFLECTION
+, 17, {'wall_l1': [[12, 3], [15, 3], [11, 4], [13, 4], [14, 4], [16, 4], [10, 5], [17, 5], [8, 6], [9, 6], [11, 6], [18, 6], [8, 7], [19, 7], [7, 8], [8, 8], [20, 8], [5, 9], [7, 9], [20, 9], [21, 9], [4, 10], [22, 10], [23, 11], [24, 12]], 'wall_l2': [[6, 10], [9, 10], [21, 10], [9, 11], [10, 11], [9, 12], [10, 12], [0, 13], [1, 13], [2, 13], [3, 13], [4, 13], [5, 13], [6, 13], [7, 13], [8, 13], [9, 13], [20, 13], [21, 13], [22, 13], [23, 13], [24, 13], [25, 13], [26, 13], [27, 13]], 'turret_l1': [[3, 12], [5, 12], [7, 12], [8, 12], [20, 12], [21, 12]], 'turret_l2': [], 'support_l1': [[13, 2], [14, 2], [13, 3], [14, 3]], 'support_l2': []}
+Considering 2 to 6 demos
+Could not spawn FF at location [25, 13]. Location is blocked.
+Could not spawn FF at location [24, 12]. Location is blocked.
+Could not spawn FF at location [23, 11]. Location is blocked.
+Could not spawn FF at location [22, 10]. Location is blocked.
+Could not spawn FF at location [21, 9]. Location is blocked.
+Could not spawn FF at location [20, 8]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [18, 6]. Location is blocked.
+Could not spawn FF at location [17, 5]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [16, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+Could not spawn FF at location [2, 13]. Location is blocked.
+Could not spawn FF at location [3, 12]. Location is blocked.
+Could not spawn FF at location [7, 8]. Location is blocked.
+Could not spawn FF at location [8, 7]. Location is blocked.
+Could not spawn FF at location [9, 6]. Location is blocked.
+Could not spawn FF at location [10, 5]. Location is blocked.
+Could not spawn FF at location [11, 4]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+LEFT, {'demos': 6, 'scouts': 2, 'scout_loc': [14, 0], 'demo_loc': [13, 0]}, (8, 7, 34, 129.5)
+RIGHT, {'demos': 6, 'scouts': 2, 'scout_loc': [14, 0], 'demo_loc': [13, 0]}, (14, 0, 7, 15.5)
+(8, 7, 34, 129.5), [0, 1, 0, 0], WHY???
+cannot complete right extra
+Performing turn 18 of your custom algo strategy
+ON REFLECTION
+, 18, {'wall_l1': [[12, 3], [15, 3], [11, 4], [13, 4], [14, 4], [16, 4], [10, 5], [17, 5], [8, 6], [9, 6], [11, 6], [18, 6], [8, 7], [19, 7], [7, 8], [8, 8], [20, 8], [5, 9], [7, 9], [20, 9], [21, 9], [4, 10], [22, 10], [23, 11], [24, 12]], 'wall_l2': [[6, 10], [9, 10], [21, 10], [9, 11], [10, 11], [9, 12], [10, 12], [0, 13], [1, 13], [2, 13], [3, 13], [6, 13], [7, 13], [8, 13], [9, 13], [20, 13], [21, 13], [22, 13], [23, 13], [24, 13], [25, 13], [26, 13], [27, 13]], 'turret_l1': [[3, 12], [5, 12], [7, 12], [8, 12], [20, 12], [21, 12], [22, 12]], 'turret_l2': [], 'support_l1': [[13, 2], [14, 2], [13, 3], [14, 3]], 'support_l2': []}
+Considering 2 to 6 demos
+Could not spawn FF at location [25, 13]. Location is blocked.
+Could not spawn FF at location [24, 12]. Location is blocked.
+Could not spawn FF at location [23, 11]. Location is blocked.
+Could not spawn FF at location [22, 10]. Location is blocked.
+Could not spawn FF at location [21, 9]. Location is blocked.
+Could not spawn FF at location [20, 8]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [18, 6]. Location is blocked.
+Could not spawn FF at location [17, 5]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [16, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+Could not spawn FF at location [2, 13]. Location is blocked.
+Could not spawn FF at location [3, 12]. Location is blocked.
+Could not spawn FF at location [7, 8]. Location is blocked.
+Could not spawn FF at location [8, 7]. Location is blocked.
+Could not spawn FF at location [9, 6]. Location is blocked.
+Could not spawn FF at location [10, 5]. Location is blocked.
+Could not spawn FF at location [11, 4]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+LEFT, {'demos': 6, 'scouts': 2, 'scout_loc': [14, 0], 'demo_loc': [13, 0]}, (8, 7, 34, 133.5)
+RIGHT, {'demos': 6, 'scouts': 2, 'scout_loc': [14, 0], 'demo_loc': [13, 0]}, (6, 8, 33, 129.5)
+(8, 7, 34, 133.5), [0, 1, 0, 0], WHY???
+cannot complete left extra
+Performing turn 19 of your custom algo strategy
+ON REFLECTION
+, 19, {'wall_l1': [[12, 3], [15, 3], [11, 4], [13, 4], [14, 4], [16, 4], [10, 5], [17, 5], [8, 6], [9, 6], [11, 6], [18, 6], [8, 7], [19, 7], [7, 8], [8, 8], [20, 8], [5, 9], [7, 9], [20, 9], [21, 9], [4, 10], [22, 10], [23, 11], [24, 12]], 'wall_l2': [[6, 10], [9, 10], [21, 10], [9, 11], [10, 11], [9, 12], [10, 12], [0, 13], [1, 13], [2, 13], [3, 13], [4, 13], [5, 13], [6, 13], [7, 13], [8, 13], [9, 13], [20, 13], [21, 13], [22, 13], [23, 13], [24, 13], [25, 13], [26, 13], [27, 13]], 'turret_l1': [[3, 12], [5, 12], [7, 12], [8, 12], [20, 12], [21, 12], [22, 12]], 'turret_l2': [], 'support_l1': [[13, 2], [14, 2], [13, 3], [14, 3]], 'support_l2': []}
+Considering 2 to 7 demos
+Could not spawn FF at location [25, 13]. Location is blocked.
+Could not spawn FF at location [24, 12]. Location is blocked.
+Could not spawn FF at location [23, 11]. Location is blocked.
+Could not spawn FF at location [22, 10]. Location is blocked.
+Could not spawn FF at location [21, 9]. Location is blocked.
+Could not spawn FF at location [20, 8]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [18, 6]. Location is blocked.
+Could not spawn FF at location [17, 5]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [16, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+Could not spawn FF at location [2, 13]. Location is blocked.
+Could not spawn FF at location [3, 12]. Location is blocked.
+Could not spawn FF at location [7, 8]. Location is blocked.
+Could not spawn FF at location [8, 7]. Location is blocked.
+Could not spawn FF at location [9, 6]. Location is blocked.
+Could not spawn FF at location [10, 5]. Location is blocked.
+Could not spawn FF at location [11, 4]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+LEFT, {'demos': 6, 'scouts': 3, 'scout_loc': [14, 0], 'demo_loc': [13, 0]}, (9, 7, 35, 137.5)
+RIGHT, {'demos': 6, 'scouts': 3, 'scout_loc': [14, 0], 'demo_loc': [13, 0]}, (15, 0, 5, 14.5)
+(9, 7, 35, 137.5), [0, 1, 0, 0], WHY???
+cannot complete left extra
+Performing turn 20 of your custom algo strategy
+ON REFLECTION
+, 20, {'wall_l1': [[12, 3], [15, 3], [11, 4], [13, 4], [14, 4], [16, 4], [10, 5], [17, 5], [8, 6], [9, 6], [11, 6], [18, 6], [8, 7], [19, 7], [7, 8], [8, 8], [20, 8], [5, 9], [7, 9], [20, 9], [21, 9], [4, 10], [22, 10], [23, 11], [24, 12]], 'wall_l2': [[6, 10], [9, 10], [21, 10], [9, 11], [10, 11], [9, 12], [10, 12], [0, 13], [1, 13], [2, 13], [3, 13], [4, 13], [5, 13], [6, 13], [7, 13], [8, 13], [9, 13], [20, 13], [21, 13], [22, 13], [23, 13], [24, 13], [25, 13], [26, 13], [27, 13]], 'turret_l1': [[3, 12], [4, 12], [5, 12], [7, 12], [8, 12], [20, 12], [21, 12], [22, 12]], 'turret_l2': [], 'support_l1': [[13, 2], [14, 2], [13, 3], [14, 3]], 'support_l2': []}
+Considering 2 to 7 demos
+Could not spawn FF at location [25, 13]. Location is blocked.
+Could not spawn FF at location [24, 12]. Location is blocked.
+Could not spawn FF at location [23, 11]. Location is blocked.
+Could not spawn FF at location [22, 10]. Location is blocked.
+Could not spawn FF at location [21, 9]. Location is blocked.
+Could not spawn FF at location [20, 8]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [18, 6]. Location is blocked.
+Could not spawn FF at location [17, 5]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [16, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+Could not spawn FF at location [2, 13]. Location is blocked.
+Could not spawn FF at location [3, 12]. Location is blocked.
+Could not spawn FF at location [7, 8]. Location is blocked.
+Could not spawn FF at location [8, 7]. Location is blocked.
+Could not spawn FF at location [9, 6]. Location is blocked.
+Could not spawn FF at location [10, 5]. Location is blocked.
+Could not spawn FF at location [11, 4]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+LEFT, {'demos': 6, 'scouts': 4, 'scout_loc': [14, 0], 'demo_loc': [13, 0]}, (10, 7, 36, 141.5)
+RIGHT, {'demos': 6, 'scouts': 4, 'scout_loc': [14, 0], 'demo_loc': [13, 0]}, (16, 0, 5, 14.5)
+(10, 7, 36, 141.5), [0, 1, 0, 0], WHY???
+cannot complete left extra
+Performing turn 21 of your custom algo strategy
+ON REFLECTION
+, 21, {'wall_l1': [[12, 3], [15, 3], [11, 4], [13, 4], [14, 4], [16, 4], [10, 5], [17, 5], [8, 6], [9, 6], [11, 6], [18, 6], [8, 7], [19, 7], [7, 8], [8, 8], [20, 8], [5, 9], [7, 9], [20, 9], [21, 9], [4, 10], [22, 10], [23, 11], [24, 12]], 'wall_l2': [[6, 10], [9, 10], [21, 10], [9, 11], [10, 11], [9, 12], [10, 12], [0, 13], [1, 13], [2, 13], [3, 13], [4, 13], [5, 13], [6, 13], [7, 13], [8, 13], [9, 13], [20, 13], [21, 13], [22, 13], [23, 13], [24, 13], [25, 13], [26, 13], [27, 13]], 'turret_l1': [[3, 12], [4, 12], [5, 12], [6, 12], [7, 12], [8, 12], [20, 12], [21, 12], [22, 12]], 'turret_l2': [], 'support_l1': [[13, 2], [14, 2], [13, 3], [14, 3]], 'support_l2': []}
+Considering 2 to 7 demos
+Could not spawn FF at location [25, 13]. Location is blocked.
+Could not spawn FF at location [24, 12]. Location is blocked.
+Could not spawn FF at location [23, 11]. Location is blocked.
+Could not spawn FF at location [22, 10]. Location is blocked.
+Could not spawn FF at location [21, 9]. Location is blocked.
+Could not spawn FF at location [20, 8]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [18, 6]. Location is blocked.
+Could not spawn FF at location [17, 5]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [16, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+Could not spawn FF at location [2, 13]. Location is blocked.
+Could not spawn FF at location [3, 12]. Location is blocked.
+Could not spawn FF at location [7, 8]. Location is blocked.
+Could not spawn FF at location [8, 7]. Location is blocked.
+Could not spawn FF at location [9, 6]. Location is blocked.
+Could not spawn FF at location [10, 5]. Location is blocked.
+Could not spawn FF at location [11, 4]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+LEFT, {'demos': 6, 'scouts': 4, 'scout_loc': [14, 0], 'demo_loc': [13, 0]}, (10, 7, 36, 141.5)
+RIGHT, {'demos': 6, 'scouts': 4, 'scout_loc': [14, 0], 'demo_loc': [13, 0]}, (15, 1, 5, 17.0)
+(10, 7, 36, 141.5), [0, 1, 0, 0], WHY???
+ABOUT TO DESTROY
+, 21, {'wall_l1': [[12, 3], [15, 3], [11, 4], [13, 4], [14, 4], [16, 4], [10, 5], [17, 5], [8, 6], [9, 6], [11, 6], [18, 6], [8, 7], [19, 7], [7, 8], [8, 8], [20, 8], [5, 9], [7, 9], [20, 9], [21, 9], [4, 10], [22, 10], [23, 11], [24, 12]], 'wall_l2': [[6, 10], [9, 10], [21, 10], [9, 11], [10, 11], [9, 12], [10, 12], [0, 13], [1, 13], [2, 13], [3, 13], [4, 13], [5, 13], [6, 13], [7, 13], [8, 13], [9, 13], [20, 13], [21, 13], [22, 13], [23, 13], [24, 13], [25, 13], [26, 13], [27, 13]], 'turret_l1': [[3, 12], [4, 12], [5, 12], [6, 12], [7, 12], [8, 12], [20, 12], [21, 12], [22, 12], [8, 11]], 'turret_l2': [], 'support_l1': [[13, 2], [14, 2], [13, 3], [14, 3]], 'support_l2': []}
+cannot complete right extra
+Performing turn 22 of your custom algo strategy
+ON REFLECTION
+, 22, {'wall_l1': [[12, 3], [15, 3], [11, 4], [13, 4], [14, 4], [16, 4], [10, 5], [17, 5], [8, 6], [9, 6], [11, 6], [18, 6], [8, 7], [19, 7], [7, 8], [8, 8], [20, 8], [5, 9], [7, 9], [20, 9], [21, 9], [4, 10], [22, 10], [23, 11], [24, 12]], 'wall_l2': [[6, 10], [9, 10], [21, 10], [9, 11], [10, 11], [9, 12], [10, 12], [0, 13], [1, 13], [2, 13], [3, 13], [4, 13], [5, 13], [6, 13], [7, 13], [8, 13], [9, 13], [20, 13], [21, 13], [22, 13], [23, 13], [24, 13], [25, 13], [26, 13], [27, 13]], 'turret_l1': [[8, 11], [3, 12], [4, 12], [5, 12], [6, 12], [7, 12], [8, 12], [20, 12], [21, 12], [22, 12]], 'turret_l2': [], 'support_l1': [[13, 2], [14, 2], [13, 3], [14, 3]], 'support_l2': []}
+Considering 2 to 7 demos
+Could not spawn FF at location [25, 13]. Location is blocked.
+Could not spawn FF at location [24, 12]. Location is blocked.
+Could not spawn FF at location [23, 11]. Location is blocked.
+Could not spawn FF at location [22, 10]. Location is blocked.
+Could not spawn FF at location [21, 9]. Location is blocked.
+Could not spawn FF at location [20, 8]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [18, 6]. Location is blocked.
+Could not spawn FF at location [17, 5]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [16, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+Could not spawn FF at location [2, 13]. Location is blocked.
+Could not spawn FF at location [3, 12]. Location is blocked.
+Could not spawn FF at location [7, 8]. Location is blocked.
+Could not spawn FF at location [8, 7]. Location is blocked.
+Could not spawn FF at location [9, 6]. Location is blocked.
+Could not spawn FF at location [10, 5]. Location is blocked.
+Could not spawn FF at location [11, 4]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+LEFT, {'demos': 6, 'scouts': 5, 'scout_loc': [14, 0], 'demo_loc': [13, 0]}, (11, 7, 36, 141.5)
+RIGHT, {'demos': 6, 'scouts': 5, 'scout_loc': [14, 0], 'demo_loc': [13, 0]}, (16, 1, 5, 17.0)
+(11, 7, 36, 141.5), [0, 1, 0, 0], WHY???
+ABOUT TO DESTROY
+, 22, {'wall_l1': [[12, 3], [15, 3], [11, 4], [13, 4], [14, 4], [16, 4], [10, 5], [17, 5], [8, 6], [9, 6], [11, 6], [18, 6], [8, 7], [19, 7], [7, 8], [8, 8], [20, 8], [5, 9], [7, 9], [20, 9], [21, 9], [4, 10], [22, 10], [23, 11], [24, 12]], 'wall_l2': [[6, 10], [9, 10], [21, 10], [9, 11], [10, 11], [9, 12], [10, 12], [0, 13], [1, 13], [2, 13], [3, 13], [4, 13], [5, 13], [6, 13], [7, 13], [8, 13], [9, 13], [20, 13], [21, 13], [22, 13], [23, 13], [24, 13], [25, 13], [26, 13], [27, 13]], 'turret_l1': [[8, 11], [3, 12], [4, 12], [5, 12], [6, 12], [7, 12], [8, 12], [20, 12], [21, 12], [22, 12]], 'turret_l2': [], 'support_l1': [[13, 2], [14, 2], [13, 3], [14, 3]], 'support_l2': []}
+cannot complete right extra
+Performing turn 23 of your custom algo strategy
+ON REFLECTION
+, 23, {'wall_l1': [[12, 3], [15, 3], [11, 4], [13, 4], [14, 4], [16, 4], [10, 5], [17, 5], [8, 6], [9, 6], [11, 6], [18, 6], [8, 7], [19, 7], [7, 8], [8, 8], [20, 8], [5, 9], [7, 9], [20, 9], [21, 9], [4, 10], [22, 10], [23, 11], [24, 12]], 'wall_l2': [[6, 10], [9, 10], [21, 10], [9, 11], [10, 11], [9, 12], [10, 12], [0, 13], [1, 13], [2, 13], [3, 13], [4, 13], [5, 13], [6, 13], [7, 13], [8, 13], [9, 13], [20, 13], [21, 13], [22, 13], [23, 13], [24, 13], [25, 13], [26, 13], [27, 13]], 'turret_l1': [[8, 11], [3, 12], [4, 12], [5, 12], [6, 12], [7, 12], [8, 12], [20, 12], [21, 12], [22, 12]], 'turret_l2': [], 'support_l1': [[13, 2], [14, 2], [13, 3], [14, 3]], 'support_l2': []}
+Considering 2 to 7 demos
+Could not spawn FF at location [25, 13]. Location is blocked.
+Could not spawn FF at location [24, 12]. Location is blocked.
+Could not spawn FF at location [23, 11]. Location is blocked.
+Could not spawn FF at location [22, 10]. Location is blocked.
+Could not spawn FF at location [21, 9]. Location is blocked.
+Could not spawn FF at location [20, 8]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [18, 6]. Location is blocked.
+Could not spawn FF at location [17, 5]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [16, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+Could not spawn FF at location [2, 13]. Location is blocked.
+Could not spawn FF at location [3, 12]. Location is blocked.
+Could not spawn FF at location [7, 8]. Location is blocked.
+Could not spawn FF at location [8, 7]. Location is blocked.
+Could not spawn FF at location [9, 6]. Location is blocked.
+Could not spawn FF at location [10, 5]. Location is blocked.
+Could not spawn FF at location [11, 4]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+LEFT, {'demos': 6, 'scouts': 5, 'scout_loc': [14, 0], 'demo_loc': [13, 0]}, (11, 7, 36, 141.5)
+RIGHT, {'demos': 6, 'scouts': 5, 'scout_loc': [14, 0], 'demo_loc': [13, 0]}, (16, 1, 5, 17.0)
+(11, 7, 36, 141.5), [0, 1, 0, 0], WHY???
+ABOUT TO DESTROY
+, 23, {'wall_l1': [[12, 3], [15, 3], [11, 4], [13, 4], [14, 4], [16, 4], [10, 5], [17, 5], [8, 6], [9, 6], [11, 6], [18, 6], [8, 7], [19, 7], [7, 8], [8, 8], [20, 8], [5, 9], [7, 9], [20, 9], [21, 9], [4, 10], [22, 10], [23, 11], [24, 12]], 'wall_l2': [[6, 10], [9, 10], [21, 10], [9, 11], [10, 11], [9, 12], [10, 12], [0, 13], [1, 13], [2, 13], [3, 13], [4, 13], [5, 13], [6, 13], [7, 13], [8, 13], [9, 13], [20, 13], [21, 13], [22, 13], [23, 13], [24, 13], [25, 13], [26, 13], [27, 13]], 'turret_l1': [[8, 11], [3, 12], [4, 12], [5, 12], [6, 12], [7, 12], [8, 12], [20, 12], [21, 12], [22, 12], [23, 12]], 'turret_l2': [], 'support_l1': [[13, 2], [14, 2], [13, 3], [14, 3]], 'support_l2': []}
+cannot complete late game shields
+Traceback (most recent call last):
+  File "C:\Users\wpwit\Desktop\coding_resources\correlation-one\repo\python-algo-algo\algo_strategy.py", line 924, in <module>
+    algo = AlgoStrategy()
+  File "C:\Users\wpwit\Desktop\coding_resources\correlation-one\repo\python-algo-algo\gamelib\algocore.py", line 74, in start
+    self.on_turn(game_state_string)
+  File "C:\Users\wpwit\Desktop\coding_resources\correlation-one\repo\python-algo-algo\algo_strategy.py", line 256, in on_turn
+    game_state.submit_turn()
+  File "C:\Users\wpwit\Desktop\coding_resources\correlation-one\repo\python-algo-algo\gamelib\game_state.py", line 212, in submit_turn
+    send_command(build_string)
+  File "C:\Users\wpwit\Desktop\coding_resources\correlation-one\repo\python-algo-algo\gamelib\util.py", line 31, in send_command
+    sys.stdout.flush()
+OSError: [Errno 22] Invalid argument
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='cp1252'>
+OSError: [Errno 22] Invalid argument
