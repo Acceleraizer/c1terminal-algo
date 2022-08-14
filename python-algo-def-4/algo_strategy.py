@@ -181,7 +181,7 @@ class AlgoStrategy(gamelib.AlgoCore):
         gamelib.debug_write("build_reactive_defenses based on simulation result:" + str(priority_left) + " " + str(priority_right))
         self.build_reactive_defenses(game_state, priority_left, priority_right)
 
-        # self.attack(game_state, best_spawn, best_config, score)
+        self.attack(game_state, best_spawn, best_config, score)
 
         
     def attack_simulation(self, game_state):
@@ -190,18 +190,19 @@ class AlgoStrategy(gamelib.AlgoCore):
         best_score = -float('inf')
         best_dmg = None
         
-        units = [[[SCOUT, game_state.number_affordable(SCOUT)]], 
+        configs = [[[SCOUT, game_state.number_affordable(SCOUT)]], 
         [[DEMOLISHER, game_state.number_affordable(DEMOLISHER)]],
         [[SCOUT, game_state.number_affordable(SCOUT) // 2], [DEMOLISHER, game_state.number_affordable(DEMOLISHER) // 2]]] 
-        configs = []
 
         for unique_spawn_point in [[12, 1], [15, 1]]:
             for config in configs:
                 sim = Simulator(self.config, game_state)
                 for unit in config:
-                    sim.place_mobile_units([config + unique_spawn_point])
+                    gamelib.debug_write([unit + [unique_spawn_point]])
+                    sim.place_mobile_units([unit + [unique_spawn_point]])
                 dmg, turrets, structures = sim.simulate()
-                score =  3 * dmg  + 2 * turrets - game_state.number_affordable(SCOUT)
+                score =  7 * dmg  + 11 * turrets - 3 * game_state.number_affordable(SCOUT)
+                gamelib.debug_write('attack sim:', dmg, turrets, structures, game_state.number_affordable(SCOUT), score)
 
                 if dmg == None:
                     dmg = 0
@@ -209,8 +210,8 @@ class AlgoStrategy(gamelib.AlgoCore):
                 if turrets == None:
                     turrets = 0  
 
-                if dmg > game_state.enemy_health:
-                    score = 10000
+                if structures == None:
+                    score = 0
 
                 if score >= best_score:
                     best_score = score
@@ -220,10 +221,10 @@ class AlgoStrategy(gamelib.AlgoCore):
 
         return best_spawn, best_config, best_dmg, best_score
 
-    # def attack(self, game_state, best_spawn, best_config, score):
-    #     if score > 0:
-    #         for unit in config:
-    #             game_state.attempt_spawn(best_config[0], best_spawn, best_config[1])
+    def attack(self, game_state, best_spawn, best_config, score):
+        if score > 0:
+            for unit in best_config:
+                game_state.attempt_spawn(unit[0], best_spawn, unit[1])
 
 
     def support(self, game_state):
@@ -251,14 +252,17 @@ class AlgoStrategy(gamelib.AlgoCore):
             return (left, right)
 
     def build_reactive_defenses(self, game_state, priority_left, priority_right):
-
         flip_left = lambda num : num
         flip_right = lambda num : 27 - num
         allocate = lambda total, left, right : ((total * left) / (left + right), (total * right) / (left + right))
 
 
         # Allocate resources to the left and right
-        res_left, res_right = allocate(game_state.get_resource(0), priority_left, priority_right) 
+        res_right, res_left = 0, 0
+        if priority_left + priority_right < 1:
+            res_left, res_right = game_state.get_resource(0) / 2, game_state.get_resource(0) / 2
+        else:
+            res_left, res_right = allocate(game_state.get_resource(0), priority_left, priority_right) 
 
         for level, level_func in enumerate(self.levels):
             # Build up to right

@@ -1,0 +1,159 @@
+Random seed: 7198319008235063946
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Performing turn 0 of your custom algo strategy
+[['PI', 5, [12, 1]]]
+Execution time of <simulate>: 27.1366 ms
+attack sim:, 5, 0, 0, 5, 45
+[['EI', 1, [12, 1]]]
+Execution time of <simulate>: 29.8743 ms
+attack sim:, 1, 0, 0, 5, -3
+[['PI', 2, [12, 1]]]
+[['EI', 0, [12, 1]]]
+Execution time of <simulate>: 12.8588 ms
+attack sim:, 0, 0, 0, 5, -15
+[['PI', 5, [15, 1]]]
+Execution time of <simulate>: 15.1535 ms
+attack sim:, 5, 0, 0, 5, 45
+[['EI', 1, [15, 1]]]
+Execution time of <simulate>: 17.5026 ms
+attack sim:, 1, 0, 0, 5, -3
+[['PI', 2, [15, 1]]]
+[['EI', 0, [15, 1]]]
+Execution time of <simulate>: 11.3931 ms
+attack sim:, 0, 0, 0, 5, -15
+opponent attack simulation
+Execution time of <simulate>: 16.2453 ms
+Execution time of <simulate>: 16.3555 ms
+Execution time of <simulate>: 11.9478 ms
+Execution time of <simulate>: 16.5887 ms
+Execution time of <simulate>: 10.6997 ms
+Execution time of <simulate>: 19.6887 ms
+Execution time of <simulate>: 24.796 ms
+build_reactive_defenses based on simulation result:4 2
+return
+returned
+Performing turn 1 of your custom algo strategy
+[['PI', 5, [12, 1]]]
+Execution time of <simulate>: 36.7413 ms
+attack sim:, 0, 0, 0, 5, -15
+[['EI', 1, [12, 1]]]
+Execution time of <simulate>: 24.2959 ms
+attack sim:, 0, 0, 0, 5, -15
+[['PI', 2, [12, 1]]]
+[['EI', 0, [12, 1]]]
+Execution time of <simulate>: 25.2111 ms
+attack sim:, 0, 0, 0, 5, -15
+[['PI', 5, [15, 1]]]
+Execution time of <simulate>: 26.2516 ms
+attack sim:, 0, 0, 0, 5, -15
+[['EI', 1, [15, 1]]]
+Execution time of <simulate>: 21.8289 ms
+attack sim:, 0, 1, 1, 5, -7
+[['PI', 2, [15, 1]]]
+[['EI', 0, [15, 1]]]
+Execution time of <simulate>: 23.0507 ms
+attack sim:, 0, 0, 0, 5, -15
+opponent attack simulation
+Execution time of <simulate>: 41.6002 ms
+Execution time of <simulate>: 20.061 ms
+Execution time of <simulate>: 9.8807 ms
+Execution time of <simulate>: 19.8324 ms
+Execution time of <simulate>: 18.1243 ms
+Execution time of <simulate>: 13.757 ms
+Execution time of <simulate>: 15.9955 ms
+build_reactive_defenses based on simulation result:1 7
+return
+returned
+Performing turn 2 of your custom algo strategy
+[['PI', 8, [12, 1]]]
+Execution time of <simulate>: 45.2256 ms
+attack sim:, 3, 0, 0, 8, 12
+[['EI', 2, [12, 1]]]
+Execution time of <simulate>: 31.1856 ms
+attack sim:, 1, 1, 1, 8, -4
+[['PI', 4, [12, 1]]]
+[['EI', 1, [12, 1]]]
+Execution time of <simulate>: 23.419 ms
+attack sim:, 0, 0, 0, 8, -24
+[['PI', 8, [15, 1]]]
+Execution time of <simulate>: 31.1227 ms
+attack sim:, 4, 1, 1, 8, 32
+[['EI', 2, [15, 1]]]
+Execution time of <simulate>: 33.5469 ms
+attack sim:, 2, 1, 1, 8, 8
+[['PI', 4, [15, 1]]]
+[['EI', 1, [15, 1]]]
+Execution time of <simulate>: 26.3128 ms
+attack sim:, 0, 1, 1, 8, -16
+opponent attack simulation
+Execution time of <simulate>: 26.0198 ms
+Execution time of <simulate>: 18.293 ms
+Execution time of <simulate>: 19.9756 ms
+Execution time of <simulate>: 21.2279 ms
+build_reactive_defenses based on simulation result:5 7
+return
+returned
+Performing turn 3 of your custom algo strategy
+[['PI', 5, [12, 1]]]
+Execution time of <simulate>: 25.8184 ms
+attack sim:, 0, 0, 0, 5, -15
+[['EI', 1, [12, 1]]]
+Execution time of <simulate>: 23.3724 ms
+attack sim:, 0, 0, 0, 5, -15
+[['PI', 2, [12, 1]]]
+[['EI', 0, [12, 1]]]
+Execution time of <simulate>: 23.8226 ms
+attack sim:, 0, 0, 0, 5, -15
+[['PI', 5, [15, 1]]]
+Execution time of <simulate>: 22.0109 ms
+attack sim:, 5, 0, 0, 5, 45
+[['EI', 1, [15, 1]]]
+Execution time of <simulate>: 23.1125 ms
+attack sim:, 1, 0, 0, 5, -3
+[['PI', 2, [15, 1]]]
+[['EI', 0, [15, 1]]]
+Execution time of <simulate>: 20.1225 ms
+attack sim:, 0, 0, 0, 5, -15
+opponent attack simulation
+Execution time of <simulate>: 24.4127 ms
+Execution time of <simulate>: 29.6957 ms
+Execution time of <simulate>: 24.6012 ms
+Execution time of <simulate>: 13.8106 ms
+Execution time of <simulate>: 36.1373 ms
+Execution time of <simulate>: 38.5196 ms
+Execution time of <simulate>: 33.882 ms
+build_reactive_defenses based on simulation result:7 2
+return
+returned
+Performing turn 4 of your custom algo strategy
+[['PI', 5, [12, 1]]]
+Execution time of <simulate>: 30.271 ms
+attack sim:, 0, 0, 0, 5, -15
+[['EI', 1, [12, 1]]]
+Traceback (most recent call last):
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/algo_strategy.py", line 383, in <module>
+    algo.start()
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/gamelib/algocore.py", line 74, in start
+    self.on_turn(game_state_string)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/algo_strategy.py", line 127, in on_turn
+    self.starter_strategy(game_state)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/algo_strategy.py", line 164, in starter_strategy
+    best_spawn, best_config, dmg, score = self.attack_simulation(game_state)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/algo_strategy.py", line 203, in attack_simulation
+    dmg, turrets, structures = sim.simulate()
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/gamelib/util.py", line 48, in inner
+    ret = func(*args, **kwargs)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/simulator.py", line 250, in simulate
+    self.simulate_tick()
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/simulator.py", line 265, in simulate_tick
+    struct_destroyed =  self.resolve_attacks()
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/simulator.py", line 304, in resolve_attacks
+    struct_destroyed = self.resolve_attacks_per_list(self.our_demos) or struct_destroyed
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/simulator.py", line 315, in resolve_attacks_per_list
+    target:Simunit = self.get_target(simunit)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/simulator.py", line 177, in get_target
+    possible_locations = self.game_state.game_map.get_locations_in_range(attacker_location, attacking_unit.unit.attackRange)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/gamelib/game_map.py", line 217, in get_locations_in_range
+    if self.in_arena_bounds(new_location) and self.sq_distance_between_locations(location, new_location) < (radius + getHitRadius)**2:
+KeyboardInterrupt

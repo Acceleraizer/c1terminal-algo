@@ -1,0 +1,552 @@
+Random seed: 4454489175210284686
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Performing turn 0 of your custom algo strategy
+[['PI', 5, [12, 1]]]
+Execution time of <simulate>: 50.8943 ms
+attack sim:, 5, 0, 0, 5, 5
+[['EI', 1, [12, 1]]]
+Execution time of <simulate>: 35.3556 ms
+attack sim:, 1, 0, 0, 5, -7
+[['PI', 2, [12, 1]]]
+[['EI', 0, [12, 1]]]
+Execution time of <simulate>: 8.241 ms
+attack sim:, 0, 0, 0, 5, -10
+[['PI', 5, [15, 1]]]
+Execution time of <simulate>: 9.8651 ms
+attack sim:, 5, 0, 0, 5, 5
+[['EI', 1, [15, 1]]]
+Execution time of <simulate>: 11.0055 ms
+attack sim:, 1, 0, 0, 5, -7
+[['PI', 2, [15, 1]]]
+[['EI', 0, [15, 1]]]
+Execution time of <simulate>: 5.2618 ms
+attack sim:, 0, 0, 0, 5, -10
+opponent attack simulation
+Execution time of <simulate>: 12.3403 ms
+Execution time of <simulate>: 20.7792 ms
+Execution time of <simulate>: 18.8948 ms
+Execution time of <simulate>: 19.2227 ms
+Execution time of <simulate>: 19.9222 ms
+Execution time of <simulate>: 29.4101 ms
+Execution time of <simulate>: 37.8165 ms
+build_reactive_defenses based on simulation result:4 1
+return
+returned
+Performing turn 1 of your custom algo strategy
+[['PI', 5, [12, 1]]]
+Execution time of <simulate>: 31.566 ms
+attack sim:, 0, 0, 0, 5, -10
+[['EI', 1, [12, 1]]]
+Execution time of <simulate>: 28.1067 ms
+attack sim:, 0, 0, 0, 5, -10
+[['PI', 2, [12, 1]]]
+[['EI', 0, [12, 1]]]
+Execution time of <simulate>: 28.8064 ms
+attack sim:, 0, 0, 0, 5, -10
+[['PI', 5, [15, 1]]]
+Execution time of <simulate>: 74.7692 ms
+attack sim:, 0, 0, 0, 5, -10
+[['EI', 1, [15, 1]]]
+Execution time of <simulate>: 72.7605 ms
+attack sim:, 0, 1, 1, 5, -8
+[['PI', 2, [15, 1]]]
+[['EI', 0, [15, 1]]]
+Execution time of <simulate>: 55.9626 ms
+attack sim:, 0, 0, 0, 5, -10
+opponent attack simulation
+Execution time of <simulate>: 45.192 ms
+Execution time of <simulate>: 15.6973 ms
+Execution time of <simulate>: 28.2793 ms
+Execution time of <simulate>: 17.7715 ms
+Execution time of <simulate>: 28.0159 ms
+Execution time of <simulate>: 21.0392 ms
+Execution time of <simulate>: 16.8253 ms
+build_reactive_defenses based on simulation result:1 7
+return
+returned
+Performing turn 2 of your custom algo strategy
+[['PI', 8, [12, 1]]]
+Execution time of <simulate>: 30.7515 ms
+attack sim:, 3, 0, 0, 8, -7
+[['EI', 2, [12, 1]]]
+Execution time of <simulate>: 42.6443 ms
+attack sim:, 1, 1, 1, 8, -11
+[['PI', 4, [12, 1]]]
+[['EI', 1, [12, 1]]]
+Execution time of <simulate>: 41.8321 ms
+attack sim:, 0, 0, 0, 8, -16
+[['PI', 8, [15, 1]]]
+Execution time of <simulate>: 49.5732 ms
+attack sim:, 4, 1, 1, 8, -2
+[['EI', 2, [15, 1]]]
+Execution time of <simulate>: 39.8303 ms
+attack sim:, 2, 1, 1, 8, -8
+[['PI', 4, [15, 1]]]
+[['EI', 1, [15, 1]]]
+Execution time of <simulate>: 32.5777 ms
+attack sim:, 0, 1, 1, 8, -14
+opponent attack simulation
+Execution time of <simulate>: 42.7829 ms
+Execution time of <simulate>: 39.0897 ms
+Execution time of <simulate>: 27.4339 ms
+Execution time of <simulate>: 25.3441 ms
+build_reactive_defenses based on simulation result:5 7
+return
+returned
+Performing turn 3 of your custom algo strategy
+[['PI', 11, [12, 1]]]
+Execution time of <simulate>: 35.2123 ms
+attack sim:, 7, 1, 1, 11, 1
+[['EI', 3, [12, 1]]]
+Execution time of <simulate>: 40.7299 ms
+attack sim:, 3, 1, 1, 11, -11
+[['PI', 5, [12, 1]]]
+[['EI', 1, [12, 1]]]
+Execution time of <simulate>: 35.7159 ms
+attack sim:, 0, 0, 0, 11, -22
+[['PI', 11, [15, 1]]]
+Execution time of <simulate>: 50.8068 ms
+attack sim:, 8, 1, 1, 11, 4
+[['EI', 3, [15, 1]]]
+Execution time of <simulate>: 34.299 ms
+attack sim:, 3, 1, 1, 11, -11
+[['PI', 5, [15, 1]]]
+[['EI', 1, [15, 1]]]
+Execution time of <simulate>: 29.5291 ms
+attack sim:, 0, 1, 1, 11, -20
+opponent attack simulation
+Execution time of <simulate>: 101.2426 ms
+Execution time of <simulate>: 77.2345 ms
+Execution time of <simulate>: 38.148 ms
+Execution time of <simulate>: 28.2324 ms
+Execution time of <simulate>: 28.1194 ms
+Execution time of <simulate>: 42.3974 ms
+Execution time of <simulate>: 82.8251 ms
+build_reactive_defenses based on simulation result:104 3
+return
+returned
+Performing turn 4 of your custom algo strategy
+[['PI', 5, [12, 1]]]
+Execution time of <simulate>: 37.1929 ms
+attack sim:, 0, 0, 0, 5, -10
+[['EI', 1, [12, 1]]]
+Execution time of <simulate>: 24.9297 ms
+attack sim:, 0, 0, 0, 5, -10
+[['PI', 2, [12, 1]]]
+[['EI', 0, [12, 1]]]
+Execution time of <simulate>: 30.7154 ms
+attack sim:, 0, 0, 0, 5, -10
+[['PI', 5, [15, 1]]]
+Execution time of <simulate>: 41.0095 ms
+attack sim:, 5, 0, 0, 5, 5
+[['EI', 1, [15, 1]]]
+Execution time of <simulate>: 30.045 ms
+attack sim:, 1, 0, 0, 5, -7
+[['PI', 2, [15, 1]]]
+[['EI', 0, [15, 1]]]
+Execution time of <simulate>: 25.2004 ms
+attack sim:, 0, 0, 0, 5, -10
+opponent attack simulation
+Execution time of <simulate>: 15.2141 ms
+Execution time of <simulate>: 36.0999 ms
+Execution time of <simulate>: 10.9214 ms
+Execution time of <simulate>: 27.6162 ms
+build_reactive_defenses based on simulation result:3 3
+return
+returned
+Performing turn 5 of your custom algo strategy
+[['PI', 5, [12, 1]]]
+Execution time of <simulate>: 31.5473 ms
+attack sim:, 0, 0, 0, 5, -10
+[['EI', 1, [12, 1]]]
+Execution time of <simulate>: 27.789 ms
+attack sim:, 0, 0, 0, 5, -10
+[['PI', 2, [12, 1]]]
+[['EI', 0, [12, 1]]]
+Execution time of <simulate>: 27.4252 ms
+attack sim:, 0, 0, 0, 5, -10
+[['PI', 5, [15, 1]]]
+Execution time of <simulate>: 31.5132 ms
+attack sim:, 0, 0, 0, 5, -10
+[['EI', 1, [15, 1]]]
+Execution time of <simulate>: 25.1228 ms
+attack sim:, 0, 0, 0, 5, -10
+[['PI', 2, [15, 1]]]
+[['EI', 0, [15, 1]]]
+Execution time of <simulate>: 27.5406 ms
+attack sim:, 0, 0, 0, 5, -10
+opponent attack simulation
+Execution time of <simulate>: 18.3581 ms
+Execution time of <simulate>: 50.7605 ms
+Execution time of <simulate>: 33.7276 ms
+build_reactive_defenses based on simulation result:2 3
+return
+returned
+Performing turn 6 of your custom algo strategy
+[['PI', 9, [12, 1]]]
+Execution time of <simulate>: 36.242 ms
+attack sim:, 4, 1, 1, 9, -4
+[['EI', 3, [12, 1]]]
+Execution time of <simulate>: 40.6386 ms
+attack sim:, 3, 1, 2, 9, -7
+[['PI', 4, [12, 1]]]
+[['EI', 1, [12, 1]]]
+Execution time of <simulate>: 28.771 ms
+attack sim:, 0, 0, 0, 9, -18
+[['PI', 9, [15, 1]]]
+Execution time of <simulate>: 33.9203 ms
+attack sim:, 0, 1, 1, 9, -16
+[['EI', 3, [15, 1]]]
+Execution time of <simulate>: 60.6604 ms
+attack sim:, 3, 2, 7, 9, -5
+[['PI', 4, [15, 1]]]
+[['EI', 1, [15, 1]]]
+Execution time of <simulate>: 27.1469 ms
+attack sim:, 0, 0, 0, 9, -18
+opponent attack simulation
+Execution time of <simulate>: 36.2402 ms
+Execution time of <simulate>: 62.0256 ms
+Execution time of <simulate>: 42.7845 ms
+Execution time of <simulate>: 32.9502 ms
+build_reactive_defenses based on simulation result:4 5
+return
+returned
+Performing turn 7 of your custom algo strategy
+[['PI', 11, [12, 1]]]
+Execution time of <simulate>: 60.9176 ms
+attack sim:, 7, 1, 1, 11, 1
+[['EI', 3, [12, 1]]]
+Execution time of <simulate>: 47.5034 ms
+attack sim:, 3, 1, 2, 11, -11
+[['PI', 5, [12, 1]]]
+[['EI', 1, [12, 1]]]
+Execution time of <simulate>: 27.3411 ms
+attack sim:, 0, 0, 0, 11, -22
+[['PI', 11, [15, 1]]]
+Execution time of <simulate>: 46.8234 ms
+attack sim:, 1, 1, 2, 11, -17
+[['EI', 3, [15, 1]]]
+Execution time of <simulate>: 92.0063 ms
+attack sim:, 3, 2, 7, 11, -9
+[['PI', 5, [15, 1]]]
+[['EI', 1, [15, 1]]]
+Execution time of <simulate>: 38.4773 ms
+attack sim:, 0, 0, 0, 11, -22
+opponent attack simulation
+Execution time of <simulate>: 24.1786 ms
+Execution time of <simulate>: 18.1355 ms
+Execution time of <simulate>: 33.2697 ms
+Execution time of <simulate>: 54.6772 ms
+build_reactive_defenses based on simulation result:11 5
+return
+returned
+Performing turn 8 of your custom algo strategy
+[['PI', 5, [12, 1]]]
+Execution time of <simulate>: 32.6895 ms
+attack sim:, 5, 0, 0, 5, 5
+[['EI', 1, [12, 1]]]
+Execution time of <simulate>: 35.0296 ms
+attack sim:, 1, 0, 1, 5, -7
+[['PI', 2, [12, 1]]]
+[['EI', 0, [12, 1]]]
+Execution time of <simulate>: 24.6567 ms
+attack sim:, 0, 0, 0, 5, -10
+[['PI', 5, [15, 1]]]
+Execution time of <simulate>: 25.4351 ms
+attack sim:, 0, 0, 0, 5, -10
+[['EI', 1, [15, 1]]]
+Execution time of <simulate>: 28.5156 ms
+attack sim:, 0, 0, 0, 5, -10
+[['PI', 2, [15, 1]]]
+[['EI', 0, [15, 1]]]
+Execution time of <simulate>: 28.7506 ms
+attack sim:, 0, 0, 0, 5, -10
+opponent attack simulation
+Execution time of <simulate>: 12.8477 ms
+Execution time of <simulate>: 36.9368 ms
+Execution time of <simulate>: 42.2139 ms
+Execution time of <simulate>: 11.0037 ms
+build_reactive_defenses based on simulation result:1 3
+return
+returned
+Performing turn 9 of your custom algo strategy
+[['PI', 5, [12, 1]]]
+Execution time of <simulate>: 31.706 ms
+attack sim:, 0, 0, 0, 5, -10
+[['EI', 1, [12, 1]]]
+Execution time of <simulate>: 41.059 ms
+attack sim:, 0, 0, 0, 5, -10
+[['PI', 2, [12, 1]]]
+[['EI', 0, [12, 1]]]
+Execution time of <simulate>: 42.52 ms
+attack sim:, 0, 0, 0, 5, -10
+[['PI', 5, [15, 1]]]
+Execution time of <simulate>: 29.2218 ms
+attack sim:, 0, 0, 0, 5, -10
+[['EI', 1, [15, 1]]]
+Execution time of <simulate>: 28.8295 ms
+attack sim:, 0, 0, 0, 5, -10
+[['PI', 2, [15, 1]]]
+[['EI', 0, [15, 1]]]
+Execution time of <simulate>: 30.4056 ms
+attack sim:, 0, 0, 0, 5, -10
+opponent attack simulation
+Execution time of <simulate>: 55.9694 ms
+Execution time of <simulate>: 55.0171 ms
+build_reactive_defenses based on simulation result:0 2
+return
+returned
+Performing turn 10 of your custom algo strategy
+[['PI', 10, [12, 1]]]
+Execution time of <simulate>: 60.2537 ms
+attack sim:, 0, 1, 1, 10, -18
+[['EI', 3, [12, 1]]]
+Execution time of <simulate>: 73.4076 ms
+attack sim:, 3, 2, 3, 10, -7
+[['PI', 5, [12, 1]]]
+[['EI', 1, [12, 1]]]
+Execution time of <simulate>: 38.4904 ms
+attack sim:, 0, 0, 0, 10, -20
+[['PI', 10, [15, 1]]]
+Execution time of <simulate>: 42.2826 ms
+attack sim:, 0, 1, 2, 10, -18
+[['EI', 3, [15, 1]]]
+Execution time of <simulate>: 62.9516 ms
+attack sim:, 3, 2, 7, 10, -7
+[['PI', 5, [15, 1]]]
+[['EI', 1, [15, 1]]]
+Execution time of <simulate>: 47.7543 ms
+attack sim:, 0, 0, 0, 10, -20
+opponent attack simulation
+Execution time of <simulate>: 54.4277 ms
+Execution time of <simulate>: 67.5146 ms
+build_reactive_defenses based on simulation result:2 3
+return
+returned
+Performing turn 11 of your custom algo strategy
+[['PI', 13, [12, 1]]]
+Execution time of <simulate>: 54.6863 ms
+attack sim:, 4, 1, 1, 13, -12
+[['EI', 4, [12, 1]]]
+Execution time of <simulate>: 48.5655 ms
+attack sim:, 4, 2, 3, 13, -10
+[['PI', 6, [12, 1]]]
+[['EI', 2, [12, 1]]]
+Execution time of <simulate>: 35.3541 ms
+attack sim:, 0, 1, 1, 13, -24
+[['PI', 13, [15, 1]]]
+Execution time of <simulate>: 43.2703 ms
+attack sim:, 3, 1, 2, 13, -15
+[['EI', 4, [15, 1]]]
+Execution time of <simulate>: 59.8667 ms
+attack sim:, 4, 2, 7, 13, -10
+[['PI', 6, [15, 1]]]
+[['EI', 2, [15, 1]]]
+Execution time of <simulate>: 137.4401 ms
+attack sim:, 1, 2, 7, 13, -19
+opponent attack simulation
+Execution time of <simulate>: 44.5189 ms
+Execution time of <simulate>: 68.586 ms
+build_reactive_defenses based on simulation result:9 2
+return
+returned
+Performing turn 12 of your custom algo strategy
+[['PI', 16, [12, 1]]]
+Execution time of <simulate>: 61.0775 ms
+attack sim:, 8, 2, 2, 16, -4
+[['EI', 5, [12, 1]]]
+Execution time of <simulate>: 77.2965 ms
+attack sim:, 5, 2, 3, 16, -13
+[['PI', 8, [12, 1]]]
+[['EI', 2, [12, 1]]]
+Execution time of <simulate>: 56.3257 ms
+attack sim:, 0, 1, 1, 16, -30
+[['PI', 16, [15, 1]]]
+Execution time of <simulate>: 82.3229 ms
+attack sim:, 9, 2, 6, 16, -1
+[['EI', 5, [15, 1]]]
+Execution time of <simulate>: 82.0324 ms
+attack sim:, 5, 2, 7, 16, -13
+[['PI', 8, [15, 1]]]
+[['EI', 2, [15, 1]]]
+Execution time of <simulate>: 62.8469 ms
+attack sim:, 1, 2, 7, 16, -25
+opponent attack simulation
+Execution time of <simulate>: 50.2403 ms
+Execution time of <simulate>: 94.8243 ms
+Execution time of <simulate>: 48.7524 ms
+build_reactive_defenses based on simulation result:12 28
+return
+returned
+Performing turn 13 of your custom algo strategy
+[['PI', 18, [12, 1]]]
+Execution time of <simulate>: 67.2268 ms
+attack sim:, 12, 2, 2, 18, 4
+[['EI', 6, [12, 1]]]
+Execution time of <simulate>: 63.0066 ms
+attack sim:, 6, 2, 3, 18, -14
+[['PI', 9, [12, 1]]]
+[['EI', 3, [12, 1]]]
+Execution time of <simulate>: 60.8491 ms
+attack sim:, 3, 2, 3, 18, -23
+[['PI', 18, [15, 1]]]
+Execution time of <simulate>: 52.8218 ms
+attack sim:, 12, 2, 6, 18, 4
+[['EI', 6, [15, 1]]]
+Execution time of <simulate>: 89.9918 ms
+attack sim:, 6, 2, 7, 18, -14
+[['PI', 9, [15, 1]]]
+[['EI', 3, [15, 1]]]
+Execution time of <simulate>: 77.795 ms
+attack sim:, 3, 2, 7, 18, -23
+opponent attack simulation
+Execution time of <simulate>: 51.163 ms
+Execution time of <simulate>: 64.5625 ms
+Execution time of <simulate>: 39.6237 ms
+Execution time of <simulate>: 26.1403 ms
+build_reactive_defenses based on simulation result:16 31
+return
+returned
+Performing turn 14 of your custom algo strategy
+[['PI', 6, [12, 1]]]
+Execution time of <simulate>: 28.917 ms
+attack sim:, 0, 0, 0, 6, -12
+[['EI', 2, [12, 1]]]
+Execution time of <simulate>: 31.2784 ms
+attack sim:, 0, 1, 1, 6, -10
+[['PI', 3, [12, 1]]]
+[['EI', 1, [12, 1]]]
+Execution time of <simulate>: 30.1954 ms
+attack sim:, 0, 0, 0, 6, -12
+[['PI', 6, [15, 1]]]
+Execution time of <simulate>: 40.778 ms
+attack sim:, 6, 0, 0, 6, 6
+[['EI', 2, [15, 1]]]
+Execution time of <simulate>: 63.7823 ms
+attack sim:, 2, 0, 2, 6, -6
+[['PI', 3, [15, 1]]]
+[['EI', 1, [15, 1]]]
+Execution time of <simulate>: 43.8995 ms
+attack sim:, 1, 0, 2, 6, -9
+opponent attack simulation
+Execution time of <simulate>: 19.2107 ms
+Execution time of <simulate>: 39.9471 ms
+Execution time of <simulate>: 34.2458 ms
+Execution time of <simulate>: 24.071 ms
+Execution time of <simulate>: 37.6447 ms
+Execution time of <simulate>: 12.3049 ms
+Execution time of <simulate>: 24.0056 ms
+build_reactive_defenses based on simulation result:4 6
+return
+returned
+Performing turn 15 of your custom algo strategy
+[['PI', 6, [12, 1]]]
+Execution time of <simulate>: 86.5657 ms
+attack sim:, 0, 0, 0, 6, -12
+[['EI', 2, [12, 1]]]
+Execution time of <simulate>: 62.5379 ms
+attack sim:, 0, 1, 1, 6, -10
+[['PI', 3, [12, 1]]]
+[['EI', 1, [12, 1]]]
+Execution time of <simulate>: 63.2717 ms
+attack sim:, 0, 0, 0, 6, -12
+[['PI', 6, [15, 1]]]
+Execution time of <simulate>: 148.5196 ms
+attack sim:, 0, 0, 0, 6, -12
+[['EI', 2, [15, 1]]]
+Execution time of <simulate>: 109.7109 ms
+attack sim:, 2, 2, 4, 6, -2
+[['PI', 3, [15, 1]]]
+[['EI', 1, [15, 1]]]
+Execution time of <simulate>: 69.6486 ms
+attack sim:, 0, 1, 1, 6, -10
+opponent attack simulation
+Execution time of <simulate>: 162.0599 ms
+Execution time of <simulate>: 90.4066 ms
+build_reactive_defenses based on simulation result:3 3
+return
+returned
+Performing turn 16 of your custom algo strategy
+[['PI', 10, [12, 1]]]
+Execution time of <simulate>: 64.0372 ms
+attack sim:, 0, 1, 1, 10, -18
+[['EI', 3, [12, 1]]]
+Execution time of <simulate>: 81.5624 ms
+attack sim:, 3, 2, 3, 10, -7
+[['PI', 5, [12, 1]]]
+[['EI', 1, [12, 1]]]
+Execution time of <simulate>: 50.0015 ms
+attack sim:, 0, 0, 0, 10, -20
+[['PI', 10, [15, 1]]]
+Execution time of <simulate>: 70.1519 ms
+attack sim:, 0, 1, 2, 10, -18
+[['EI', 3, [15, 1]]]
+Execution time of <simulate>: 102.6505 ms
+attack sim:, 3, 2, 7, 10, -7
+[['PI', 5, [15, 1]]]
+[['EI', 1, [15, 1]]]
+Execution time of <simulate>: 46.8826 ms
+attack sim:, 0, 1, 1, 10, -18
+opponent attack simulation
+Execution time of <simulate>: 58.5467 ms
+Execution time of <simulate>: 74.0929 ms
+build_reactive_defenses based on simulation result:2 3
+return
+returned
+Performing turn 17 of your custom algo strategy
+[['PI', 14, [12, 1]]]
+Execution time of <simulate>: 43.7119 ms
+attack sim:, 5, 2, 2, 14, -9
+[['EI', 4, [12, 1]]]
+Execution time of <simulate>: 66.0308 ms
+attack sim:, 4, 2, 3, 14, -12
+[['PI', 7, [12, 1]]]
+[['EI', 2, [12, 1]]]
+Execution time of <simulate>: 46.5739 ms
+attack sim:, 0, 1, 1, 14, -26
+[['PI', 14, [15, 1]]]
+Execution time of <simulate>: 67.1457 ms
+attack sim:, 5, 2, 6, 14, -9
+[['EI', 4, [15, 1]]]
+Execution time of <simulate>: 62.7642 ms
+attack sim:, 4, 2, 7, 14, -12
+[['PI', 7, [15, 1]]]
+[['EI', 2, [15, 1]]]
+Execution time of <simulate>: 67.5884 ms
+attack sim:, 2, 2, 7, 14, -18
+opponent attack simulation
+Execution time of <simulate>: 83.7295 ms
+Execution time of <simulate>: 66.1285 ms
+build_reactive_defenses based on simulation result:9 41
+return
+returned
+Performing turn 18 of your custom algo strategy
+[['PI', 16, [12, 1]]]
+Execution time of <simulate>: 65.0349 ms
+attack sim:, 8, 2, 2, 16, -4
+[['EI', 5, [12, 1]]]
+Execution time of <simulate>: 63.3563 ms
+attack sim:, 5, 2, 3, 16, -13
+[['PI', 8, [12, 1]]]
+[['EI', 2, [12, 1]]]
+Execution time of <simulate>: 61.4895 ms
+attack sim:, 0, 1, 1, 16, -30
+[['PI', 16, [15, 1]]]
+Execution time of <simulate>: 90.06 ms
+attack sim:, 10, 2, 6, 16, 2
+[['EI', 5, [15, 1]]]
+Execution time of <simulate>: 77.4568 ms
+attack sim:, 5, 2, 7, 16, -13
+[['PI', 8, [15, 1]]]
+[['EI', 2, [15, 1]]]
+Execution time of <simulate>: 101.0234 ms
+attack sim:, 2, 2, 7, 16, -22
+opponent attack simulation
+Execution time of <simulate>: 35.5969 ms
+Execution time of <simulate>: 51.9512 ms
+Execution time of <simulate>: 45.2103 ms
+build_reactive_defenses based on simulation result:11 1000
+return
+returned
+Got end state, game over. Stopping algo.
