@@ -48,7 +48,7 @@ class AlgoStrategy(gamelib.AlgoCore):
             game_state.attempt_upgrade([[flip_side(3), 13]])
 
         def level_2(game_state, flip_side):
-            game_state.attempt_upgrade([[flip_side(0), 13], [flip_side(1), 13]]) 
+            game_state.attempt_upgrade([[flip_side(0), 13], [flip_side(1), 13]])
 
         def level_3(game_state, flip_side):
             game_state.attempt_spawn(TURRET, [[flip_side(1), 12]])
@@ -180,8 +180,10 @@ class AlgoStrategy(gamelib.AlgoCore):
 
         gamelib.debug_write("build_reactive_defenses based on simulation result:" + str(priority_left) + " " + str(priority_right))
         self.build_reactive_defenses(game_state, priority_left, priority_right)
-
+        
+        self.support(game_state)
         self.attack(game_state, best_spawn, best_config, score)
+
 
         
     def attack_simulation(self, game_state):
