@@ -1,4 +1,0 @@
-  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/algo_strategy.py", line 110
-    visited_points = dict{}
-                         ^
-SyntaxError: invalid syntax

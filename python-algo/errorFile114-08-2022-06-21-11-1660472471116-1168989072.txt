@@ -1,0 +1,57 @@
+Random seed: 4907791948375594285
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 0 of your custom algo strategy
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 1 of your custom algo strategy
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 2 of your custom algo strategy
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 3 of your custom algo strategy
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 4 of your custom algo strategy
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 5 of your custom algo strategy
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 6 of your custom algo strategy
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 7 of your custom algo strategy
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 8 of your custom algo strategy
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 9 of your custom algo strategy
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 10 of your custom algo strategy
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 11 of your custom algo strategy
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 12 of your custom algo strategy
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 13 of your custom algo strategy
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 14 of your custom algo strategy
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 15 of your custom algo strategy
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 16 of your custom algo strategy
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 17 of your custom algo strategy
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 18 of your custom algo strategy
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 19 of your custom algo strategy
+Traceback (most recent call last):
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo/algo_strategy.py", line 239, in <module>
+    algo.start()
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo/gamelib/algocore.py", line 74, in start
+    self.on_turn(game_state_string)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo/algo_strategy.py", line 61, in on_turn
+    self.starter_strategy(game_state)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo/algo_strategy.py", line 98, in starter_strategy
+    best_location = self.least_damage_spawn_location(game_state, scout_spawn_location_options)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo/algo_strategy.py", line 193, in least_damage_spawn_location
+    damage += len(game_state.get_attackers(path_location, 0)) * gamelib.GameUnit(TURRET, game_state.config).damage_i
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo/gamelib/game_state.py", line 644, in get_attackers
+    for unit in self.game_map[location_unit]:
+KeyboardInterrupt

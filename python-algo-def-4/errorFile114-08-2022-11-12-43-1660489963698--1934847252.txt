@@ -1,0 +1,4 @@
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/algo_strategy.py", line 181
+    self.attack(game_state, best_spawn, best_config, score):
+                                                           ^
+SyntaxError: invalid syntax

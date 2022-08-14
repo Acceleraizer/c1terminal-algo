@@ -1,0 +1,172 @@
+Random seed: 4926968424738673487
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Performing turn 0 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 11.4462 ms
+Execution time of <simulate>: 16.4593 ms
+Execution time of <simulate>: 13.8128 ms
+Execution time of <simulate>: 16.4103 ms
+Execution time of <simulate>: 19.9121 ms
+Execution time of <simulate>: 19.6724 ms
+Execution time of <simulate>: 16.2009 ms
+build_reactive_defenses based on simulation result:4 5
+return
+returned
+Performing turn 1 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 22.9109 ms
+Execution time of <simulate>: 28.0681 ms
+Execution time of <simulate>: 21.1288 ms
+Execution time of <simulate>: 18.281 ms
+build_reactive_defenses based on simulation result:7 5
+return
+returned
+Performing turn 2 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 26.564 ms
+Execution time of <simulate>: 15.6963 ms
+Execution time of <simulate>: 93.7446 ms
+Execution time of <simulate>: 34.9315 ms
+build_reactive_defenses based on simulation result:105 12
+return
+returned
+Performing turn 3 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 15.9977 ms
+Execution time of <simulate>: 15.7602 ms
+Execution time of <simulate>: 19.1153 ms
+Execution time of <simulate>: 54.6553 ms
+Execution time of <simulate>: 51.2699 ms
+Execution time of <simulate>: 40.9684 ms
+Execution time of <simulate>: 39.9281 ms
+build_reactive_defenses based on simulation result:205 10
+return
+returned
+Performing turn 4 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 52.2874 ms
+Execution time of <simulate>: 63.4454 ms
+Execution time of <simulate>: 51.5147 ms
+Execution time of <simulate>: 64.6262 ms
+build_reactive_defenses based on simulation result:96 96
+return
+returned
+Performing turn 5 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 76.2781 ms
+Execution time of <simulate>: 49.6816 ms
+Execution time of <simulate>: 71.2173 ms
+Execution time of <simulate>: 59.9789 ms
+build_reactive_defenses based on simulation result:137 137
+return
+returned
+Performing turn 6 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 52.8654 ms
+Execution time of <simulate>: 29.1532 ms
+Execution time of <simulate>: 81.263 ms
+Execution time of <simulate>: 100.5002 ms
+Execution time of <simulate>: 56.6523 ms
+Execution time of <simulate>: 36.7633 ms
+Execution time of <simulate>: 36.6875 ms
+build_reactive_defenses based on simulation result:451 174
+return
+returned
+Performing turn 7 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 47.8135 ms
+Execution time of <simulate>: 89.6972 ms
+Execution time of <simulate>: 43.7452 ms
+Execution time of <simulate>: 56.4734 ms
+build_reactive_defenses based on simulation result:88 180
+return
+returned
+Performing turn 8 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 36.653 ms
+Execution time of <simulate>: 60.3712 ms
+Execution time of <simulate>: 28.0612 ms
+Execution time of <simulate>: 16.1952 ms
+build_reactive_defenses based on simulation result:108 101
+return
+returned
+Performing turn 9 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 48.0423 ms
+Execution time of <simulate>: 57.0431 ms
+Execution time of <simulate>: 67.1776 ms
+Execution time of <simulate>: 16.8915 ms
+build_reactive_defenses based on simulation result:116 155
+return
+returned
+Performing turn 10 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 59.8632 ms
+Execution time of <simulate>: 57.042 ms
+Execution time of <simulate>: 101.7498 ms
+Execution time of <simulate>: 91.988 ms
+build_reactive_defenses based on simulation result:178 176
+return
+returned
+Performing turn 11 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 63.0503 ms
+Execution time of <simulate>: 84.1373 ms
+Execution time of <simulate>: 40.0936 ms
+Execution time of <simulate>: 51.9382 ms
+build_reactive_defenses based on simulation result:208 231
+return
+returned
+Performing turn 12 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 37.8735 ms
+Execution time of <simulate>: 73.6179 ms
+Execution time of <simulate>: 84.5213 ms
+Execution time of <simulate>: 75.4256 ms
+Execution time of <simulate>: 80.1543 ms
+build_reactive_defenses based on simulation result:340 214
+return
+returned
+Performing turn 13 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 74.446 ms
+Execution time of <simulate>: 45.5469 ms
+Execution time of <simulate>: 54.6626 ms
+Execution time of <simulate>: 58.1526 ms
+build_reactive_defenses based on simulation result:238 243
+return
+returned
+Performing turn 14 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 49.661 ms
+Execution time of <simulate>: 60.8211 ms
+Execution time of <simulate>: 63.3538 ms
+Traceback (most recent call last):
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/algo_strategy.py", line 380, in <module>
+    algo.start()
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/gamelib/algocore.py", line 74, in start
+    self.on_turn(game_state_string)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/algo_strategy.py", line 127, in on_turn
+    self.starter_strategy(game_state)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/algo_strategy.py", line 176, in starter_strategy
+    unique_spawn_points, scores, cross_map = self.opponent_attack_simulation(game_state)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/algo_strategy.py", line 343, in opponent_attack_simulation
+    scores = simulate_damage(gs, unique_spawn_points)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/algo_strategy.py", line 329, in simulate_damage
+    dmg, turrets, structures = sim.simulate()
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/gamelib/util.py", line 48, in inner
+    ret = func(*args, **kwargs)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/simulator.py", line 250, in simulate
+    self.simulate_tick()
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/simulator.py", line 265, in simulate_tick
+    struct_destroyed =  self.resolve_attacks()
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/simulator.py", line 306, in resolve_attacks
+    struct_destroyed = self.resolve_attacks_per_list(self.their_turrets) or struct_destroyed
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/simulator.py", line 315, in resolve_attacks_per_list
+    target:Simunit = self.get_target(simunit)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/simulator.py", line 177, in get_target
+    possible_locations = self.game_state.game_map.get_locations_in_range(attacker_location, attacking_unit.unit.attackRange)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-def-4/gamelib/game_map.py", line 217, in get_locations_in_range
+    if self.in_arena_bounds(new_location) and self.sq_distance_between_locations(location, new_location) < (radius + getHitRadius)**2:
+KeyboardInterrupt

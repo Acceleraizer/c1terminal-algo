@@ -1,0 +1,99 @@
+2022-08-14 06:21:12.659713: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2022-08-14 06:21:12.659803: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+Random seed: 145578147121306553
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 0 of your custom algo strategy
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 1 of your custom algo strategy
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 2 of your custom algo strategy
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 3 of your custom algo strategy
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 4 of your custom algo strategy
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 5 of your custom algo strategy
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 6 of your custom algo strategy
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 7 of your custom algo strategy
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 8 of your custom algo strategy
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 9 of your custom algo strategy
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 10 of your custom algo strategy
+Got scored on at: [17, 3]
+All locations: [[17, 3]]
+Got scored on at: [17, 3]
+All locations: [[17, 3], [17, 3]]
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 11 of your custom algo strategy
+Got scored on at: [17, 3]
+All locations: [[17, 3], [17, 3], [17, 3]]
+Got scored on at: [17, 3]
+All locations: [[17, 3], [17, 3], [17, 3], [17, 3]]
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 12 of your custom algo strategy
+Got scored on at: [17, 3]
+All locations: [[17, 3], [17, 3], [17, 3], [17, 3], [17, 3]]
+Got scored on at: [17, 3]
+All locations: [[17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3]]
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 13 of your custom algo strategy
+Got scored on at: [17, 3]
+All locations: [[17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3]]
+Got scored on at: [17, 3]
+All locations: [[17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3]]
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 14 of your custom algo strategy
+Got scored on at: [17, 3]
+All locations: [[17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3]]
+Got scored on at: [17, 3]
+All locations: [[17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3]]
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 15 of your custom algo strategy
+Got scored on at: [17, 3]
+All locations: [[17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3]]
+Got scored on at: [17, 3]
+All locations: [[17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3]]
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 16 of your custom algo strategy
+Got scored on at: [17, 3]
+All locations: [[17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3]]
+Got scored on at: [17, 3]
+All locations: [[17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3]]
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 17 of your custom algo strategy
+Got scored on at: [17, 3]
+All locations: [[17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3]]
+Got scored on at: [17, 3]
+All locations: [[17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3]]
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 18 of your custom algo strategy
+Got scored on at: [17, 3]
+All locations: [[17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3]]
+Got scored on at: [17, 3]
+All locations: [[17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3], [17, 3]]
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 19 of your custom algo strategy
+Traceback (most recent call last):
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-1/algo_strategy.py", line 233, in <module>
+    algo.start()
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-1/gamelib/algocore.py", line 74, in start
+    self.on_turn(game_state_string)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-1/algo_strategy.py", line 61, in on_turn
+    self.starter_strategy(game_state)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-1/algo_strategy.py", line 90, in starter_strategy
+    best_location = self.least_damage_spawn_location(game_state, scout_spawn_location_options)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-1/algo_strategy.py", line 183, in least_damage_spawn_location
+    path = game_state.find_path_to_edge(location)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-1/gamelib/game_state.py", line 499, in find_path_to_edge
+    return self._shortest_path_finder.navigate_multiple_endpoints(start_location, end_points, self)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-1/gamelib/navigation.py", line 79, in navigate_multiple_endpoints
+    self._validate(ideal_endpoints, end_points)
+  File "/home/eli/projects/c1-terminal/c1terminal-algo/python-algo-1/gamelib/navigation.py", line 182, in _validate
+    current_node = self.game_map[current_location[0]][current_location[1]]
+KeyboardInterrupt

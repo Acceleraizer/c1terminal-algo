@@ -1,0 +1,352 @@
+Random seed: 5271930222300153935
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Performing turn 0 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 7.6523 ms
+Execution time of <simulate>: 7.6806 ms
+Execution time of <simulate>: 7.4821 ms
+Execution time of <simulate>: 7.2065 ms
+Execution time of <simulate>: 8.9497 ms
+Execution time of <simulate>: 8.1916 ms
+Execution time of <simulate>: 7.8391 ms
+build_reactive_defenses based on simulation result:180 30
+return
+returned
+Performing turn 1 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 38.1589 ms
+Execution time of <simulate>: 25.4682 ms
+Execution time of <simulate>: 10.9319 ms
+Execution time of <simulate>: 15.167 ms
+Execution time of <simulate>: 14.7577 ms
+Execution time of <simulate>: 22.6118 ms
+Execution time of <simulate>: 14.9321 ms
+build_reactive_defenses based on simulation result:94 144
+return
+returned
+Performing turn 2 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 37.6065 ms
+Execution time of <simulate>: 25.3837 ms
+Execution time of <simulate>: 20.6306 ms
+Execution time of <simulate>: 18.2803 ms
+Execution time of <simulate>: 23.9109 ms
+Execution time of <simulate>: 29.4551 ms
+Execution time of <simulate>: 33.2861 ms
+build_reactive_defenses based on simulation result:138 198
+return
+returned
+Performing turn 3 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 16.63 ms
+Execution time of <simulate>: 23.5125 ms
+Execution time of <simulate>: 31.8804 ms
+Execution time of <simulate>: 41.5013 ms
+Execution time of <simulate>: 21.7044 ms
+Execution time of <simulate>: 50.0372 ms
+Execution time of <simulate>: 45.189 ms
+build_reactive_defenses based on simulation result:182 140
+return
+returned
+Performing turn 4 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 34.1464 ms
+Execution time of <simulate>: 32.409 ms
+Execution time of <simulate>: 24.936 ms
+Execution time of <simulate>: 25.0241 ms
+Execution time of <simulate>: 16.6101 ms
+Execution time of <simulate>: 19.9218 ms
+Execution time of <simulate>: 18.0606 ms
+build_reactive_defenses based on simulation result:113 251
+return
+returned
+Performing turn 5 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 27.3334 ms
+Execution time of <simulate>: 17.9268 ms
+Execution time of <simulate>: 21.6164 ms
+Execution time of <simulate>: 23.1979 ms
+Execution time of <simulate>: 20.3366 ms
+Execution time of <simulate>: 26.6495 ms
+Execution time of <simulate>: 27.0933 ms
+build_reactive_defenses based on simulation result:126 268
+return
+returned
+Performing turn 6 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 43.4609 ms
+Execution time of <simulate>: 22.6549 ms
+Execution time of <simulate>: 23.4594 ms
+Execution time of <simulate>: 27.9001 ms
+Execution time of <simulate>: 32.1319 ms
+Execution time of <simulate>: 29.8634 ms
+Execution time of <simulate>: 24.1767 ms
+build_reactive_defenses based on simulation result:352 297
+return
+returned
+Performing turn 7 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 25.8876 ms
+Execution time of <simulate>: 48.1777 ms
+Execution time of <simulate>: 21.8013 ms
+Execution time of <simulate>: 26.8295 ms
+Execution time of <simulate>: 17.9431 ms
+Execution time of <simulate>: 24.5643 ms
+Execution time of <simulate>: 27.1279 ms
+build_reactive_defenses based on simulation result:164 424
+return
+returned
+Performing turn 8 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 45.789 ms
+Execution time of <simulate>: 61.0299 ms
+Execution time of <simulate>: 53.19 ms
+Execution time of <simulate>: 49.4948 ms
+Execution time of <simulate>: 22.2899 ms
+Execution time of <simulate>: 25.1393 ms
+Execution time of <simulate>: 20.0127 ms
+build_reactive_defenses based on simulation result:286 310
+return
+returned
+Performing turn 9 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 33.8607 ms
+Execution time of <simulate>: 34.2795 ms
+Execution time of <simulate>: 76.5197 ms
+Execution time of <simulate>: 29.3888 ms
+Execution time of <simulate>: 36.9795 ms
+Execution time of <simulate>: 23.5179 ms
+Execution time of <simulate>: 25.3637 ms
+build_reactive_defenses based on simulation result:409 224
+return
+returned
+Performing turn 10 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 30.4384 ms
+Execution time of <simulate>: 46.8584 ms
+Execution time of <simulate>: 44.8024 ms
+Execution time of <simulate>: 91.472 ms
+Execution time of <simulate>: 54.3962 ms
+Execution time of <simulate>: 48.0041 ms
+Execution time of <simulate>: 34.4638 ms
+build_reactive_defenses based on simulation result:402 307
+return
+returned
+Performing turn 11 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 47.7046 ms
+Execution time of <simulate>: 49.1921 ms
+Execution time of <simulate>: 60.3178 ms
+Execution time of <simulate>: 31.6295 ms
+Execution time of <simulate>: 30.1426 ms
+Execution time of <simulate>: 28.2385 ms
+Execution time of <simulate>: 82.0613 ms
+build_reactive_defenses based on simulation result:247 609
+return
+returned
+Performing turn 12 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 34.4571 ms
+Execution time of <simulate>: 22.0305 ms
+Execution time of <simulate>: 31.0178 ms
+Execution time of <simulate>: 40.2087 ms
+Execution time of <simulate>: 37.8966 ms
+Execution time of <simulate>: 34.8249 ms
+Execution time of <simulate>: 44.5746 ms
+build_reactive_defenses based on simulation result:451 349
+return
+returned
+Performing turn 13 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 23.6984 ms
+Execution time of <simulate>: 25.9295 ms
+Execution time of <simulate>: 34.1422 ms
+Execution time of <simulate>: 28.6222 ms
+Execution time of <simulate>: 28.8166 ms
+Execution time of <simulate>: 28.1948 ms
+Execution time of <simulate>: 52.0462 ms
+build_reactive_defenses based on simulation result:375 518
+return
+returned
+Performing turn 14 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 31.3363 ms
+Execution time of <simulate>: 28.9002 ms
+Execution time of <simulate>: 46.0006 ms
+Execution time of <simulate>: 42.9851 ms
+Execution time of <simulate>: 48.3323 ms
+Execution time of <simulate>: 43.6883 ms
+Execution time of <simulate>: 23.8592 ms
+build_reactive_defenses based on simulation result:445 388
+return
+returned
+Performing turn 15 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 84.953 ms
+Execution time of <simulate>: 61.4165 ms
+Execution time of <simulate>: 54.1584 ms
+Execution time of <simulate>: 71.2179 ms
+Execution time of <simulate>: 70.1391 ms
+Execution time of <simulate>: 43.0115 ms
+Execution time of <simulate>: 34.1997 ms
+build_reactive_defenses based on simulation result:338 543
+return
+returned
+Performing turn 16 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 49.6108 ms
+Execution time of <simulate>: 77.2467 ms
+Execution time of <simulate>: 44.6245 ms
+Execution time of <simulate>: 45.3387 ms
+Execution time of <simulate>: 39.0972 ms
+Execution time of <simulate>: 31.7289 ms
+Execution time of <simulate>: 70.5924 ms
+build_reactive_defenses based on simulation result:534 410
+return
+returned
+Performing turn 17 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 53.1364 ms
+Execution time of <simulate>: 29.0228 ms
+Execution time of <simulate>: 63.6233 ms
+Execution time of <simulate>: 47.0669 ms
+Execution time of <simulate>: 76.6373 ms
+Execution time of <simulate>: 73.7772 ms
+Execution time of <simulate>: 68.2438 ms
+build_reactive_defenses based on simulation result:355 529
+return
+returned
+Performing turn 18 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 34.3903 ms
+Execution time of <simulate>: 41.3295 ms
+Execution time of <simulate>: 38.4452 ms
+Execution time of <simulate>: 42.4122 ms
+Execution time of <simulate>: 47.4462 ms
+Execution time of <simulate>: 23.0443 ms
+Execution time of <simulate>: 41.9093 ms
+build_reactive_defenses based on simulation result:260 679
+return
+returned
+Performing turn 19 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 33.0791 ms
+Execution time of <simulate>: 21.289 ms
+Execution time of <simulate>: 20.7795 ms
+Execution time of <simulate>: 29.8025 ms
+Execution time of <simulate>: 24.6726 ms
+Execution time of <simulate>: 29.4552 ms
+Execution time of <simulate>: 34.0368 ms
+build_reactive_defenses based on simulation result:552 393
+return
+returned
+Performing turn 20 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 21.9838 ms
+Execution time of <simulate>: 51.2253 ms
+Execution time of <simulate>: 38.3899 ms
+Execution time of <simulate>: 47.9858 ms
+Execution time of <simulate>: 21.8491 ms
+Execution time of <simulate>: 40.6511 ms
+Execution time of <simulate>: 31.6414 ms
+build_reactive_defenses based on simulation result:288 664
+return
+returned
+Performing turn 21 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 19.3386 ms
+Execution time of <simulate>: 39.4787 ms
+Execution time of <simulate>: 19.9423 ms
+Execution time of <simulate>: 42.6644 ms
+Execution time of <simulate>: 21.1222 ms
+Execution time of <simulate>: 19.3727 ms
+Execution time of <simulate>: 27.5049 ms
+build_reactive_defenses based on simulation result:450 548
+return
+returned
+Performing turn 22 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 24.0698 ms
+Execution time of <simulate>: 25.1066 ms
+Execution time of <simulate>: 24.0723 ms
+Execution time of <simulate>: 41.1362 ms
+Execution time of <simulate>: 32.991 ms
+Execution time of <simulate>: 41.5144 ms
+Execution time of <simulate>: 41.7895 ms
+build_reactive_defenses based on simulation result:936 155
+return
+returned
+Performing turn 23 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 33.1372 ms
+Execution time of <simulate>: 52.9914 ms
+Execution time of <simulate>: 51.7217 ms
+Execution time of <simulate>: 57.4896 ms
+Execution time of <simulate>: 27.3473 ms
+Execution time of <simulate>: 29.5801 ms
+Execution time of <simulate>: 28.4201 ms
+build_reactive_defenses based on simulation result:619 398
+return
+returned
+Performing turn 24 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 63.9896 ms
+Execution time of <simulate>: 24.6878 ms
+Execution time of <simulate>: 56.964 ms
+Execution time of <simulate>: 37.7559 ms
+Execution time of <simulate>: 90.4291 ms
+Execution time of <simulate>: 27.0758 ms
+Execution time of <simulate>: 26.5786 ms
+build_reactive_defenses based on simulation result:648 474
+return
+returned
+Performing turn 25 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 44.6496 ms
+Execution time of <simulate>: 28.3738 ms
+Execution time of <simulate>: 28.8516 ms
+Execution time of <simulate>: 43.1971 ms
+Execution time of <simulate>: 55.697 ms
+Execution time of <simulate>: 45.411 ms
+Execution time of <simulate>: 40.8968 ms
+build_reactive_defenses based on simulation result:805 288
+return
+returned
+Performing turn 26 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 45.1788 ms
+Execution time of <simulate>: 41.1664 ms
+Execution time of <simulate>: 52.7196 ms
+Execution time of <simulate>: 45.847 ms
+Execution time of <simulate>: 51.6925 ms
+Execution time of <simulate>: 76.3327 ms
+Execution time of <simulate>: 57.0276 ms
+build_reactive_defenses based on simulation result:806 312
+return
+returned
+Performing turn 27 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 36.1958 ms
+Execution time of <simulate>: 66.6844 ms
+Execution time of <simulate>: 51.5521 ms
+Execution time of <simulate>: 24.636 ms
+Execution time of <simulate>: 24.931 ms
+Execution time of <simulate>: 25.3713 ms
+Execution time of <simulate>: 29.171 ms
+build_reactive_defenses based on simulation result:648 428
+return
+returned
+Performing turn 28 of your custom algo strategy
+opponent attack simulation
+Execution time of <simulate>: 73.3115 ms
+Execution time of <simulate>: 66.5117 ms
+Execution time of <simulate>: 37.7717 ms
+Execution time of <simulate>: 40.6925 ms
+Execution time of <simulate>: 49.5458 ms
+Execution time of <simulate>: 24.9052 ms
+Execution time of <simulate>: 38.6225 ms
+build_reactive_defenses based on simulation result:486 541
+return
+returned
+Got end state, game over. Stopping algo.

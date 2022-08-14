@@ -1,0 +1,6 @@
+Random seed: 245003610263717846
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 0 of your custom algo strategy
+Got end state, game over. Stopping algo.

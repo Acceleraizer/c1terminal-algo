@@ -1,12 +1,13 @@
 import gamelib
 import random
 import math
-import warnings
 from sys import maxsize, stderr
 import json
 # import tensorflow
-from simulator import Simulator, timer
+from simulator import Simulator
+
 import copy
+import random
 
 """
 Most of the algo code you write will be in this file unless you create new
@@ -40,7 +41,58 @@ class AlgoStrategy(gamelib.AlgoCore):
         seed = random.randrange(maxsize)
         random.seed(seed)
         gamelib.debug_write('Random seed: {}'.format(seed))
+        
+        def level_1(game_state, flip_side):
+            game_state.attempt_upgrade([[flip_side(3), 11]])
+            game_state.attempt_spawn(WALL, [[flip_side(3), 13]])
+            game_state.attempt_upgrade([[flip_side(3), 13]])
 
+        def level_2(game_state, flip_side):
+            game_state.attempt_upgrade([[flip_side(0), 13], [flip_side(1), 13]]) 
+
+        def level_3(game_state, flip_side):
+            game_state.attempt_spawn(TURRET, [[flip_side(1), 12]])
+
+        def level_4(game_state, flip_side):
+            game_state.attempt_upgrade([[flip_side(1), 12]])         
+
+        def level_5(game_state, flip_side):
+            game_state.attempt_spawn(TURRET, [[flip_side(4), 12]])
+
+        def level_6(game_state, flip_side):
+            game_state.attempt_spawn(WALL, [[flip_side(4), 13]])
+            game_state.attempt_upgrade([[flip_side(4), 13], [flip_side(4), 12]])
+            
+        def level_7(game_state, flip_side):
+            four_eleven = game_state.contains_stationary_unit([flip_side(4), 11])
+            if not four_eleven == False and four_eleven.unit_type == WALL:
+                game_state.attempt_remove([[flip_side(4), 11]])
+            game_state.attempt_spawn(TURRET, [[flip_side(4), 11]])
+        
+        def level_8(game_state, flip_side):
+            game_state.attempt_upgrade([[flip_side(4), 11]])
+
+        def level_9(game_state, flip_side):
+            game_state.attempt_spawn(TURRET, [[flip_side(5), 11]])
+
+        def level_10(game_state, flip_side):
+            game_state.attempt_upgrade([[flip_side(5), 11]])
+
+        def level_11(game_state, flip_side):
+            game_state.attempt_spawn(TURRET, [[flip_side(5), 12]])
+
+        def level_12(game_state, flip_side):
+            game_state.attempt_spawn(WALL, [[flip_side(6), 12]])
+            game_state.attempt_upgrade([[flip_side(6), 12]])
+
+        def level_13(game_state, flip_side):
+            game_state.attempt_upgrade([[flip_side(5), 12]])
+            game_state.attempt_spawn(WALL, [[flip_side(5), 13]])
+            game_state.attempt_upgrade([[flip_side(5), 13]])
+
+        self.levels = [level_1, level_2, level_3, level_4, level_5, 
+        level_6, level_7, level_8, level_9, level_10, level_11, level_12, level_13]
+        
     def on_game_start(self, config):
         """ 
         Read in config and perform any initial setup here 
@@ -78,23 +130,162 @@ class AlgoStrategy(gamelib.AlgoCore):
         game_state.submit_turn()
         gamelib.debug_write("returned")
 
+    def print_map(self, game_state):
+        return
+        # for y in range(game_state.game_map.ARENA_SIZE - 1, -1, -1):
+        #     row = []
+        #     for x in range(game_state.game_map.ARENA_SIZE):
+        #         unit = game_state.contains_stationary_unit([x, y])
+        #         if unit == False:
+        #             row.append('.')
+        #             continue
+                
+        #         if unit.unit_type == WALL:
+        #             row.append('~')
+        #             continue
+
+        #         if unit.unit_type == TURRET:
+        #             row.append('*')
+        #             continue
+                
+        #         if unit.unit_type == SUPPORT:
+        #             row.append('#')
+        #             continue
+        #     gamelib.debug_write(' '.join(row))
+
     def starter_strategy(self, game_state:gamelib.GameState):
+        
+        def level_0(game_state):
+            game_state.attempt_spawn(TURRET, [[3, 12], [24, 12]])
+            back_walls_loc = [[4, 11], [23, 11], [5, 10], [22, 10]] + [[col, 9] for col in range(6, 22)]
+            front_walls_loc = [[col , 13] for col in [0, 27, 1, 26]]
+            game_state.attempt_spawn(WALL, back_walls_loc + front_walls_loc)
+        
+        best_spawn, best_config, dmg, score = self.attack_simulation(game_state)
+
+        if not dmg == None:
+
+            if dmg >= game_state.enemy_health:
+                self.support(game_state)
+
+            level_0(game_state)
+
+            if game_state.get_resources(1)[1] < 5:
+                self.support(game_state)
+
+
         gamelib.debug_write("opponent attack simulation")
         unique_spawn_points, scores, cross_map = self.opponent_attack_simulation(game_state)
+        priority_left, priority_right = self.guage_defense(unique_spawn_points, scores, cross_map)
 
-        gamelib.debug_write("build_reactive_defenses based on simulation result:" + str(scores))
-        self.build_reactive_defenses(game_state, unique_spawn_points, scores, cross_map)
+        gamelib.debug_write("build_reactive_defenses based on simulation result:" + str(priority_left) + " " + str(priority_right))
+        self.build_reactive_defenses(game_state, priority_left, priority_right)
+
+        # self.attack(game_state, best_spawn, best_config, score)
+
         
-        gamelib.debug_write("build_defenses")
-        self.build_defences(game_state)
-        gamelib.debug_write("maybe_spawn_interceptors")
-        self.maybe_spawn_interceptors()
+    def attack_simulation(self, game_state):
+        best_config = None
+        best_spawn = None
+        best_score = -float('inf')
+        best_dmg = None
+        
+        units = [[[SCOUT, game_state.number_affordable(SCOUT)]], 
+        [[DEMOLISHER, game_state.number_affordable(DEMOLISHER)]],
+        [[SCOUT, game_state.number_affordable(SCOUT) // 2], [DEMOLISHER, game_state.number_affordable(DEMOLISHER) // 2]]] 
+        configs = []
 
-    def build_reactive_defenses(self, game_state, unique_spawn_points, scores, cross_map):
-        pass
+        for unique_spawn_point in [[12, 1], [15, 1]]:
+            for config in configs:
+                sim = Simulator(self.config, game_state)
+                for unit in config:
+                    sim.place_mobile_units([config + unique_spawn_point])
+                dmg, turrets, structures = sim.simulate()
+                score =  3 * dmg  + 2 * turrets - game_state.number_affordable(SCOUT)
+
+                if dmg == None:
+                    dmg = 0
+
+                if turrets == None:
+                    turrets = 0  
+
+                if dmg > game_state.enemy_health:
+                    score = 10000
+
+                if score >= best_score:
+                    best_score = score
+                    best_config = config
+                    best_spawn = unique_spawn_point
+                    best_dmg = dmg
+
+        return best_spawn, best_config, best_dmg, best_score
+
+    # def attack(self, game_state, best_spawn, best_config, score):
+    #     if score > 0:
+    #         for unit in config:
+    #             game_state.attempt_spawn(best_config[0], best_spawn, best_config[1])
+
+
+    def support(self, game_state):
+        support_loc = []
+        for i in [13, 14]:
+            for j in [0, 1, 2, 3]:
+                support_loc.append([i, j])
+        
+        if game_state.get_resources(1)[1] <= 5:
+            game_state.attempt_spawn(SUPPORT, support_loc)
+
+    def guage_defense(self, unique_spawn_points, scores, cross_map):
+        left = 0
+        right = 0
+        if len(scores) == 0:
+            return (50, 50)
+        else:
+            for s in scores:
+                score, spawn_point = s
+                cross_x = cross_map[spawn_point][0]
+                if cross_x < 14:
+                    left += score
+                else:
+                    right += score
+            return (left, right)
+
+    def build_reactive_defenses(self, game_state, priority_left, priority_right):
+
+        flip_left = lambda num : num
+        flip_right = lambda num : 27 - num
+        allocate = lambda total, left, right : ((total * left) / (left + right), (total * right) / (left + right))
+
+
+        # Allocate resources to the left and right
+        res_left, res_right = allocate(game_state.get_resource(0), priority_left, priority_right) 
+
+        for level, level_func in enumerate(self.levels):
+            # Build up to right
+            if res_right >= 6:
+                self.print_map(game_state)
+
+                before = game_state.get_resource(0)
+                level_func(game_state, flip_right)
+                used = before - game_state.get_resource(0)
+                res_right -= used
+            
+            if res_left >= 6:
+                self.print_map(game_state)
+
+                before = game_state.get_resource(0)
+                level_func(game_state, flip_left)
+                used = before - game_state.get_resource(0)
+                res_left -= used
+
+        for level_func in self.levels:
+            if game_state.get_resource(0) >= 6:
+                if priority_left > priority_right:
+                    level_func(game_state, flip_left)
+                else:
+                    level_func(game_state, flip_right)
 
     def opponent_attack_simulation(self, game_state):
-         
         def check_all_paths(gs, visited_points, unique_spawn_points, cross_map):  
             def check_spawn_point(gs, spawn_point, unique_spawn_points, visited_points):
                 
@@ -127,32 +318,19 @@ class AlgoStrategy(gamelib.AlgoCore):
                 check_spawn_point(gs, spawn_point, unique_spawn_points, visited_points)
 
         # Somehow sample so we don't do all the spawn points
-        def get_farthest_spawn_points(spawn_points):
-            # if len(spawn_points) <= 3:
-            #     return spawn_points
-            
-            # point_min = min(spawn_points)
-            # point_max = max(spawn_points)
-            # best_point_index, best_point_value = 0, 0
-            # for point_index, point in enumerate(spawn_points):
-            #     point_value = min(point[0] - point_min[0], point_max[0] - point[0])
-            #     if point_value > best_point_value:
-            #         best_point_value, best_point_index = point_value, point_index
-            # point_mid = spawn_points[best_point_index]
-            # return [point_min, point_mid, point_max]
-            return spawn_points
+        def filter_spawn_points(spawn_points):
+            return random.sample(spawn_points, min(7, len(spawn_points)))
 
         def simulate_damage(gs, unique_spawn_points):
-            gamelib.debug_write(unique_spawn_points)
+            # gamelib.debug_write(unique_spawn_points)
             scores = []
             
             for unique_spawn_point in unique_spawn_points:
                 sim = Simulator(self.config, gs)
-                gamelib.debug_write(type(unique_spawn_point))
                 sim.place_mobile_units([[SCOUT, gs.number_affordable(SCOUT), list(unique_spawn_point)]])
                 dmg, turrets, structures = sim.simulate()
-                gamelib.debug_write(dmg, turrets, structures)
-                score = dmg * 3 + turrets * 6 + structures
+                # gamelib.debug_write('dmg, turrets, structures: ', dmg, turrets, structures)
+                score = dmg * 6 + turrets * 6 + structures
                 if dmg > gs.my_health:
                     score = 1000
                 scores.append((score, tuple(unique_spawn_point)))
@@ -163,9 +341,8 @@ class AlgoStrategy(gamelib.AlgoCore):
         unique_spawn_points = list()
         cross_map = dict()
         check_all_paths(gs, visited_points, unique_spawn_points, cross_map)
-        unique_spawn_points = get_farthest_spawn_points(unique_spawn_points)
+        unique_spawn_points = filter_spawn_points(unique_spawn_points)
         scores = simulate_damage(gs, unique_spawn_points)
-
         return unique_spawn_points, scores, cross_map
 
     def flip_board_state(self, game_state):
@@ -199,49 +376,6 @@ class AlgoStrategy(gamelib.AlgoCore):
                 board.append(StructureInfo(state[0], cell))
 
         return [my_resources, their_resources, my_health, their_health, board]
-
-    def defense_priority_1(self, game_state):
-        main_turrets_loc = [[3, 12], [24, 12]]
-        main_turrets_walls_loc = [[3, 13], [24, 13]]
-        back_walls_loc = [[5, 10], [22, 10]] + [[col, 9] for col in range(6, 22)]
-        
-        game_state.attempt_spawn(TURRET, main_turrets_loc)
-        game_state.attempt_spawn(WALL, back_walls_loc)
-        game_state.attempt_spawn(WALL, main_turrets_walls_loc)
-        game_state.attempt_upgrade(main_turrets_walls_loc + main_turrets_loc)
-
-    def defense_priority_2(self, game_state):
-        other_turrets_loc = [[4, 11], [23, 11]]
-        front_walls_loc = [[0, 13], [27, 13], [1, 13], [26, 13]]
-
-        game_state.attempt_spawn(WALL, front_walls_loc)
-        game_state.attempt_upgrade(front_walls_loc)
-        game_state.attempt_spawn(TURRET, other_turrets_loc)
-        game_state.attempt_upgrade(other_turrets_loc)
-
-    def defense_priority_3(self, game_state):
-        other_turrets_loc = [[1, 12], [26, 12]]
-
-        game_state.attempt_spawn(TURRET, other_turrets_loc)
-        game_state.attempt_upgrade(other_turrets_loc)
-
-    def build_defences(self, game_state):
-        """
-        Build basic defenses using hardcoded locations.
-        Remember to defend corners and avoid placing units in the front where enemy demolishers can attack them.
-        """
-        # Useful tool for setting up your base locations: https://www.kevinbai.design/terminal-map-maker
-        # More community tools available at: https://terminal.c1games.com/rules#Download
-
-        self.defense_priority_1(game_state)
-        self.defense_priority_2(game_state)
-        self.defense_priority_3(game_state)
-
-        
-
-    def maybe_spawn_interceptors(self):
-        return
-
 
 if __name__ == "__main__":
     algo = AlgoStrategy()
