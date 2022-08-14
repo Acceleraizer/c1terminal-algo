@@ -265,7 +265,6 @@ class Simulator:
         # TODO: Self-destruct (but probably not necessary for attack sim)
         if len(simunit.path) == 0:
             self.graveyard.append(simunit)
-            simunit.health = 0
             simunit.graved = True
             self.resolve_end_of_path(simunit)
             return True# But this unit has to be removed at the end of the round
@@ -392,10 +391,11 @@ class Simulator:
             unit, supp = self.our_unit_support_pairs.popleft()
             xu, yu = unit.unit.x, unit.unit.y
             xs, ys = supp.unit.x, supp.unit.y
-            if (xu-xs)**2 + (yu-ys)**2 <= 3.5**2 and not supp.unit.upgraded:
-                unit.base_health += 3
-            elif (xu-xs)**2 + (yu-ys)**2 <= 49 and supp.unit.upgraded:
-                unit.base_health += 2 + 0.34*yu
+            if (xu-xs)**2 + (yu-ys)**2 <= 3.5**2:
+                if supp.unit.upgraded:
+                    unit.base_health += 2 + 0.34*yu
+                else:
+                    unit.base_health += 3
             else:
                 self.our_unit_support_pairs.append([unit, supp])
 

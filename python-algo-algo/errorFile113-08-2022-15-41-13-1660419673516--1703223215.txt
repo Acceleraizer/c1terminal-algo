@@ -1,3 +1,0 @@
-Random seed: 5323338088185760407
----------------- Starting Your Algo --------------------
-Got EOF, parent game process must have died, exiting for cleanup

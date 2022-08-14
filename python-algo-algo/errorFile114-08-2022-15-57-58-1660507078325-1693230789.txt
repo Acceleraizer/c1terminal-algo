@@ -1,0 +1,603 @@
+Random seed: 5883668680007678573
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Performing turn 0 of your custom algo strategy
+TURN 0
+False
+-1
+[]
+[]
+Cost: 69.0 False 0 5.0
+Performing turn 1 of your custom algo strategy
+TURN 1
+False
+-1
+[]
+[]
+Cost: 65.5 False 0 5.8
+Performing turn 2 of your custom algo strategy
+TURN 2
+False
+-1
+[]
+[]
+Cost: 65.5 False 0 6.3
+Performing turn 3 of your custom algo strategy
+TURN 3
+False
+-1
+[]
+[]
+Cost: 65.5 False 0 6.7
+Performing turn 4 of your custom algo strategy
+TURN 4
+False
+-1
+[]
+[]
+Cost: 65.5 False 0 7.0
+Performing turn 5 of your custom algo strategy
+TURN 5
+False
+-1
+[]
+[]
+Cost: 65.5 False 0 7.3
+Performing turn 6 of your custom algo strategy
+TURN 6
+False
+-1
+[]
+[]
+Cost: 65.5 False 0 7.5
+Performing turn 7 of your custom algo strategy
+TURN 7
+False
+-1
+[]
+[]
+Cost: 65.5 False 0 7.6
+Performing turn 8 of your custom algo strategy
+TURN 8
+False
+-1
+[]
+[]
+Cost: 65.5 True 0 7.7
+Performing turn 9 of your custom algo strategy
+TURN 9
+False
+-1
+[]
+[]
+Cost: 65.5 True 0 7.8
+Performing turn 10 of your custom algo strategy
+TURN 10
+False
+-1
+[]
+[]
+cannot complete right extra
+cannot complete mid game shields
+cannot complete left extra
+Performing turn 11 of your custom algo strategy
+TURN 11
+False
+-1
+[]
+[]
+cannot complete right extra
+cannot complete mid game shields
+cannot complete left extra
+Performing turn 12 of your custom algo strategy
+ENEMY HAS COMMITTED!!
+TURN 12
+False
+-1
+[]
+[]
+TURN 12 ==== PREPARING ALL BREACHES
+cannot complete right extra
+cannot complete mid game shields
+cannot complete left extra
+Performing turn 13 of your custom algo strategy
+TURN 13
+True
+12
+[12]
+[13]
+TURN 13 REINFORCING FLANK 1
+TURN 13 ==== PREPARING ALL BREACHES
+cannot complete right extra
+cannot complete left extra
+Performing turn 14 of your custom algo strategy
+TURN 14
+True
+12
+[12]
+[13]
+Considering 3 to 5 demos
+Could not spawn FF at location [2, 13]. Location is blocked.
+Could not spawn FF at location [5, 10]. Location is blocked.
+Could not spawn FF at location [6, 9]. Location is blocked.
+Could not spawn FF at location [7, 8]. Location is blocked.
+Could not spawn FF at location [9, 6]. Location is blocked.
+Could not spawn FF at location [10, 5]. Location is blocked.
+Could not spawn FF at location [11, 4]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+Could not spawn FF at location [3, 12]. Location is blocked.
+CANDIDATE BREACH: 0
+Demos 4@[15, 1] Scouts 4@[14, 0], (8, 2, 9, 27.5)
+Demos 5@[15, 1] Scouts 1@[14, 0], (6, 2, 8, 27.0)
+Could not spawn FF at location [22, 10]. Location is blocked.
+Could not spawn FF at location [21, 9]. Location is blocked.
+Could not spawn FF at location [20, 8]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [18, 6]. Location is blocked.
+Could not spawn FF at location [17, 5]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [16, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+Could not spawn FF at location [24, 12]. Location is blocked.
+CANDIDATE BREACH: 1
+Demos 4@[12, 1] Scouts 4@[13, 0], (6, 2, 8, 24.0)
+Demos 5@[12, 1] Scouts 1@[13, 0], (6, 2, 9, 27.5)
+Could not spawn FF at location [2, 13]. Location is blocked.
+Could not spawn FF at location [3, 13]. Location is blocked.
+Could not spawn FF at location [4, 13]. Location is blocked.
+Could not spawn FF at location [6, 13]. Location is blocked.
+Could not spawn FF at location [7, 13]. Location is blocked.
+Could not spawn FF at location [22, 10]. Location is blocked.
+Could not spawn FF at location [21, 9]. Location is blocked.
+Could not spawn FF at location [20, 8]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [9, 6]. Location is blocked.
+Could not spawn FF at location [18, 6]. Location is blocked.
+Could not spawn FF at location [10, 5]. Location is blocked.
+Could not spawn FF at location [17, 5]. Location is blocked.
+Could not spawn FF at location [11, 4]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [16, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+Could not spawn FF at location [24, 12]. Location is blocked.
+CANDIDATE BREACH: 2
+Demos 4@[26, 12] Scouts 4@[25, 11], (0, 0, 3, 4.5)
+Demos 5@[26, 12] Scouts 1@[25, 11], (0, 0, 3, 4.5)
+Could not spawn FF at location [2, 13]. Location is blocked.
+Could not spawn FF at location [3, 12]. Location is blocked.
+Could not spawn FF at location [22, 12]. Location is blocked.
+Could not spawn FF at location [4, 11]. Location is blocked.
+Could not spawn FF at location [5, 10]. Location is blocked.
+Could not spawn FF at location [22, 10]. Location is blocked.
+Could not spawn FF at location [7, 8]. Location is blocked.
+Could not spawn FF at location [20, 8]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [9, 6]. Location is blocked.
+Could not spawn FF at location [18, 6]. Location is blocked.
+Could not spawn FF at location [10, 5]. Location is blocked.
+Could not spawn FF at location [17, 5]. Location is blocked.
+Could not spawn FF at location [11, 4]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [16, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+Could not spawn FF at location [24, 12]. Location is blocked.
+Could not spawn FF at location [22, 11]. Location is blocked.
+CANDIDATE BREACH: 3
+Demos 4@[1, 12] Scouts 4@[2, 11], (0, 0, 6, 15.0)
+Demos 5@[1, 12] Scouts 1@[2, 11], (0, 0, 7, 18.5)
+LEFT, {'demos': 4, 'scouts': 4, 'scout_loc': [14, 0], 'demo_loc': [15, 1]}, (8, 2, 9, 27.5)
+RIGHT, {'demos': 5, 'scouts': 1, 'scout_loc': [13, 0], 'demo_loc': [12, 1]}, (6, 2, 9, 27.5)
+LEFT CENTER, {'demos': 3, 'scouts': 0, 'scout_loc': [13, 0], 'demo_loc': [14, 0]}, [0, 1, 0, 0]
+RIGHT CENTER, {'demos': 3, 'scouts': 0, 'scout_loc': [13, 0], 'demo_loc': [14, 0]}, [0, 1, 0, 0]
+TURN 14 ==== EXECUTING BREACH
+ 0 :: {'demos': 4, 'scouts': 4, 'scout_loc': [14, 0], 'demo_loc': [15, 1]}
+EXECUTING BREACH, 0, {'demos': 4, 'scouts': 4, 'scout_loc': [14, 0], 'demo_loc': [15, 1]}, 14, 14, 4
+cannot complete right extra
+cannot complete left extra
+Performing turn 15 of your custom algo strategy
+this attack sucked, [0, 1, 2, 3], 0
+after reflection: period = 5. predicted (8, 2, 9, 27.5) got [0.0, 0, 0, 0]
+TURN 15
+True
+12
+[12]
+[13]
+cannot complete right extra
+cannot complete left extra
+Performing turn 16 of your custom algo strategy
+TURN 16
+True
+12
+[12]
+[13]
+cannot complete right extra
+cannot complete left extra
+Performing turn 17 of your custom algo strategy
+TURN 17
+True
+12
+[12]
+[13]
+TURN 17 REINFORCING FLANK 1
+cannot complete right extra
+cannot complete left extra
+Performing turn 18 of your custom algo strategy
+TURN 18
+True
+17
+[12, 17]
+[13]
+TURN 18 REINFORCING FLANK 1
+cannot complete left extra
+cannot complete right extra
+Performing turn 19 of your custom algo strategy
+TURN 19
+True
+17
+[12, 17]
+[13]
+cannot complete left extra
+cannot complete right extra
+Performing turn 20 of your custom algo strategy
+TURN 20
+True
+17
+[12, 17]
+[13]
+TURN 20 ==== PREPARING ALL BREACHES
+cannot complete right extra
+cannot complete left extra
+Performing turn 21 of your custom algo strategy
+TURN 21
+True
+17
+[12, 17]
+[13]
+TURN 21 ==== PREPARING ALL BREACHES
+cannot complete left extra
+Performing turn 22 of your custom algo strategy
+TURN 22
+True
+17
+[12, 17]
+[13]
+TURN 22 ==== PREPARING ALL BREACHES
+Considering 3 to 6 demos
+Could not spawn FF at location [25, 13]. Location is blocked.
+Could not spawn FF at location [22, 10]. Location is blocked.
+Could not spawn FF at location [21, 9]. Location is blocked.
+Could not spawn FF at location [20, 8]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [18, 6]. Location is blocked.
+Could not spawn FF at location [17, 5]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [16, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+Could not spawn FF at location [24, 12]. Location is blocked.
+CANDIDATE BREACH: 1
+Demos 4@[12, 1] Scouts 7@[13, 0], (10, 4, 11, 36.5)
+Demos 6@[12, 1] Scouts 1@[13, 0], (7, 4, 11, 39.5)
+Could not spawn FF at location [2, 13]. Location is blocked.
+Could not spawn FF at location [3, 13]. Location is blocked.
+Could not spawn FF at location [4, 13]. Location is blocked.
+Could not spawn FF at location [6, 13]. Location is blocked.
+Could not spawn FF at location [7, 13]. Location is blocked.
+Could not spawn FF at location [25, 13]. Location is blocked.
+Could not spawn FF at location [22, 10]. Location is blocked.
+Could not spawn FF at location [21, 9]. Location is blocked.
+Could not spawn FF at location [20, 8]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [9, 6]. Location is blocked.
+Could not spawn FF at location [18, 6]. Location is blocked.
+Could not spawn FF at location [10, 5]. Location is blocked.
+Could not spawn FF at location [17, 5]. Location is blocked.
+Could not spawn FF at location [11, 4]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [16, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+Could not spawn FF at location [24, 12]. Location is blocked.
+CANDIDATE BREACH: 2
+Demos 4@[26, 12] Scouts 7@[25, 11], (0, 0, 3, 4.5)
+Demos 6@[26, 12] Scouts 1@[25, 11], (0, 1, 5, 14.0)
+Could not spawn FF at location [2, 13]. Location is blocked.
+Could not spawn FF at location [25, 13]. Location is blocked.
+Could not spawn FF at location [3, 12]. Location is blocked.
+Could not spawn FF at location [22, 12]. Location is blocked.
+Could not spawn FF at location [4, 11]. Location is blocked.
+Could not spawn FF at location [5, 10]. Location is blocked.
+Could not spawn FF at location [21, 10]. Location is blocked.
+Could not spawn FF at location [22, 10]. Location is blocked.
+Could not spawn FF at location [7, 8]. Location is blocked.
+Could not spawn FF at location [20, 8]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [9, 6]. Location is blocked.
+Could not spawn FF at location [18, 6]. Location is blocked.
+Could not spawn FF at location [10, 5]. Location is blocked.
+Could not spawn FF at location [17, 5]. Location is blocked.
+Could not spawn FF at location [11, 4]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [16, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+Could not spawn FF at location [24, 12]. Location is blocked.
+Could not spawn FF at location [22, 11]. Location is blocked.
+CANDIDATE BREACH: 3
+Demos 4@[1, 12] Scouts 7@[2, 11], (0, 0, 6, 15.0)
+Demos 6@[1, 12] Scouts 1@[2, 11], (0, 3, 13, 47.0)
+LEFT, {'demos': 3, 'scouts': 0, 'scout_loc': [13, 0], 'demo_loc': [14, 0]}, [0, 1, 0, 0]
+RIGHT, {'demos': 4, 'scouts': 7, 'scout_loc': [13, 0], 'demo_loc': [12, 1]}, (10, 4, 11, 36.5)
+LEFT CENTER, {'demos': 6, 'scouts': 1, 'scout_loc': [25, 11], 'demo_loc': [26, 12]}, (0, 1, 5, 14.0)
+RIGHT CENTER, {'demos': 6, 'scouts': 1, 'scout_loc': [2, 11], 'demo_loc': [1, 12]}, (0, 3, 13, 47.0)
+TURN 22 ==== EXECUTING BREACH
+ 1 :: {'demos': 4, 'scouts': 7, 'scout_loc': [13, 0], 'demo_loc': [12, 1]}
+EXECUTING BREACH, 1, {'demos': 4, 'scouts': 7, 'scout_loc': [13, 0], 'demo_loc': [12, 1]}, 22, 22, 5
+cannot complete left extra
+Performing turn 23 of your custom algo strategy
+this attack sucked, [0, 1, 2, 3], 1
+after reflection: period = 6. predicted (10, 4, 11, 36.5) got [0.0, 0, 0, 0]
+TURN 23
+True
+17
+[12, 17]
+[13]
+TURN 23 REINFORCING FLANK 1
+cannot complete left extra
+Performing turn 24 of your custom algo strategy
+TURN 24
+True
+23
+[12, 17, 23]
+[13]
+TURN 24 REINFORCING FLANK 1
+cannot complete left extra
+Performing turn 25 of your custom algo strategy
+TURN 25
+True
+23
+[12, 17, 23]
+[13]
+cannot complete left extra
+Performing turn 26 of your custom algo strategy
+TURN 26
+True
+23
+[12, 17, 23]
+[13]
+TURN 26 ==== PREPARING ALL BREACHES
+Considering 4 to 7 demos
+Could not spawn FF at location [2, 13]. Location is blocked.
+Could not spawn FF at location [5, 10]. Location is blocked.
+Could not spawn FF at location [6, 9]. Location is blocked.
+Could not spawn FF at location [7, 8]. Location is blocked.
+Could not spawn FF at location [9, 6]. Location is blocked.
+Could not spawn FF at location [10, 5]. Location is blocked.
+Could not spawn FF at location [11, 4]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+Could not spawn FF at location [16, 2]. Location is blocked.
+Could not spawn FF at location [3, 12]. Location is blocked.
+CANDIDATE BREACH: 0
+Demos 5@[15, 1] Scouts 6@[14, 0], (11, 3, 10, 36.5)
+Demos 7@[15, 1] Scouts 0@[14, 0], (7, 3, 10, 36.5)
+Could not spawn FF at location [0, 13]. Location is blocked.
+Could not spawn FF at location [1, 13]. Location is blocked.
+Could not spawn FF at location [2, 13]. Location is blocked.
+Could not spawn FF at location [3, 13]. Location is blocked.
+Could not spawn FF at location [4, 13]. Location is blocked.
+Could not spawn FF at location [6, 13]. Location is blocked.
+Could not spawn FF at location [7, 13]. Location is blocked.
+Could not spawn FF at location [25, 13]. Location is blocked.
+Could not spawn FF at location [26, 13]. Location is blocked.
+Could not spawn FF at location [27, 13]. Location is blocked.
+Could not spawn FF at location [23, 11]. Location is blocked.
+Could not spawn FF at location [22, 10]. Location is blocked.
+Could not spawn FF at location [21, 9]. Location is blocked.
+Could not spawn FF at location [20, 8]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [9, 6]. Location is blocked.
+Could not spawn FF at location [18, 6]. Location is blocked.
+Could not spawn FF at location [10, 5]. Location is blocked.
+Could not spawn FF at location [17, 5]. Location is blocked.
+Could not spawn FF at location [11, 4]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [16, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+Could not spawn FF at location [24, 12]. Location is blocked.
+CANDIDATE BREACH: 2
+Demos 5@[26, 12] Scouts 6@[25, 11], (0, 1, 5, 14.0)
+Demos 7@[26, 12] Scouts 0@[25, 11], (0, 3, 11, 40.0)
+Could not spawn FF at location [0, 13]. Location is blocked.
+Could not spawn FF at location [1, 13]. Location is blocked.
+Could not spawn FF at location [2, 13]. Location is blocked.
+Could not spawn FF at location [25, 13]. Location is blocked.
+Could not spawn FF at location [26, 13]. Location is blocked.
+Could not spawn FF at location [27, 13]. Location is blocked.
+Could not spawn FF at location [3, 12]. Location is blocked.
+Could not spawn FF at location [22, 12]. Location is blocked.
+Could not spawn FF at location [4, 11]. Location is blocked.
+Could not spawn FF at location [5, 10]. Location is blocked.
+Could not spawn FF at location [21, 10]. Location is blocked.
+Could not spawn FF at location [22, 10]. Location is blocked.
+Could not spawn FF at location [7, 8]. Location is blocked.
+Could not spawn FF at location [20, 8]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [9, 6]. Location is blocked.
+Could not spawn FF at location [18, 6]. Location is blocked.
+Could not spawn FF at location [10, 5]. Location is blocked.
+Could not spawn FF at location [17, 5]. Location is blocked.
+Could not spawn FF at location [11, 4]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [16, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+Could not spawn FF at location [24, 12]. Location is blocked.
+Could not spawn FF at location [22, 11]. Location is blocked.
+CANDIDATE BREACH: 3
+Demos 5@[1, 12] Scouts 6@[2, 11], (0, 5, 16, 62.5)
+Demos 7@[1, 12] Scouts 0@[2, 11], (7, 9, 29, 100.0)
+LEFT, {'demos': 5, 'scouts': 6, 'scout_loc': [14, 0], 'demo_loc': [15, 1]}, (11, 3, 10, 36.5)
+RIGHT, {'demos': 4, 'scouts': 0, 'scout_loc': [13, 0], 'demo_loc': [14, 0]}, [0, 1, 0, 0]
+LEFT CENTER, {'demos': 7, 'scouts': 0, 'scout_loc': [25, 11], 'demo_loc': [26, 12]}, (0, 3, 11, 40.0)
+RIGHT CENTER, {'demos': 7, 'scouts': 0, 'scout_loc': [2, 11], 'demo_loc': [1, 12]}, (7, 9, 29, 100.0)
+TURN 26 ==== EXECUTING BREACH
+ 3 :: {'demos': 7, 'scouts': 0, 'scout_loc': [2, 11], 'demo_loc': [1, 12]}
+EXECUTING BREACH, 3, {'demos': 7, 'scouts': 0, 'scout_loc': [2, 11], 'demo_loc': [1, 12]}, 26, 26, 6
+cannot complete left extra
+Performing turn 27 of your custom algo strategy
+this attack sucked, [0, 1, 2, 3], 3
+after reflection: period = 6. predicted (7, 9, 29, 100.0) got [0.0, 0, 0, 0]
+TURN 27
+True
+23
+[12, 17, 23]
+[13]
+cannot complete left extra
+Performing turn 28 of your custom algo strategy
+TURN 28
+True
+23
+[12, 17, 23]
+[13]
+TURN 28 REINFORCING FLANK 0
+cannot complete left extra
+Performing turn 29 of your custom algo strategy
+TURN 29
+True
+23
+[12, 17, 23]
+[13]
+cannot complete left extra
+Performing turn 30 of your custom algo strategy
+TURN 30
+True
+23
+[12, 17, 23]
+[13]
+TURN 30 REINFORCING FLANK 0
+cannot complete left extra
+Performing turn 31 of your custom algo strategy
+TURN 31
+True
+30
+[12, 17, 23, 30]
+[13, 14]
+TURN 31 REINFORCING FLANK 0
+cannot complete left extra
+Performing turn 32 of your custom algo strategy
+TURN 32
+True
+30
+[12, 17, 23, 30]
+[13, 14]
+cannot complete left extra
+Performing turn 33 of your custom algo strategy
+TURN 33
+True
+30
+[12, 17, 23, 30]
+[13, 14]
+TURN 33 ==== PREPARING ALL BREACHES
+Considering 4 to 8 demos
+Could not spawn FF at location [2, 13]. Location is blocked.
+Could not spawn FF at location [5, 10]. Location is blocked.
+Could not spawn FF at location [6, 9]. Location is blocked.
+Could not spawn FF at location [7, 8]. Location is blocked.
+Could not spawn FF at location [9, 6]. Location is blocked.
+Could not spawn FF at location [10, 5]. Location is blocked.
+Could not spawn FF at location [11, 4]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+Could not spawn FF at location [16, 2]. Location is blocked.
+Could not spawn FF at location [3, 12]. Location is blocked.
+CANDIDATE BREACH: 0
+Demos 6@[15, 1] Scouts 6@[14, 0], (12, 3, 11, 49.0)
+Demos 8@[15, 1] Scouts 0@[14, 0], (8, 3, 11, 49.0)
+Could not spawn FF at location [25, 13]. Location is blocked.
+Could not spawn FF at location [23, 11]. Location is blocked.
+Could not spawn FF at location [22, 10]. Location is blocked.
+Could not spawn FF at location [21, 9]. Location is blocked.
+Could not spawn FF at location [20, 8]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [18, 6]. Location is blocked.
+Could not spawn FF at location [17, 5]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [16, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+Could not spawn FF at location [24, 12]. Location is blocked.
+CANDIDATE BREACH: 1
+Demos 6@[12, 1] Scouts 6@[13, 0], (12, 4, 11, 39.5)
+Demos 8@[12, 1] Scouts 0@[13, 0], (8, 4, 11, 39.5)
+Could not spawn FF at location [0, 13]. Location is blocked.
+Could not spawn FF at location [1, 13]. Location is blocked.
+Could not spawn FF at location [2, 13]. Location is blocked.
+Could not spawn FF at location [3, 13]. Location is blocked.
+Could not spawn FF at location [4, 13]. Location is blocked.
+Could not spawn FF at location [6, 13]. Location is blocked.
+Could not spawn FF at location [7, 13]. Location is blocked.
+Could not spawn FF at location [25, 13]. Location is blocked.
+Could not spawn FF at location [26, 13]. Location is blocked.
+Could not spawn FF at location [27, 13]. Location is blocked.
+Could not spawn FF at location [23, 11]. Location is blocked.
+Could not spawn FF at location [22, 10]. Location is blocked.
+Could not spawn FF at location [21, 9]. Location is blocked.
+Could not spawn FF at location [20, 8]. Location is blocked.
+Could not spawn FF at location [19, 7]. Location is blocked.
+Could not spawn FF at location [9, 6]. Location is blocked.
+Could not spawn FF at location [18, 6]. Location is blocked.
+Could not spawn FF at location [10, 5]. Location is blocked.
+Could not spawn FF at location [17, 5]. Location is blocked.
+Could not spawn FF at location [11, 4]. Location is blocked.
+Could not spawn FF at location [13, 4]. Location is blocked.
+Could not spawn FF at location [14, 4]. Location is blocked.
+Could not spawn FF at location [16, 4]. Location is blocked.
+Could not spawn FF at location [12, 3]. Location is blocked.
+Could not spawn FF at location [15, 3]. Location is blocked.
+Could not spawn FF at location [24, 12]. Location is blocked.
+CANDIDATE BREACH: 2
+Demos 6@[26, 12] Scouts 6@[25, 11], (0, 4, 12, 46.0)
+Demos 8@[26, 12] Scouts 0@[25, 11], (6, 11, 35, 144.0)
+LEFT, {'demos': 6, 'scouts': 6, 'scout_loc': [14, 0], 'demo_loc': [15, 1]}, (12, 3, 11, 49.0)
+RIGHT, {'demos': 6, 'scouts': 6, 'scout_loc': [13, 0], 'demo_loc': [12, 1]}, (12, 4, 11, 39.5)
+LEFT CENTER, {'demos': 8, 'scouts': 0, 'scout_loc': [25, 11], 'demo_loc': [26, 12]}, (6, 11, 35, 144.0)
+RIGHT CENTER, {'demos': 4, 'scouts': 0, 'scout_loc': [13, 0], 'demo_loc': [14, 0]}, [0, 1, 0, 0]
+TURN 33 ==== EXECUTING BREACH
+ 1 :: {'demos': 6, 'scouts': 6, 'scout_loc': [13, 0], 'demo_loc': [12, 1]}
+EXECUTING BREACH, 1, {'demos': 6, 'scouts': 6, 'scout_loc': [13, 0], 'demo_loc': [12, 1]}, 33, 33, 6
+cannot complete left extra
+Traceback (most recent call last):
+  File "C:\Users\wpwit\Desktop\coding_resources\correlation-one\repo\python-algo-algo\algo_strategy.py", line 1150, in <module>
+    algo.start()
+  File "C:\Users\wpwit\Desktop\coding_resources\correlation-one\repo\python-algo-algo\gamelib\algocore.py", line 74, in start
+    self.on_turn(game_state_string)
+  File "C:\Users\wpwit\Desktop\coding_resources\correlation-one\repo\python-algo-algo\algo_strategy.py", line 426, in on_turn
+    game_state.submit_turn()
+  File "C:\Users\wpwit\Desktop\coding_resources\correlation-one\repo\python-algo-algo\gamelib\game_state.py", line 212, in submit_turn
+    send_command(build_string)
+  File "C:\Users\wpwit\Desktop\coding_resources\correlation-one\repo\python-algo-algo\gamelib\util.py", line 31, in send_command
+    sys.stdout.flush()
+OSError: [Errno 22] Invalid argument
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='cp1252'>
+OSError: [Errno 22] Invalid argument

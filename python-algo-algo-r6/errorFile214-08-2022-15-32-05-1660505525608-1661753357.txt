@@ -1,0 +1,19 @@
+Random seed: 3675350516713016256
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Performing turn 0 of your custom algo strategy
+after reflection: period = 5. predicted [0, 0, 0, 0] got [0.0, 0, 0, 0]
+Traceback (most recent call last):
+  File "C:\Users\wpwit\Desktop\coding_resources\correlation-one\repo\python-algo-algo-r6\algo_strategy.py", line 964, in <module>
+    algo.start()
+  File "C:\Users\wpwit\Desktop\coding_resources\correlation-one\repo\python-algo-algo-r6\gamelib\algocore.py", line 74, in start
+    self.on_turn(game_state_string)
+  File "C:\Users\wpwit\Desktop\coding_resources\correlation-one\repo\python-algo-algo-r6\algo_strategy.py", line 309, in on_turn
+    game_state.submit_turn()
+  File "C:\Users\wpwit\Desktop\coding_resources\correlation-one\repo\python-algo-algo-r6\gamelib\game_state.py", line 212, in submit_turn
+    send_command(build_string)
+  File "C:\Users\wpwit\Desktop\coding_resources\correlation-one\repo\python-algo-algo-r6\gamelib\util.py", line 31, in send_command
+    sys.stdout.flush()
+OSError: [Errno 22] Invalid argument
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='cp1252'>
+OSError: [Errno 22] Invalid argument
